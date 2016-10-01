@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/admin', function () {
+    return view('layouts.inspinia_app');
+});
+
+Route::get('admin/category', function() {
+	return view('admin.categories.index');
 });
