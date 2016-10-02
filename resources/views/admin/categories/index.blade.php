@@ -25,6 +25,9 @@
 						<a href="{{ url('admin/category/create') }}" class="btn btn-primary"><i class="fa fa-plus"> </i> เพิ่มประเภทสินค้า</a>
 					</div>
 				</div>
+				{{-- @if(Session::has('alert-success')) --}}
+				
+				{{-- @endif --}}
 				<div class="ibox-content">
 					<table class="table table-striped table-bordered table-hover " id="category" >
 						<thead>
@@ -32,49 +35,22 @@
 								<th>#</th>
 								<th>ชื่อประเภทสินค้า</th>
 								<th>วันที่เพิ่ม</th>
+								<th style="width:50px;"></th>
 							</tr>
 						</thead>
 						<tbody>
+							<?php $i = 1; ?>
+							@foreach($categories as $category)
 							<tr>
-								<td>1</td>
-								<td>ผักสวนครัว</td>
-								<td>4/09/2016</td>
+								<td>{{ $i++ }}</td>
+								<td>{{ $category->name }}</td>
+								<td>{{ date('d F Y', strtotime($category->created_at)) }}</td>
+								<td align="center">
+									<a class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a> <span style="color:#D9D0D9"> | </span> 
+									<a class="btn btn-xs btn-danger" href=""><i class="fa fa-trash"> </i></a>
+								</td>
 							</tr>
-							<tr>
-								<td>2</td>
-								<td>ผักสมุนไพร</td>
-								<td>04/09/2016</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>ผักสลัด</td>
-								<td>04/09/2016</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>ผักตามฤดูกาล</td>
-								<td>04/09/2016</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>ผลไม้</td>
-								<td>04/09/2016</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>ผลไม้ตามฤดูกาล</td>
-								<td>04/09/2016</td>
-							</tr>
-							<tr>
-								<td>7</td>
-								<td>ผลไม้</td>
-								<td>04/09/2016</td>
-							</tr>
-							<tr>
-								<td>8</td>
-								<td>ผลไม้</td>
-								<td>04/09/2016</td>
-							</tr>
+							@endforeach
 						</tbody>
 					</table>
 				</div>

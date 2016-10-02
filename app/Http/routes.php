@@ -15,6 +15,4 @@ Route::get('/admin', function () {
     return view('layouts.inspinia_app');
 });
 
-Route::get('admin/category', function() {
-	return view('admin.categories.index');
-});
+Route::resource('admin/category' , 'CategoriesController' );

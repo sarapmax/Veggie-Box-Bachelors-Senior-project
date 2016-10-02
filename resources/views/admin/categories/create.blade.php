@@ -1,4 +1,4 @@
-@extends('admin.layouts.master')
+@extends('layouts.inspinia_app')
 @section('content')
 
 <div class="row wrapper border-bottom white-bg page-heading">
@@ -24,29 +24,23 @@
 
 	         <div class="ibox">
                 <div class="ibox-title">
-                    <h5>Add Product Category</h5>
+                    <h5>เพิ่มประเภทสินค้า</h5>
                     <div class="ibox-tools">
-                        <a href="{{ url('admin/category') }}" class="btn btn-primary"><i class="fa fa-arrow-up"> </i> Add Category</a>
+                        <a href="{{ url('admin/category') }}" class="btn btn-primary"><i class="fa fa-list"> </i> จัดการประเภทสินค้า</a>
                     </div>
                 </div>
                 <div class="ibox-content">
-                	<form class="form-horizontal">
-                        <div class="form-group">
-                        	<label class="col-lg-2 control-label">Category Name</label>
+                	<form action="{{ route('admin.category.store') }}" method="POST" class="form-horizontal">
+                        <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+                        	<label class="col-lg-2 control-label"> ชื่อประเภทสินค้า</label>
                             <div class="col-lg-6">
-                            	<input type="text" placeholder="Enter product name" class="form-control">
+                            	<input type="text" placeholder="Enter product name" name="name" class="form-control" value="{{ old('name') }}">
+                                @if($errors->has('name'))
+                                    <span class="help-block">{{ $errors->first('name') }}</span>
+                                @endif
                             </div>
-                        </div>
-                        <div class="form-group">
-                        	<label class="col-lg-2 control-label">Category Description</label>
-                            <div class="col-lg-6">
-                            	<textarea cols="30" rows="10" class="form-control"></textarea>
-                            </div>
-                        </div>
-                        <div class="hr-line-dashed"></div>
-                        <div class="form-group">
-                            <div class="col-lg-offset-2 col-lg-10">
-                                <button class="btn btn-sm btn-primary" type="submit">Submit</button>
+                            <div class="col-md-2">
+                                 <button class="btn btn-primary" type="submit"><i class="fa fa-check"> </i> Submit</button>
                             </div>
                         </div>
                     </form>

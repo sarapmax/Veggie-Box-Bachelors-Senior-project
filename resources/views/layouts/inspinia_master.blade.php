@@ -27,6 +27,9 @@
     <link href="{{ asset('inspinia/css/plugins/summernote/summernote.css') }}" rel="stylesheet">
     <link href="{{ asset('inspinia/css/plugins/summernote/summernote-bs3.css') }}" rel="stylesheet">
 
+    {{-- sweet-alert --}}
+    <link href="{{ asset('bower_components/sweetalert/dist/sweetalert.css') }}" rel="stylesheet">
+
     <style type="text/css">
         .td-center {
             text-align:center; 
@@ -70,6 +73,12 @@
 
 <!-- Chartist -->
 <script src="{{ asset('js/plugins/chartist/chartist.min.js') }}"></script>
+
+{{-- sweetalert --}}
+<script src="{{ asset('bower_components/sweetalert/dist/sweetalert.min.js') }}"></script>
+
+<!-- Include this after the sweet alert js file -->
+@include('sweet::alert')
 
 @yield('admin-js')
 
