@@ -34,7 +34,7 @@ class CategoriesController extends Controller
 
     	$categories->save();
     	
-    	alert()->success('ประเภทสินค้า '. $categories->name . 'ถูกเพิ่มเข้าสู่ระบบแล้ว', 'เพิ่มประเภทสินค้าสำเร็จแล้ว')->persistent('ปิด');;
+    	alert()->success('ประเภทสินค้า '. $categories->name . ' ถูกเพิ่มเข้าสู่ระบบแล้ว', 'เพิ่มประเภทสินค้าสำเร็จแล้ว')->persistent('ปิด');;
 
     	return redirect()->route('admin.category.index');
     }
