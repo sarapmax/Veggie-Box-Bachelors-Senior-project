@@ -46,8 +46,13 @@
 								<td>{{ $category->name }}</td>
 								<td>{{ date('d F Y', strtotime($category->created_at)) }}</td>
 								<td align="center">
-									<a class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a> <span style="color:#D9D0D9"> | </span> 
-									<a class="btn btn-xs btn-danger" href=""><i class="fa fa-trash"> </i></a>
+									<a href="{{ route('admin.category.edit', $category->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a> 
+									<span style="color:#D9D0D9"> | </span> 
+									<form action="{{ route('admin.category.destroy', $category->id) }}" method="POST" style="display:inline" onsubmit="return confirm('Are you sure to delete ?')">
+										<input type="hidden" name="_method" value="DELETE">
+										<input type="hidden" name="_token" value="{{ csrf_token() }}">
+										<button type="submit" class="btn btn-xs btn-danger"><i class="fa fa-trash"> </i></button>
+									</form>
 								</td>
 							</tr>
 							@endforeach

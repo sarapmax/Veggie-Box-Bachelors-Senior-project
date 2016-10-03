@@ -12,7 +12,7 @@
 				<a href="#">Category</a>
 			</li>
 			<li class="active">
-				<strong>Create Category</strong>
+				<strong>Edit Category</strong>
 			</li>
 		</ol>
 	</div>
@@ -24,18 +24,19 @@
 
 	         <div class="ibox">
                 <div class="ibox-title">
-                    <h5>เพิ่มประเภทสินค้า</h5>
+                    <h5>แก้ไขประเภทสินค้า</h5>
                     <div class="ibox-tools">
                         <a href="{{ url('admin/category') }}" class="btn btn-primary"><i class="fa fa-list"> </i> จัดการประเภทสินค้า</a>
                     </div>
                 </div>
                 <div class="ibox-content">
-                	<form action="{{ route('admin.category.store') }}" method="POST" class="form-horizontal">
+                	<form action="{{ route('admin.category.update', $category->id) }}" method="POST" class="form-horizontal">
+                        <input type="hidden" name="_method" value="PATCH">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label"> ชื่อประเภทสินค้า</label>
                             <div class="col-lg-6">
-                            	<input type="text" placeholder="Enter product name" name="name" class="form-control" value="{{ old('name') }}">
+                            	<input type="text" placeholder="Enter product name" name="name" class="form-control" value="{{ old('name', $category->name) }}">
                                 @if($errors->has('name'))
                                     <span class="help-block">{{ $errors->first('name') }}</span>
                                 @endif

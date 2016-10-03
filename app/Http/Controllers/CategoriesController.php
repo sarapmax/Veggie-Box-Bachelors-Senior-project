@@ -11,7 +11,6 @@ use Alert;
 
 class CategoriesController extends Controller
 {
-    //
     public function index(){
       $categories = Categories::orderBy('created_at', 'DESC')->get();
 
@@ -34,8 +33,42 @@ class CategoriesController extends Controller
 
     	$categories->save();
     	
-    	alert()->success('ประเภทสินค้า '. $categories->name . ' ถูกเพิ่มเข้าสู่ระบบแล้ว', 'เพิ่มประเภทสินค้าสำเร็จแล้ว')->persistent('ปิด');;
+    	alert()->success('ประเภทสินค้า '. $categories->name . ' ถูกเพิ่มเข้าสู่ระบบแล้ว', 'เพิ่มประเภทสินค้าสำเร็จแล้ว', 'สำเร็จ')->persistent('ปิด');;
 
     	return redirect()->route('admin.category.index');
+    }
+
+    public function edit($id) {
+        $category = Categories::find($id);
+
+        return view('admin.categories.edit', compact('category'));
+    }
+
+    public function update($id, Request $request) {
+        $category = Categories::find($id);
+
+        $this->validate($request, [
+            'name' => 'required|unique:categories|min:4'
+        ]);
+
+        $category->name = $request->input('name');
+        $category->slug = Str::slug($request->input('name'));
+
+        $category->save();
+
+        alert()->success('ประเภทสินค้า '.$category->name.' ถูกแก้ไขเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
+
+        return redirect('admin/category');
+    }
+
+    public function destroy($id) {
+        $category = Categories::find($id);
+
+        $category->delete();
+
+        alert()->success('ประเภทสินค้า '.$category->name.' ถูกลบเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
+
+        return redirect()->back();
+
     }
 }

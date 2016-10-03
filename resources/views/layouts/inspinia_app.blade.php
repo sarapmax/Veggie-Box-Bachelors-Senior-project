@@ -20,7 +20,11 @@
                     <a href="{{ url('admin/') }}"><i class="fa fa-desktop"></i> <span class="nav-label"> หน้าแรก</span></a>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'category' ? 'class=active' : '' }}>
-                    <a href="{{ url('admin/category') }}"><i class="fa fa-list"></i> <span class="nav-label"> ประเภทสินค้า</span> </a>
+                    <a href="{{ url('admin/category') }}"><i class="fa fa-list"></i> <span class="nav-label"> ประเภทสินค้า</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li {{ Request::segment(2) == 'category' ? 'class=active' : '' }}><a href="{{ url('admin/category') }}"> ประเภทสินค้า</a></li>
+                        <li {{ Request::segment(2) == 'sub_category' ? 'class=active' : '' }}><a href="{{ url('admin/product/release') }}"> ประเภทสินค้าย่อย</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="{{ url('admin/product_selection') }}"><i class="fa fa-check-square-o"></i> <span class="nav-label">เลือกสินค้า</span> </a>
