@@ -23,7 +23,7 @@
                     <a href="{{ url('admin/category') }}"><i class="fa fa-list"></i> <span class="nav-label"> ประเภทสินค้า</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li {{ Request::segment(2) == 'category' ? 'class=active' : '' }}><a href="{{ url('admin/category') }}"> ประเภทสินค้า</a></li>
-                        <li {{ Request::segment(2) == 'sub_category' ? 'class=active' : '' }}><a href="{{ url('admin/product/release') }}"> ประเภทสินค้าย่อย</a></li>
+                        <li {{ Request::segment(2) == 'sub_category' ? 'class=active' : '' }}><a href="{{ url('admin/subcategory') }}"> ประเภทสินค้าย่อย</a></li>
                     </ul>
                 </li>
                 <li>

@@ -16,3 +16,5 @@ Route::get('/admin', function () {
 });
 
 Route::resource('admin/category', 'CategoriesController');
+
+Route::resource('admin/subcategory' , 'SubCategoriesController');
