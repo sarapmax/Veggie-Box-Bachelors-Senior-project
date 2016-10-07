@@ -474,7 +474,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 .top-navigation .nav > li > a {
   padding: 15px 20px;
-  color: #676a6c;
+  color: #3a3a3a;
 }
 .top-navigation .nav > li a:hover,
 .top-navigation .nav > li a:focus {
@@ -493,7 +493,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 .top-navigation .navbar-nav .dropdown-menu {
   box-shadow: none;
-  border: 1px solid #e7eaec;
+  /*border: 1px solid #e7eaec;*/
 }
 .top-navigation .dropdown-menu > li > a {
   margin: 0;
@@ -5191,7 +5191,7 @@ del {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background-color: #1ab394;
+  background-color: rgba(113, 111, 111, 0.59);
   padding: 6px 12px;
   position: absolute;
   top: -32px;
