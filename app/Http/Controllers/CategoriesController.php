@@ -32,7 +32,7 @@ class CategoriesController extends Controller
     	$categories->slug = Str::slug($request->input('name'));
 
     	$categories->save();
-    	
+
     	alert()->success('ประเภทสินค้า '. $categories->name . ' ถูกเพิ่มเข้าสู่ระบบแล้ว', 'เพิ่มประเภทสินค้าสำเร็จแล้ว', 'สำเร็จ')->persistent('ปิด');;
 
     	return redirect()->route('admin.category.index');
