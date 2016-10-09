@@ -1,4 +1,4 @@
-@extends('layouts.inspinia_app')
+@extends('layouts.inspinia_admin')
 @section('content')
 
 <div class="row wrapper border-bottom white-bg page-heading">
@@ -6,13 +6,13 @@
 		<h2>Category</h2><br>
 		<ol class="breadcrumb">
 			<li>
-				<a href="index.html">Dashboard</a>
+				<a href="{{ url('admin/') }}">หน้าแรก</a>
 			</li>
 			<li>
-				<a href="#">Category</a>
+				<a href="{{ route('admin.category.index') }}">ประเภทสินค้า</a>
 			</li>
 			<li class="active">
-				<strong>Edit Category</strong>
+				<strong>เพิ่มประเภทสินค้า</strong>
 			</li>
 		</ol>
 	</div>
@@ -24,19 +24,18 @@
 
 	         <div class="ibox">
                 <div class="ibox-title">
-                    <h5>แก้ไขประเภทสินค้า</h5>
+                    <h5>เพิ่มประเภทสินค้า</h5>
                     <div class="ibox-tools">
                         <a href="{{ url('admin/category') }}" class="btn btn-primary"><i class="fa fa-list"> </i> จัดการประเภทสินค้า</a>
                     </div>
                 </div>
                 <div class="ibox-content">
-                	<form action="{{ route('admin.category.update', $category->id) }}" method="POST" class="form-horizontal">
-                        <input type="hidden" name="_method" value="PATCH">
+                	<form action="{{ route('admin.category.store') }}" method="POST" class="form-horizontal">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label"> ชื่อประเภทสินค้า</label>
                             <div class="col-lg-6">
-                            	<input type="text" placeholder="Enter product name" name="name" class="form-control" value="{{ old('name', $category->name) }}">
+                            	<input type="text" placeholder="กรอกชื่อประเภทสินค้า" name="name" class="form-control" value="{{ old('name') }}">
                                 @if($errors->has('name'))
                                     <span class="help-block">{{ $errors->first('name') }}</span>
                                 @endif

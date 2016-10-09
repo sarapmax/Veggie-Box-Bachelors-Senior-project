@@ -19,11 +19,11 @@
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == '' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/') }}"><i class="fa fa-desktop"></i> <span class="nav-label"> หน้าแรก</span></a>
                 </li>
-                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'category' ? 'class=active' : '' }}>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'category' || Request::segment(2) == 'sub_category' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/category') }}"><i class="fa fa-list"></i> <span class="nav-label"> ประเภทสินค้า</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li {{ Request::segment(2) == 'category' ? 'class=active' : '' }}><a href="{{ url('admin/category') }}"> ประเภทสินค้า</a></li>
-                        <li {{ Request::segment(2) == 'sub_category' ? 'class=active' : '' }}><a href="{{ url('admin/subcategory') }}"> ประเภทสินค้าย่อย</a></li>
+                        <li {{ Request::segment(2) == 'sub_category' ? 'class=active' : '' }}><a href="{{ url('admin/sub_category') }}"> ประเภทสินค้าย่อย</a></li>
                     </ul>
                 </li>
                 <li>
@@ -65,7 +65,7 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user"></i>  Teerpong Phothiphun <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-user"></i>Teerpong Phothiphun <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="profile.html"><i class="fa fa-user"> </i> View Profile</a></li>

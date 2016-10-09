@@ -27,8 +27,13 @@
     <link href="{{ asset('inspinia/css/plugins/summernote/summernote.css') }}" rel="stylesheet">
     <link href="{{ asset('inspinia/css/plugins/summernote/summernote-bs3.css') }}" rel="stylesheet">
 
+    {{-- chosen --}}
+    <link href="{{ asset('inspinia/css/plugins/chosen/chosen.css') }}" rel="stylesheet">
+
     {{-- sweet-alert --}}
     <link href="{{ asset('bower_components/sweetalert/dist/sweetalert.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('style.css') }}" rel="stylesheet">
 
     <style type="text/css">
         .td-center {
@@ -76,6 +81,9 @@
 
 {{-- sweetalert --}}
 <script src="{{ asset('bower_components/sweetalert/dist/sweetalert.min.js') }}"></script>
+
+{{-- chosen --}}
+<script src="{{ asset('inspinia/js/plugins/chosen/chosen.jquery.js') }}"></script>
 
 <!-- Include this after the sweet alert js file -->
 @include('sweet::alert')

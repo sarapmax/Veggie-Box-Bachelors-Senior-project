@@ -5,20 +5,20 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\Categories;
+use App\Category;
 use Illuminate\Support\Str;
 use Alert;
 
-class CategoriesController extends Controller
+class AdminCategoryController extends Controller
 {
     public function index(){
-      $categories = Categories::orderBy('created_at', 'DESC')->get();
+      $categories = Category::orderBy('created_at', 'DESC')->get();
 
-      return view('admin.categories.index', compact('categories'));
+      return view('admin.category.index', compact('categories'));
     }
 
     public function create() {
-    	return view('admin.categories.create');
+    	return view('admin.category.create');
     }
 
     public function store(Request $request) {
@@ -26,7 +26,7 @@ class CategoriesController extends Controller
     		'name' => 'required|unique:categories|min:4'
     	]);
 
-    	$categories = new Categories;
+    	$categories = new Category;
 
     	$categories->name = $request->input('name');
     	$categories->slug = Str::slug($request->input('name'));
@@ -39,13 +39,13 @@ class CategoriesController extends Controller
     }
 
     public function edit($id) {
-        $category = Categories::find($id);
+        $category = Category::find($id);
 
-        return view('admin.categories.edit', compact('category'));
+        return view('admin.category.edit', compact('category'));
     }
 
     public function update($id, Request $request) {
-        $category = Categories::find($id);
+        $category = Category::find($id);
 
         $this->validate($request, [
             'name' => 'required|unique:categories|min:4'
@@ -62,7 +62,7 @@ class CategoriesController extends Controller
     }
 
     public function destroy($id) {
-        $category = Categories::find($id);
+        $category = Category::find($id);
 
         $category->delete();
 

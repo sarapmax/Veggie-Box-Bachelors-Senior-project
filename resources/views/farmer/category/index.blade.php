@@ -1,4 +1,4 @@
-@extends('layouts.inspinia_app')
+@extends('layouts.inspinia_farmer')
 
 @section('content')
 
@@ -7,7 +7,7 @@
 		<h2>ประเภทสินค้า</h2><br>
 		<ol class="breadcrumb">
 			<li>
-				<a href="{{ url('admin/') }}">หน้าแรก</a>
+				<a href="{{ url('farmer/') }}">หน้าแรก</a>
 			</li>
 			<li class="active">
 				<strong>ประเภทสินค้า</strong>
@@ -20,10 +20,7 @@
 		<div class="wrapper wrapper-content animated fadeInUp">
 			<div class="ibox">
 				<div class="ibox-title">
-					<h5>จัดการประเภทสินค้า</h5>
-					<div class="ibox-tools">
-						<a href="{{ url('admin/category/create') }}" class="btn btn-primary"><i class="fa fa-plus"> </i> เพิ่มประเภทสินค้า</a>
-					</div>
+					<h5>ประเภทสินค้า</h5>
 				</div>
 				{{-- @if(Session::has('alert-success')) --}}
 				
@@ -33,9 +30,8 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>ชื่อประเภทสินค้า</th>
+								<th>ประเภทสินค้า</th>
 								<th>วันที่เพิ่ม</th>
-								<th style="width:50px;"></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -45,15 +41,6 @@
 								<td>{{ $i++ }}</td>
 								<td>{{ $category->name }}</td>
 								<td>{{ date('d F Y', strtotime($category->created_at)) }}</td>
-								<td align="center">
-									<a href="{{ route('admin.category.edit', $category->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a> 
-									<span style="color:#D9D0D9"> | </span> 
-									<form action="{{ route('admin.category.destroy', $category->id) }}" method="POST" style="display:inline" onsubmit="return confirm('Are you sure to delete ?')">
-										<input type="hidden" name="_method" value="DELETE">
-										<input type="hidden" name="_token" value="{{ csrf_token() }}">
-										<button type="submit" class="btn btn-xs btn-danger"><i class="fa fa-trash"> </i></button>
-									</form>
-								</td>
 							</tr>
 							@endforeach
 						</tbody>
