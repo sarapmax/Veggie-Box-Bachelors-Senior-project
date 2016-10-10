@@ -4,7 +4,7 @@
 
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-sm-4">
-        <h2>เพิ่มสินค้า</h2><br>
+        <h2>แก้ไขสินค้า</h2><br>
         <ol class="breadcrumb">
             <li>
                 <a href="{{ url('farmer/') }}">หน้าแรก</a>
@@ -13,7 +13,7 @@
                 <a href="{{ url('farmer/product') }}">สินค้า</a>
             </li>
             <li class="active">
-                <strong>เพิ่มสินค้า</strong>
+                <strong>แก้ไขสินค้า</strong>
             </li>
         </ol>
     </div>
@@ -24,13 +24,14 @@
 
 	         <div class="ibox">
                 <div class="ibox-title">
-                    <h5>เพิ่มสินค้า</h5>
+                    <h5>แก้ไขสินค้า</h5>
                     <div class="ibox-tools">
                         <a href="{{ url('farmer/product/') }}" class="btn btn-primary"><i class="fa fa-cubes"> </i> สินค้าทั้งหมด</a>
                     </div>
                 </div>
-                <div class="ibox-content">
-                	<form action="{{ route('farmer.product.store') }}" method="POST" class="form-horizontal" enctype="multipart/form-data">
+                <div ng-controller="FarmerProductCtrl" class="ibox-content">
+                	<form action="{{ route('farmer.product.update', $farm_product->id) }}" method="POST" class="form-horizontal" enctype="multipart/form-data">
+                        <input type="hidden" name="_method" value="PATCH">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
                             <label class="col-lg-2 control-label">ประเภทสินค้า : </label>
@@ -38,7 +39,7 @@
                                 <select id="category" name="category_id" class="form-control">
                                     <option value="">เลือกประเภทสินค้า</option>
                                     @foreach(App\Category::orderBy('created_at', 'DESC')->get() as $category)
-                                    <option @if(old('category_id') == $category->id) selected="selected" @endif value="{{ $category->id }}">{{ $category->name }}</option>
+                                    <option @if(old('category_id') == $category->id) selected="selected" @endif @if($farm_product->sub_category[0]->category_id == $category->id) selected="selected" @endif value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
                                 @if($errors->has('category_id'))
@@ -52,6 +53,7 @@
                                 <select id="sub_category" class="form-control" name="sub_category_ids[]" multiple>
                                     <option value="">เลือกประเภทสินค้าย่อย</option>
                                 </select>
+                                <div id="field" data-field-id="{{$farm_product->sub_category[0]->category_id}}" ></div>
                                 @if($errors->has('sub_category_id'))
                                     <span class="help-block">{{ $errors->first('sub_category_id') }}</span>
                                 @endif
@@ -61,7 +63,7 @@
                         <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label">ชื่อสินค้า : </label>
                             <div class="col-lg-6">
-                            	<input type="text" placeholder="กรอกชื่อสินค้า" name="name" class="form-control" value="{{ old('name') }}">
+                            	<input type="text" placeholder="กรอกชื่อสินค้า" name="name" class="form-control" value="{{ old('name', $farm_product->name) }}">
                                 @if($errors->has('name'))
                                     <span class="help-block">{{ $errors->first('name') }}</span>
                                 @endif
@@ -187,7 +189,29 @@
 
 @section('admin-js')
 <script>
+    $.get('{{ url('farmer/selectCategory') }}?category_id=' + {{ $farm_product->sub_category[0]->category_id }} , function(data) {
+        $("select#sub_category").empty();
+        $.each(data, function(index, subCatObj){
+            $('select#sub_category').append($('<option>', {
+                value: subCatObj.id,
+                text: subCatObj.name,
+            }).attr("selected", subCatObj.id == '{{ $farm_product->sub_category[subCatObj.id]->id }}' ? true : false));
+        });
+    }); 
+
 	$('#growing-product').DataTable();
+
+    $("select#category").change(function(){    
+        $.get('{{ url('farmer/selectCategory') }}?category_id=' + $(this).val() , function(data) {
+            $("select#sub_category").empty();
+            $.each(data, function(index, subCatObj){
+                $('select#sub_category').append($('<option>', {
+                    value: subCatObj.id,
+                    text: subCatObj.name
+                }));
+            });
+        }); 
+    });
 
     $('select#status').change(function() {
 

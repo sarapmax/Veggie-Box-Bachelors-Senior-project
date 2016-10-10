@@ -14,6 +14,10 @@ Route::get('/', function() {
 	return view('customer.index');
 });
 
+//================ UNIVERSE ===============//
+
+Route::post('upload/image', 'HomeController@uploadImage');
+
 
 //================ ADMIN ===============//
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 
 <head>
 
@@ -13,10 +13,6 @@
 
     <link href="{{ asset('inspinia/css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('inspinia/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('inspinia/css/plugins/dataTables/dataTables.bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('inspinia/css/plugins/dataTables/dataTables.responsive.css') }}" rel="stylesheet">
-    <link href="{{ asset('inspinia/css/plugins/dataTables/dataTables.tableTools.min.css') }}" rel="stylesheet">
-
 
     <!-- Data Tables -->
     <link href="{{ asset('inspinia/css/plugins/dataTables/dataTables.bootstrap.css') }}" rel="stylesheet">
@@ -24,11 +20,10 @@
     <link href="{{ asset('inspinia/css/plugins/dataTables/dataTables.tableTools.min.css') }}" rel="stylesheet">
 
     <!-- note -->
-    <link href="{{ asset('inspinia/css/plugins/summernote/summernote.css') }}" rel="stylesheet">
-    <link href="{{ asset('inspinia/css/plugins/summernote/summernote-bs3.css') }}" rel="stylesheet">
+    <link href="{{ asset('bower_components/summernote/dist/summernote.css') }}" rel="stylesheet">
 
-    {{-- chosen --}}
-    <link href="{{ asset('inspinia/css/plugins/chosen/chosen.css') }}" rel="stylesheet">
+    {{-- gallery --}}
+    <link href="{{ asset('inspinia/css/plugins/blueimp/css/blueimp-gallery.css') }}" rel="stylesheet">
 
     {{-- sweet-alert --}}
     <link href="{{ asset('bower_components/sweetalert/dist/sweetalert.css') }}" rel="stylesheet">
@@ -67,28 +62,41 @@
 <script src="{{ asset('inspinia/js/plugins/dataTables/dataTables.tableTools.min.js') }}"></script>
 
 <!-- Flot -->
-<script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.js') }}"></script>
+{{-- <script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.js') }}"></script>
 <script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.tooltip.min.js') }}"></script>
 <script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.resize.js') }}"></script>
 <script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.pie.js') }}"></script>
-<script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.time.js') }}"></script>
+<script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.time.js') }}"></script> --}}
 
 <!-- Flot demo data -->
-<script src="{{ asset('inspinia/js/demo/flot-demo.js') }}"></script>
+{{-- <script src="{{ asset('inspinia/js/demo/flot-demo.js') }}"></script> --}}
 
 <!-- Chartist -->
-<script src="{{ asset('js/plugins/chartist/chartist.min.js') }}"></script>
+{{-- <script src="{{ asset('js/plugins/chartist/chartist.min.js') }}"></script> --}}
 
 {{-- sweetalert --}}
 <script src="{{ asset('bower_components/sweetalert/dist/sweetalert.min.js') }}"></script>
 
 {{-- chosen --}}
-<script src="{{ asset('inspinia/js/plugins/chosen/chosen.jquery.js') }}"></script>
+{{-- <script src="{{ asset('inspinia/js/plugins/chosen/chosen.jquery.js') }}"></script> --}}
+
+{{-- gallery --}}
+<script src="{{ asset('inspinia/js/plugins/blueimp/jquery.blueimp-gallery.min.js') }}"></script>
+
+{{-- summernote --}}
+<script src="{{ asset('bower_components/summernote/dist/summernote.min.js') }}"></script>
+
+{{-- angularjs --}}
+<script src="{{ asset('bower_components/angular/angular.min.js') }}"></script>
+<script src="{{ asset('app/app.js') }}"></script>
+<script src="{{ asset('app/controller.js') }}"></script>
+
 
 <!-- Include this after the sweet alert js file -->
 @include('sweet::alert')
 
 @yield('admin-js')
+
 
 </body>
 

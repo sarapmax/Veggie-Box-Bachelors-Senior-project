@@ -153,11 +153,14 @@ class FarmProductController extends Controller
 
         $havest_date = date('Y-m-d', strtotime($farm_product->plant_date. ' + '.$farm_product->grow_estimate.' days'));
 
-        // $havest_countdown = $havest_date - date('Y-m-d');
+        $secs = strtotime($havest_date) - strtotime(date('Y-m-d'));
 
-        // echo $havest_date;
+        $havest['havest_date'] = $havest_date;
+        $havest['havest_countdown'] = $secs / 86400;
 
-        return view('farmer.product.show', compact('farm_product'));
+        // echo $havest['havest_countdown'];
+
+        return view('farmer.product.show', compact('farm_product', 'havest'));
     }
 
     /**
@@ -168,7 +171,9 @@ class FarmProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $farm_product = FarmProduct::with('sub_category')->find($id);
+
+        return view('farmer.product.edit', compact('farm_product'));
     }
 
     /**

@@ -32,15 +32,19 @@
 				<div class="ibox-content">
 					<div class="row">
 				    	<center>
-								<img src="{{ asset('thumb_image_thumb/'.$farm_product->thumb_image) }}" />
+								<a href="{{ asset('thumb_image/'.$farm_product->thumb_image) }}" data-gallery=""><img src="{{ asset('thumb_image_thumb/'.$farm_product->thumb_image) }}" /></a>
 				    	</center>
 					</div><br/>
 					<div class="row">
 						<center>
 							<?php $images = explode("|",$farm_product->images); ?>
+							<div class="lightBoxGallery">
 							@foreach(array_slice($images ,1) as $image)
-								<img style="width:120px;" src="{{ asset('images_thumb/'.$image) }}"/>
+								<a href="{{ asset('images/'.$image) }}" data-gallery=""><img style="width:120px;" src="{{ asset('images_thumb/'.$image) }}"></a>
 							@endforeach
+							</div>
+
+							
 						</center>
 					</div><br/>
 					<div class="row">
@@ -57,11 +61,9 @@
 								<tr>
 									<th style="width:150px;">ประเภทสินค้าย่อย</th>
 									<td>
-										<ul class="dashed">
 										@foreach($farm_product->sub_category as $sub_category)
-										<li>{{ $sub_category->name }}</li>
+										<p>- {{ $sub_category->name }}</p>
 										@endforeach
-										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -82,14 +84,14 @@
 								<tr>
 									<th>จำนวน</th>
 									@if($farm_product->quantity > 0)
-										<td class="green">In stock ( {{ number_format($farm_product->quantity)  }} / {{ $farm_product->unit }} )</td>
+										<td style="color:green;">มีสินค้า ( {{ number_format($farm_product->quantity)  }} {{ $farm_product->unit }} )</td>
 									@else
-										<td class="red">Out of stock</td>
+										<td style="color:red;">สินค้าหมด</td>
 									@endif
 								</tr>
 								<tr>
 									<th>รายละเอียด</th>
-									<td>{{ $farm_product->description }}</td>
+									<td>{!! $farm_product->description !!}</td>
 								</tr>
 								<tr>
 									<th>สถานะ</th>
@@ -102,6 +104,15 @@
 									@endif
 								</td>
 								</tr>
+								@if($farm_product->grow_estimate && $farm_product->plant_date)
+								<tr>
+									<td>ข้อมูลการเก็บเกียว</td>
+									<td>
+										<label class="label label-default"> วันที่เก็บเกี่ยวโดยประมาณ : {{ $havest['havest_date'] }}</label>
+										<label class="label label-default">อีกประมาณ {{ $havest['havest_countdown'] }} วันจะสามารถเก็บเกี่ยวได้</label>
+									</td>
+								</tr>
+								@endif
 								<tr>
 									<th>เพิ่มเมือ</th>
 									<td>{{ $farm_product->created_at->format('d/m/Y H:i:s') }}</td>
@@ -125,6 +136,20 @@
 	</div>
 </div>
 
+
+@endsection
+
+@section('admin.css')
+
+<style type="text/css">
+    .lightBoxGallery {
+        text-align: center;
+    }
+
+    .lightBoxGallery img {
+        margin: 5px;
+    }
+</style>
 
 @endsection
 

@@ -55,11 +55,9 @@
 									@endforeach
 								</td>
 								<td>
-									<ul class="dashed">
-										@foreach($farm_product->sub_category as $sub_category)
-										<li>{{ $sub_category->name }}</li>
-										@endforeach
-									</ul>
+									@foreach($farm_product->sub_category as $sub_category)
+									<p>- {{ $sub_category->name }}</p>
+									@endforeach
 								</td>
 								<td>{{ $farm_product->name }}</td>
 								<td>
@@ -70,7 +68,7 @@
 										<label class="label label-warning"><i class="fa fa-spinner fa-spin"> </i> กำลังเติบโต</label>
 									@endif
 								</td>
-								<td>{{ $farm_product->price }}</td>
+								<td>{{ $farm_product->price }} บาท / {{ $farm_product->unit }}</td>
 								<td>{{ date('d F Y', strtotime($farm_product->created_at)) }}</td>
 								<td align="center">
 									<a class="btn btn-xs btn-success" href="{{ route('farmer.product.show', $farm_product->id) }}"><i class="fa fa-eye"> </i></a>
