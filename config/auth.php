@@ -41,10 +41,22 @@ return [
             'provider' => 'users',
         ],
 
-        'api' => [
-            'driver' => 'token',
-            'provider' => 'users',
+        // 'api' => [
+        //     'driver' => 'token',
+        //     'provider' => 'users',
+        // ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admin',
         ],
+        'farmer' => [
+            'driver' => 'session',
+            'provider' => 'farmer',
+        ],
+        'customer' => [
+            'driver' => 'session',
+            'provider' => 'customer',
+        ]
     ],
 
     /*
@@ -65,9 +77,21 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        // 'user' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\User::class,
+        // ],
+        'admin' =>  [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => 'App\Admin',
+        ],
+        'farmer' => [
+            'driver' => 'eloquent',
+            'model' => 'App\Farmer',
+        ],
+        'customer' => [
+            'driver' => 'eloquent' ,
+            'model' => 'App\Customer',
         ],
 
         // 'users' => [
@@ -97,7 +121,25 @@ return [
 
     'passwords' => [
         'users' => [
-            'provider' => 'users',
+            'provider' => 'user',
+            'email' => 'auth.emails.password',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'admin' =>  [
+            'provider' => 'admin',
+            'email' => 'auth.emails.password',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'farmer' => [
+            'provider' => 'farmer',
+            'email' => 'auth.emails.password',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'customer' => [
+            'provider' => 'customer',
             'email' => 'auth.emails.password',
             'table' => 'password_resets',
             'expire' => 60,

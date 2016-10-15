@@ -189,6 +189,18 @@
 <script>
 	$('#growing-product').DataTable();
 
+    $("select#category").change(function(){    
+        $.get('{{ url('farmer/selectCategory') }}?category_id=' + $(this).val() , function(data) {
+            $("select#sub_category").empty();
+            $.each(data, function(index, subCatObj){
+                $('select#sub_category').append($('<option>', {
+                    value: subCatObj.id,
+                    text: subCatObj.name
+                }));
+            });
+        }); 
+    });
+
     $('select#status').change(function() {
 
         $('#plant_date').prop('disabled', false);

@@ -52,6 +52,12 @@
                 <li>
                     <a href="{{ url('admin/inbox') }}"><i class="fa fa-inbox"></i><span class="nav-label"> ข้อความ</span></a>
                 </li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'admin' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/admin') }}"><i class="fa fa-user"></i> <span class="nav-label"> แอดมิน</span></a>
+                </li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'farmer' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/farmer') }}"><i class="fa fa-user"></i> <span class="nav-label"> Farmer</span></a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -65,13 +71,10 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user"></i>Teerpong Phothiphun <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-user"></i>{{ auth()->guard('admin')->user()->fullname }} <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="profile.html"><i class="fa fa-user"> </i> View Profile</a></li>
-                        <li><a href="profile.html"><i class="fa fa-edit"> </i> Edit Profile</a></li>
-                        <li class="divider"></li>
-                        <li><a href=""><i class="fa fa-sign-out"> </i> Logout</a></li>
+                        <li><a href="{{ url('admin/logout') }}"><i class="fa fa-sign-out"> </i> ออกจากระบบ</a></li>
                     </ul>
                 </li>
             </ul>

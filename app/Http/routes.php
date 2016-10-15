@@ -21,25 +21,61 @@ Route::post('upload/image', 'HomeController@uploadImage');
 
 //================ ADMIN ===============//
 
-Route::get('admin', function () {
-    return view('layouts.inspinia_admin');
+
+Route::get('admin/login', 'AdminController@getLogin');
+
+Route::post('admin/login', 'AdminController@postLogin');
+
+Route::group(['middleware' => 'admin'], function () {
+
+	Route::get('admin', function () {
+	    return view('layouts.inspinia_admin');
+	});
+
+	Route::resource('admin/category', 'AdminCategoryController');
+
+	Route::resource('admin/sub_category' , 'AdminSubCategoryController');
+
+	Route::get('admin/admin', 'AdminController@index');
+
+	Route::get('admin/admin/create', 'AdminController@create');
+
+	Route::post('admin/admin/store', 'AdminController@store');
+
+	Route::get('admin/logout', 'AdminController@getLogout');
+
+	Route::get('admin/farmer', 'AdminFarmerController@index');
+
+	Route::get('admin/farmer/activate_farmer', 'AdminFarmerController@farmerActivate');
+
+	Route::get('admin/farmer/deactivate_farmer', 'AdminFarmerController@farmerDeactivate');
+
+	Route::get('admin/farmer/show', 'AdminFarmerController@show');
+
 });
-
-Route::resource('admin/category', 'AdminCategoryController');
-
-Route::resource('admin/sub_category' , 'AdminSubCategoryController');
 
 
 //================ FARMER ===============//
+Route::get('farmer/register', 'FarmerController@getRegister');
 
-Route::get('farmer', function () {
-    return view('layouts.inspinia_farmer');
+Route::post('farmer/register', 'FarmerController@postRegister');
+
+Route::get('farmer/login', 'FarmerController@getLogin');
+
+Route::post('farmer/login', 'FarmerController@postLogin');
+
+Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
+	Route::get('farmer', function () {
+    	return view('layouts.inspinia_farmer');
+	});
+
+	Route::get('farmer/category', 'FarmerCategoryController@getCategory');
+
+	Route::get('farmer/sub_category', 'FarmerCategoryController@getSubCategory');
+
+	Route::resource('farmer/product', 'FarmProductController');
+
+	Route::get('farmer/selectCategory/', 'FarmProductController@getSelectCategory');
+
+	Route::get('farmer/logout', 'FarmerController@getLogout');
 });
-
-Route::get('farmer/category', 'FarmerCategoryController@getCategory');
-
-Route::get('farmer/sub_category', 'FarmerCategoryController@getSubCategory');
-
-Route::resource('farmer/product', 'FarmProductController');
-
-Route::get('farmer/selectCategory/', 'FarmProductController@getSelectCategory');

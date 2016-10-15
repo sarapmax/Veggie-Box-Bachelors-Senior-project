@@ -54,13 +54,12 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user"></i>Teerpong Phothiphun <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-home"></i>{{ auth()->guard('farmer')->user()->farm_name }} ( {{ auth()->guard('farmer')->user()->firstname }} {{ auth()->guard('farmer')->user()->lastname }} ) <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="profile.html"><i class="fa fa-user"> </i> View Profile</a></li>
-                        <li><a href="profile.html"><i class="fa fa-edit"> </i> Edit Profile</a></li>
+                        <li><a href="profile.html"><i class="fa fa-user"> </i> ดูข้อมูลส่วนตัว</a></li>
                         <li class="divider"></li>
-                        <li><a href=""><i class="fa fa-sign-out"> </i> Logout</a></li>
+                        <li><a href="{{ url('farmer/logout') }}"><i class="fa fa-sign-out"> </i> ออกจากระบบ</a></li>
                     </ul>
                 </li>
             </ul>

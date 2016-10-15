@@ -29,7 +29,7 @@
                         <a href="{{ url('farmer/product/') }}" class="btn btn-primary"><i class="fa fa-cubes"> </i> สินค้าทั้งหมด</a>
                     </div>
                 </div>
-                <div ng-controller="FarmerProductCtrl" class="ibox-content">
+                <div class="ibox-content">
                 	<form action="{{ route('farmer.product.update', $farm_product->id) }}" method="POST" class="form-horizontal" enctype="multipart/form-data">
                         <input type="hidden" name="_method" value="PATCH">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -53,7 +53,6 @@
                                 <select id="sub_category" class="form-control" name="sub_category_ids[]" multiple>
                                     <option value="">เลือกประเภทสินค้าย่อย</option>
                                 </select>
-                                <div id="field" data-field-id="{{$farm_product->sub_category[0]->category_id}}" ></div>
                                 @if($errors->has('sub_category_id'))
                                     <span class="help-block">{{ $errors->first('sub_category_id') }}</span>
                                 @endif
@@ -74,8 +73,8 @@
                             <div class="col-lg-3">
                             	<select name="status" id="status" class="form-control">
                             		<option value="">เลือกสถานะสินค้า</option>
-                            		<option @if(old('status') == 'release') selected="selected" @endif value="release">พร้อมขาย</option>
-                                    <option @if(old('status') == 'growing') selected="selected" @endif value="growing">กำลังเติบโต</option>
+                            		<option @if($farm_product->status == 'release') selected="selected" @endif @if(old('status') == 'release') selected="selected" @endif value="release">พร้อมขาย</option>
+                                    <option @if($farm_product->status == 'growing') selected="selected" @endif @if(old('status') == 'growing') selected="selected" @endif value="growing">กำลังเติบโต</option>
                             	</select>
                                 @if($errors->has('status'))
                                     <span class="help-block">{{ $errors->first('status') }}</span>
@@ -87,11 +86,11 @@
                             <div class="col-lg-3">
                                 <select name="unit" class="form-control">
                                     <option value="">เลือกหน่วยของสินค้า</option>
-                                    <option @if(old('unit') == 'กรัม') selected="selected" @endif  value="กรัม">กรัม</option>
-                                    <option @if(old('unit') == 'กิโลกรัม') selected="selected" @endif  value="กิโลกรัม">กิโลกรัม</option>
-                                    <option @if(old('unit') == 'ชิ้น') selected="selected" @endif  value="ชิ้น">ชิ้น</option>
-                                    <option @if(old('unit') == 'ลิตร') selected="selected" @endif  value="ลิตร">ลิตร</option>
-                                    <option @if(old('unit') == 'มิลลิลิตร') selected="selected" @endif  value="มิลลิลิตร">มิลิลิตร</option>
+                                    <option @if($farm_product->unit == 'กรัม') selected="selected" @endif @if(old('unit') == 'กรัม') selected="selected" @endif  value="กรัม">กรัม</option>
+                                    <option @if($farm_product->unit == 'กิโลกรัม') selected="selected" @endif @if(old('unit') == 'กิโลกรัม') selected="selected" @endif  value="กิโลกรัม">กิโลกรัม</option>
+                                    <option @if($farm_product->unit == 'ชิ้น') selected="selected" @endif @if(old('unit') == 'ชิ้น') selected="selected" @endif  value="ชิ้น">ชิ้น</option>
+                                    <option @if($farm_product->unit == 'ลิตร') selected="selected" @endif @if(old('unit') == 'ลิตร') selected="selected" @endif  value="ลิตร">ลิตร</option>
+                                    <option @if($farm_product->unit == 'มิลลิลิตร') selected="selected" @endif @if(old('unit') == 'มิลลิลิตร') selected="selected" @endif  value="มิลลิลิตร">มิลิลิตร</option>
                                 </select>
                                 @if($errors->has('unit'))
                                     <span class="help-block">{{ $errors->first('unit') }}</span>
@@ -101,7 +100,7 @@
                         <div class="form-group {{ $errors->has('price') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label">ราคา : </label>
                             <div class="col-lg-3">
-                            	<input type="number" placeholder="กรอกราคาสินค้า" name="price" class="form-control" value="{{ old('price') }}">
+                            	<input type="number" placeholder="กรอกราคาสินค้า" name="price" class="form-control" value="{{ old('price', $farm_product->price) }}">
                                 @if($errors->has('price'))
                                     <span class="help-block">{{ $errors->first('price') }}</span>
                                 @endif
@@ -110,7 +109,7 @@
                         <div class="form-group {{ $errors->has('discount_price') ? 'has-error' : '' }}">
                             <label class="col-lg-2 control-label">ลดราคา : </label>
                             <div class="col-lg-3">
-                                <input type="number" placeholder="กรอกลดราคาสินค้า" name="discount_price" class="form-control" value="{{ old('discount_price') }}">
+                                <input type="number" placeholder="กรอกลดราคาสินค้า" name="discount_price" class="form-control" value="{{ old('discount_price', $farm_product->discount_price) }}">
                                 @if($errors->has('discount_price'))
                                     <span class="help-block">{{ $errors->first('discount_price') }}</span>
                                 @endif
@@ -119,7 +118,7 @@
                         <div class="form-group {{ $errors->has('quantity') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label">จำนวน : </label>
                             <div class="col-lg-3">
-                            	<input type="number" placeholder="กรอกจำนวนสินค้า" name="quantity" class="form-control" value="{{ old('quantity') }}">
+                            	<input type="number" placeholder="กรอกจำนวนสินค้า" name="quantity" class="form-control" value="{{ old('quantity', $farm_product->quantity) }}">
                                 @if($errors->has('quantity'))
                                     <span class="help-block">{{ $errors->first('quantity') }}</span>
                                 @endif
@@ -129,7 +128,7 @@
                         <div class="form-group {{ $errors->has('plant_date') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label">วันที่ปลูก : </label>
                             <div class="col-lg-3">
-                            	<input type="date" id="plant_date" name="plant_date" class="form-control" value="{{ old('plant_date') }}">
+                            	<input @if($farm_product->plant_date == '0000-00-00') disabled="disabled" @endif type="date" id="plant_date" name="plant_date" class="form-control" value="{{ old('plant_date', $farm_product->plant_date) }}">
                                 @if($errors->has('plant_date'))
                                     <span class="help-block">{{ $errors->first('plant_date') }}</span>
                                 @endif
@@ -138,7 +137,7 @@
                         <div class="form-group {{ $errors->has('grow_estimate') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label">ระยะเวลาปลูก (วัน) : </label>
                             <div class="col-lg-3">
-                            	<input type="number" id="grow_estimate" name="grow_estimate" placeholder="กรอกระยะเวลาการปลูก (หน่วยเป็นวัน)" class="form-control" value="{{ old('grow_estimate') }}">
+                            	<input @if($farm_product->plant_date == 0) disabled="disabled" @endif type="number" id="grow_estimate" name="grow_estimate" placeholder="กรอกระยะเวลาการปลูก (หน่วยเป็นวัน)" class="form-control" value="{{ old('grow_estimate', $farm_product->grow_estimate) }}">
                                 @if($errors->has('grow_estimate'))
                                     <span class="help-block">{{ $errors->first('grow_estimate') }}</span>
                                 @endif
@@ -148,7 +147,7 @@
                         <div class="form-group {{ $errors->has('description') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label">รายละเอียดสินค้า : </label>
                             <div class="col-lg-9">
-                            	<textarea id="description" class="form-control" cols="10" rows="4" name="description" placeholder="กรอกรายละเอียดสินค้า">{{ old('description') }}</textarea>
+                            	<textarea id="description" class="form-control" cols="10" rows="4" name="description" placeholder="กรอกรายละเอียดสินค้า">{!! old('description', $farm_product->description) !!}</textarea>
                                 @if($errors->has('description'))
                                     <span class="help-block">{{ $errors->first('description') }}</span>
                                 @endif
@@ -161,6 +160,11 @@
                                 @if($errors->has('thumb_image'))
                                     <span class="help-block">{{ $errors->first('thumb_image') }}</span>
                                 @endif
+                                @if($farm_product->thumb_image) 
+                                <div><br/>
+                                <a href="{{ asset('thumb_image/'.$farm_product->thumb_image) }}" data-gallery=""><img style="width:100px;" src="{{ asset('thumb_image_thumb/'.$farm_product->thumb_image) }}" /></a>
+                                @endif
+                                </div>
                             </div>
                         </div>
                         <div class="form-group {{ $errors->has('images') ? 'has-error' : '' }}">
@@ -170,6 +174,14 @@
                                 @if($errors->has('images'))
                                     <span class="help-block">{{ $errors->first('images') }}</span>
                                 @endif
+                                @if($farm_product->images) 
+                                <div><br/>
+                                    <?php $images = explode("|",$farm_product->images); ?>
+                                    @foreach(array_slice($images ,1) as $image)
+                                        <a href="{{ asset('images/'.$image) }}" data-gallery=""><img style="width:100px;" src="{{ asset('images_thumb/'.$image) }}"></a>
+                                    @endforeach
+                                @endif
+                                </div>
                             </div>
                         </div>
                         <div class="hr-line-dashed"></div>
@@ -192,10 +204,11 @@
     $.get('{{ url('farmer/selectCategory') }}?category_id=' + {{ $farm_product->sub_category[0]->category_id }} , function(data) {
         $("select#sub_category").empty();
         $.each(data, function(index, subCatObj){
-            $('select#sub_category').append($('<option>', {
-                value: subCatObj.id,
-                text: subCatObj.name,
-            }).attr("selected", subCatObj.id == '{{ $farm_product->sub_category[subCatObj.id]->id }}' ? true : false));
+            $('select#sub_category').append('<option value="'+subCatObj.id+'">'+subCatObj.name+'</option>');
+
+            if(subCatObj.id == JSON.parse(localStorage.getItem("sub_category"))[index].id) {
+                $("select#sub_category option").prop("selected",true);
+            }
         });
     }); 
 
