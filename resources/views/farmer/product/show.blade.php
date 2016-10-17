@@ -74,20 +74,18 @@
 									<th>ราคา</th>
 									@if($farm_product->discount_price)
 									<td>
-										<p style="color: #999;text-decoration: line-through;">THB {{ number_format($farm_product->price) }} / {{ $farm_product->unit }}</p>
-										<p>THB {{ number_format($farm_product->discount_price) }} / {{ $farm_product->unit }}</p>
+										<p style="color: #999;text-decoration: line-through;">{{ number_format($farm_product->price) }} บาท / {{ $farm_product->unit }}</p>
+										<p>{{ number_format($farm_product->discount_price) }} บาท / {{ $farm_product->unit }}</p>
 									</td>
 									@else
-									<td>THB {{ number_format($farm_product->price) }} / {{ $farm_product->unit }}</td>
+									<td>{{ number_format($farm_product->price) }} บาท / {{ $farm_product->unit }}</td>
 									@endif
 								</tr>
 								<tr>
 									<th>จำนวน</th>
-									@if($farm_product->quantity > 0)
-										<td style="color:green;">มีสินค้า ( {{ number_format($farm_product->quantity)  }} {{ $farm_product->unit }} )</td>
-									@else
-										<td style="color:red;">สินค้าหมด</td>
-									@endif
+									<td>
+										{{ productCheckQuantity($farm_product->quantity, $farm_product->unit) }}
+									</td>
 								</tr>
 								<tr>
 									<th>รายละเอียด</th>

@@ -26,8 +26,12 @@
                         <li {{ Request::segment(2) == 'sub_category' ? 'class=active' : '' }}><a href="{{ url('farmer/sub_category') }}"> ประเภทสินค้าย่อย</a></li>
                     </ul>
                 </li>
-                <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'product' ? 'class=active' : '' }}>
-                    <a href="{{ url('farmer/product') }}"><i class="fa fa-cubes"></i> <span class="nav-label">สินค้า</span></a>
+                <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'product' || Request::segment(2) == 'admin_product' ? 'class=active' : '' }}>
+                    <a href="{{ url('farmer/product') }}"><i class="fa fa-cubes"></i> <span class="nav-label"> สินค้า</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li {{ Request::segment(2) == 'product' ? 'class=active' : '' }}><a href="{{ url('farmer/product') }}"> สินค้า</a></li>
+                        <li {{ Request::segment(2) == 'admin_product' ? 'class=active' : '' }}><a href="{{ url('farmer/admin_product') }}"> สินค้าที่ส่งให้แอดมิน</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="{{ url('farmer/inbox') }}"><i class="fa fa-inbox"></i> <span class="nav-label">Inbox</span> </a>

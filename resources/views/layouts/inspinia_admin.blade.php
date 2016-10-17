@@ -26,7 +26,7 @@
                         <li {{ Request::segment(2) == 'sub_category' ? 'class=active' : '' }}><a href="{{ url('admin/sub_category') }}"> ประเภทสินค้าย่อย</a></li>
                     </ul>
                 </li>
-                <li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'product_selection' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/product_selection') }}"><i class="fa fa-check-square-o"></i> <span class="nav-label">เลือกสินค้า</span> </a>
                 </li>
                 <li>

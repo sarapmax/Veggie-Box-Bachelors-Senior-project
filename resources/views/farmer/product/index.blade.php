@@ -25,9 +25,6 @@
 						<a href="{{ url('farmer/product/create') }}" class="btn btn-primary"><i class="fa fa-plus"> </i> เพิ่มสินค้า</a>
 					</div>
 				</div>
-				{{-- @if(Session::has('alert-success')) --}}
-				
-				{{-- @endif --}}
 				<div class="ibox-content">
 					<table class="table table-striped table-bordered table-hover " id="product" >
 						<thead>
@@ -35,11 +32,11 @@
 								<th>#</th>
 								<th>รูปภาพ</th>
 								<th>ประเภทสินค้า</th>
-								<th>ประเภทสินค้าย่อย</th>
 								<th>ชื่อสินค้า</th>
 								<th>สถานะ</th>
 								<th>ราคา</th>
-								<th>วันที่เพิ่ม</th>
+								<th>จำนวนที่มีอยู่</th>
+								<th style="width:185px;">ส่งสินค้าให้แอดมิน</th>
 								<th></th>
 							</tr>
 						</thead>
@@ -51,12 +48,10 @@
 								<td><img style="width:80px;" src="{{ asset('thumb_image_thumb/'.$farm_product->thumb_image) }}"></td>
 								<td>
 									@foreach($farm_product->sub_category->slice(0, 1) as $sub_category)
-										{{ $sub_category->category->name }}
+										<strong>{{ $sub_category->category->name }}</strong>
 									@endforeach
-								</td>
-								<td>
 									@foreach($farm_product->sub_category as $sub_category)
-									<p>- {{ $sub_category->name }}</p>
+									<p>{{ $sub_category->name }}</p>
 									@endforeach
 								</td>
 								<td>{{ $farm_product->name }}</td>
@@ -68,14 +63,31 @@
 										<label class="label label-warning"><i class="fa fa-spinner fa-spin"> </i> กำลังเติบโต</label>
 									@endif
 								</td>
-								<td>{{ $farm_product->price }} บาท / {{ $farm_product->unit }}</td>
-								<td>{{ date('d F Y', strtotime($farm_product->created_at)) }}</td>
+								<td>
+									{{ discountPrice($farm_product->price, $farm_product->discount_price, $farm_product->unit) }}
+								</td>
+								<td>{{ productCheckQuantity($farm_product->quantity, $farm_product->unit) }}</td>
+								<td style="text-align:center;">
+									<div class="input-group">
+										<form action="{{ url('farmer/product/sendToAdmin') }}" method="POST" style="display:inline" onsubmit="return confirm('คุณแน่ใจที่จะส่งสินค้านี้ให้แอดมิน')">
+											<input type="hidden" name="_token" value="{{ csrf_token() }}">
+											<input type="hidden" name="farm_product_id" value="{{ $farm_product->id }}">
+											<input style="height: 22px;width:150px;" placeholder="จำนวน ({{ $farm_product->unit }})" type="number" name="quantity" class="form-control">
+											<span class="input-group-btn">
+												<button type="submit" class="btn btn-primary btn-xs"><i class="fa fa-arrow-circle-right"></i> ส่ง</button>
+											</span>
+										</form><br/>
+										@if($errors->has('quantity'))
+		                                    <span style="color:#a94442;">{{ $errors->first('quantity') }}</span>
+		                                @endif
+									</div>
+								</td>
 								<td align="center">
 									<a class="btn btn-xs btn-success" href="{{ route('farmer.product.show', $farm_product->id) }}"><i class="fa fa-eye"> </i></a>
 									<span style="color:#D9D0D9"> | </span> 
 									<a href="{{ route('farmer.product.edit', $farm_product->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a> 
 									<span style="color:#D9D0D9"> | </span> 
-									<form action="{{ route('farmer.product.destroy', $farm_product->id) }}" method="POST" style="display:inline" onsubmit="return confirm('Are you sure to delete ?')">
+									<form action="{{ route('farmer.product.destroy', $farm_product->id) }}" method="POST" style="display:inline" onsubmit="return confirm('คูณแน่ใจที่จะลบสินค้านี้ ?')">
 										<input type="hidden" name="_method" value="DELETE">
 										<input type="hidden" name="_token" value="{{ csrf_token() }}">
 										<button type="submit" class="btn btn-xs btn-danger"><i class="fa fa-trash"> </i></button>
@@ -86,6 +98,7 @@
 						</tbody>
 					</table>
 				</div>
+				
 			</div>
 		</div>
 	</div>

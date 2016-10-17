@@ -78,4 +78,12 @@ Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
 	Route::get('farmer/selectCategory/', 'FarmProductController@getSelectCategory');
 
 	Route::get('farmer/logout', 'FarmerController@getLogout');
+
+	Route::post('farmer/product/sendToAdmin', 'FarmProductController@sendToAdmin');
+
+	Route::get('farmer/admin_product', 'FarmerAdminProduct@index');
+
+	Route::post('farmer/admin_product/returnProductToFarmer', 'FarmerAdminProduct@returnProductToFarmer');
+
+	Route::post('farmer/admin_product/cancelAdminProduct', 'FarmerAdminProduct@cancelAdminProduct');
 });

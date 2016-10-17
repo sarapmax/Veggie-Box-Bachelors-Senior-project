@@ -9,6 +9,7 @@ use App\FarmProduct;
 use App\Subcategory;
 use Illuminate\Support\Str;
 use App\SubCategoryProduct;
+use App\Product;
 use Alert;
 use Image;
 use Storage;
@@ -158,8 +159,6 @@ class FarmProductController extends Controller
 
         $havest['havest_date'] = $havest_date;
         $havest['havest_countdown'] = $secs / 86400;
-
-        // echo $havest['havest_countdown'];
 
         return view('farmer.product.show', compact('farm_product', 'havest'));
     }
@@ -335,5 +334,42 @@ class FarmProductController extends Controller
         $sub_categories = Subcategory::whereCategoryId($request->input('category_id'))->get();
 
         return response()->json($sub_categories);
+    }
+
+    public function sendToAdmin(Request $request) {
+        $farm_product = FarmProduct::find($request->input('farm_product_id'));
+        $product = Product::where('farm_product_id', $request->input('farm_product_id'))->first();
+
+        $this->validate($request, [
+            'quantity' => 'required|alphaNum',
+            'farm_product_id' => 'required',
+        ]);
+
+        if($request->input('quantity') <= $farm_product->quantity) {
+            if($product) {
+                $product->quantity += $request->input('quantity');
+                $product->save();
+
+                $farm_product->quantity -= $request->input('quantity');
+                $farm_product->save();
+
+                alert()->success('สินค้า '. $farm_product->name . ' อัพเดทการส่งให้แอดมินเรียบร้อยแล้ว', 'อัพเดทการส่งสินค้าให้แอดมินเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
+            }else {
+                Product::create([
+                    'farm_product_id' => $request->input('farm_product_id'),
+                    'quantity' => $request->input('quantity'),
+                ]);
+
+                $farm_product->quantity -= $request->input('quantity');
+                $farm_product->save();
+
+                alert()->success('สินค้า '. $farm_product->name . ' ส่งให้แอดมินเรียบร้อยแล้ว', 'ส่งสินค้าให้แอดมินเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
+            }
+        }else {
+            alert()->error('จำนวนสินค้า '. $farm_product->name .' ('.$farm_product
+                ->quantity.') มีน้อยกว่าจำนวนที่จะส่งให้แอดมิน', 'ไม่สามารถส่งสินค้าให้แอดมินได้', 'ล้มเหลว')->persistent('ปิด');
+        }
+
+        return redirect()->back();
     }
 }
