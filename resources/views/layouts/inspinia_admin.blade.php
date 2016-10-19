@@ -29,12 +29,8 @@
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'product_selection' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/product_selection') }}"><i class="fa fa-check-square-o"></i> <span class="nav-label">เลือกสินค้า</span> </a>
                 </li>
-                <li>
-                    <a href="minor.html"><i class="fa fa-cubes"></i> <span class="nav-label">สินค้า</span><span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse">
-                        <li><a href="{{ url('admin/product/growing') }}"> กำลังเติบโต</a></li>
-                        <li><a href="{{ url('admin/product/release') }}"> พร้อมขาย</a></li>
-                    </ul>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'product' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/product') }}"><i class="fa fa-cubes"></i><span class="nav-label"> สินค้า</span></a>
                 </li>
                 <li>
                     <a href="{{ url('admin/feed') }}"><i class="fa fa-newspaper-o"></i><span class="nav-label"> ข่าวสาร</span></a>

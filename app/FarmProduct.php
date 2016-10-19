@@ -13,4 +13,8 @@ class FarmProduct extends Model
     public function sub_category() {
     	return $this->belongsToMany('App\Subcategory', 'sub_category_products', 'farm_product_id', 'sub_category_id');
     }
+
+    public function farmer() {
+    	return $this->belongsTo('App\Farmer', 'farmer_id');
+    }
 }

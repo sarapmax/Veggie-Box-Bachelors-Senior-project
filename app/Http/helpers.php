@@ -23,3 +23,11 @@ function sellStatus($product_activated) {
 		echo '<label class="label label-warning"><i class="fa fa-spinner fa-spin"> </i> รอการเลือกสรรจากแอดมิน</label>';
 	}
 }
+
+function productStatus($product_status) {
+	if($product_status == 'release') {
+		echo '<label class="label label-success"><i class="fa fa-check"> </i> พร้อมขาย</label>';
+	}else {
+		echo '<label class="label label-warning"><i class="fa fa-spinner fa-spin"> </i> กำลังเติบโต</label>';
+	}
+}

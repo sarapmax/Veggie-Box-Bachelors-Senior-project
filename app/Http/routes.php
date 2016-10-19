@@ -21,7 +21,6 @@ Route::post('upload/image', 'HomeController@uploadImage');
 
 //================ ADMIN ===============//
 
-
 Route::get('admin/login', 'AdminController@getLogin');
 
 Route::post('admin/login', 'AdminController@postLogin');
@@ -52,10 +51,17 @@ Route::group(['middleware' => 'admin'], function () {
 
 	Route::get('admin/farmer/show', 'AdminFarmerController@show');
 
+	Route::get('admin/product_selection', 'AdminProductSelectionController@index');
+
+	Route::post('admin/product_select', 'AdminProductSelectionController@productSelect');
+
+	Route::resource('admin/product', 'AdminProductController');
+
 });
 
 
 //================ FARMER ===============//
+
 Route::get('farmer/register', 'FarmerController@getRegister');
 
 Route::post('farmer/register', 'FarmerController@postRegister');

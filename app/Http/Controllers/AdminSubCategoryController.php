@@ -24,7 +24,7 @@ class AdminSubCategoryController extends Controller
 
     public function store(Request $request){
       $this->validate($request ,[
-        'name' => 'required|min:4',
+        'name' => 'required',
         'category_id' => 'required'
       ]);
 

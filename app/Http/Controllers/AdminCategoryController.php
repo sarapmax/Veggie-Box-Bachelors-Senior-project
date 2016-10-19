@@ -23,7 +23,7 @@ class AdminCategoryController extends Controller
 
     public function store(Request $request) {
     	$this->validate($request, [
-    		'name' => 'required|unique:categories|min:4'
+    		'name' => 'required|unique:categories'
     	]);
 
     	$categories = new Category;

@@ -56,12 +56,7 @@
 								</td>
 								<td>{{ $farm_product->name }}</td>
 								<td>
-									@if($farm_product->status == 'release')
-										<label class="label label-success"><i class="fa fa-check"> </i> พร้อมขาย</label>
-									@endif
-									@if($farm_product->status == 'growing')
-										<label class="label label-warning"><i class="fa fa-spinner fa-spin"> </i> กำลังเติบโต</label>
-									@endif
+									{{ productStatus($farm_product->status) }}
 								</td>
 								<td>
 									{{ discountPrice($farm_product->price, $farm_product->discount_price, $farm_product->unit) }}

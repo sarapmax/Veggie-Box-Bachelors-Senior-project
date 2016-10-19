@@ -28,6 +28,8 @@
     {{-- sweet-alert --}}
     <link href="{{ asset('bower_components/sweetalert/dist/sweetalert.css') }}" rel="stylesheet">
 
+    <link href="{{ asset('inspinia/css/plugins/chartist/chartist.min.css') }}" rel="stylesheet">
+
     <link href="{{ asset('style.css') }}" rel="stylesheet">
 
     <style type="text/css">
@@ -72,7 +74,7 @@
 {{-- <script src="{{ asset('inspinia/js/demo/flot-demo.js') }}"></script> --}}
 
 <!-- Chartist -->
-{{-- <script src="{{ asset('js/plugins/chartist/chartist.min.js') }}"></script> --}}
+<script src="{{ asset('inspinia/js/plugins/chartist/chartist.min.js') }}"></script>
 
 {{-- sweetalert --}}
 <script src="{{ asset('bower_components/sweetalert/dist/sweetalert.min.js') }}"></script>
