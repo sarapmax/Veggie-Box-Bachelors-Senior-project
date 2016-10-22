@@ -27,12 +27,14 @@
 						<thead>
 							<tr>
 								<th>#</th>
+								<th>จากฟาร์ม</th>
 								<th>ประเภทสินค้า</th>
+								<th>รูปภาพ</th>
 								<th>ชื่อสินค้า</th>
 								<th>สถานะ</th>
 								<th>จำนวน</th>
 								<th>ราคาเดิม</th>
-								<th style="width:150px;">กำหนดราคา</th>
+								<th style="width:230px;">กำหนดจำนวนที่เลือกและราคา</th>
 								<th></th>
 								<th></th>
 							</tr>
@@ -42,17 +44,16 @@
 							@foreach($selection_products as $selection_product)
 							<tr>
 								<td>{{ $i++ }}</td>
+								<td>{{ $selection_product->farm_product->farmer->farm_name }}  <a target="_blank" href="{{ url('admin/farmer/show?farmer_id='.$selection_product->farm_product->farmer->id) }}"><i class="fa fa-external-link"> </i></a></td>
 								<td>
-									@foreach($selection_product->farm_product->sub_category->slice(0, 1) as $sub_category)
-										<p><strong>{{ $sub_category->category->name }}</strong></p>
-									@endforeach
-
-									@foreach($selection_product->farm_product->sub_category as $sub_category)
-										<p>{{ $sub_category->name }}</p>
-									@endforeach
+									<strong>{{ $selection_product->farm_product->sub_category->category->name }}</strong>
+									<p>{{ $selection_product->farm_product->sub_category->name }}</p>
+								</td>
+								<td style="text-align: center;">
+									<img style="width:70px;" src="{{ asset('thumb_image/'.$selection_product->farm_product->thumb_image) }}">
 								</td>
 								<td>
-									{{ $selection_product->farm_product->name }} <a href=""><i class="fa fa-external-link"> </i></a>
+									{{ $selection_product->farm_product->name }} <a target="_blank" href="{{ route('admin.product.show', $selection_product->id) }}"><i class="fa fa-external-link"> </i></a>
 								</td>
 								<td>
 									{{ productStatus($selection_product->farm_product->status) }}
@@ -64,21 +65,25 @@
 									<input type="hidden" name="_token" value="{{ csrf_token() }}">
 									<input type="hidden" name="product_id" value="{{ $selection_product->id }}">
 								<td>
-									<input style="width:170px;margin-bottom: 5px;" type="number" name="price" class="form-control" placeholder="ราคาใหม่ / {{ $selection_product->farm_product->unit }}" value="{{ $selection_product->price }}"><br/>
+									<span>จำนวน : &nbsp;&nbsp;</span><input style="width:180px;margin-bottom: 5px;" type="number" name="quantity" class="form-control" placeholder="จำนวน ({{ $selection_product->farm_product->unit }})" value="{{ $selection_product->quantity }}"><br/>
+									@if($errors->has('quantity'))
+										<span style="color:#a94442;">{{ $errors->first('quantity') }}</span>
+									@endif
+									ราคา : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width:180px;margin-bottom: 5px;" type="number" name="price" class="form-control" placeholder="ราคาใหม่ / {{ $selection_product->farm_product->unit }}" value="{{ $selection_product->price }}"><br/>
 									@if($errors->has('price'))
 										<span style="color:#a94442;">{{ $errors->first('price') }}</span>
 									@endif
-									<input style="width:170px;" type="number" name="discount_price" class="form-control" placeholder="ราคาลด / {{ $selection_product->farm_product->unit }}" value="{{ $selection_product->discount_price }}">
+									ลดราคา : <input style="width:180px;" type="number" name="discount_price" class="form-control" placeholder="ราคาลด / {{ $selection_product->farm_product->unit }}" value="{{ $selection_product->discount_price }}">
 								</td>
-								<td>
-									<button type="submit" class="btn btn-xs btn-primary"><i class="fa fa-check-square-o"> </i> เลือก</button>
+								<td style="text-align: center;">
+									<button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"> </i> เลือก</button>
 								</td>
 								</form>
-								<td>
+								<td style="text-align: center;">
 									<form action="{{ route('admin.product.destroy', $selection_product->id) }}" method="POST" style="display:inline" onsubmit="return confirm('คูณแน่ใจที่จะส่งสินค้านี้กลับไปให้ Farmer ?')">
 										<input type="hidden" name="_method" value="DELETE">
 										<input type="hidden" name="_token" value="{{ csrf_token() }}">
-										<button type="submit" class="btn btn-xs btn-default"><i class="fa fa-close"> </i> ปฏิเสธ</button>
+										<button type="submit" class="btn btn-default"><i class="fa fa-close"> </i> ปฏิเสธ</button>
 									</form>
 								</td>
 							</tr>

@@ -3,7 +3,7 @@
 
 <div class="row wrapper border-bottom white-bg page-heading">
 	<div class="col-sm-4">
-		<h2>Category</h2><br>
+		<h2>ประเภทสินค้า</h2><br>
 		<ol class="breadcrumb">
 			<li>
 				<a href="{{ url('admin/') }}">หน้าแรก</a>

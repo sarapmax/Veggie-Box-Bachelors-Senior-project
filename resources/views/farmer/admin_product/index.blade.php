@@ -27,6 +27,7 @@
 						<thead>
 							<tr>
 								<th>#</th>
+								<th>รูปภาพ</th>
 								<th>ชื่อสินค้า</th>
 								<th>ราคาเดิม</th>
 								<th>ราคาใหม่</th>
@@ -40,8 +41,10 @@
 						<tbody>
 							<?php $i = 1; ?>
 							@foreach($admin_products as $admin_product)
+							@if($admin_product->farm_product->farmer_id == auth()->guard('farmer')->user()->id)
 							<tr>
 								<td>{{ $i++ }}</td>
+								<td style="text-align: center;"><img style="width:70px;" src="{{ asset('thumb_image/'.$admin_product->farm_product->thumb_image) }}"></td>
 								<td>{{ $admin_product->farm_product->name }} &nbsp;<a target="_blank" href="{{ route('farmer.product.show', $admin_product->farm_product->id) }}"><i class="fa fa-external-link"> </i> </a></td>
 								<td>
 									{{ discountPrice($admin_product->farm_product->price, $admin_product->farm_product->discount_price, $admin_product->farm_product->unit) }}
@@ -85,6 +88,7 @@
 									</form>
 								</td>
 							</tr>
+							@endif
 							@endforeach
 						</tbody>
 					</table>

@@ -12,3 +12,23 @@ ul.dashed > li:before {
   content: "- ";
   text-indent: -5px;
 }
+
+.green {
+	color: #5FCC53;
+}
+
+.red {
+	color: #C52C28;
+}
+
+.blue {
+	color: #313FC8;
+}
+
+.orange {
+	color: #f8ac59;
+}
+
+.gray {
+  color: #bababa;
+}

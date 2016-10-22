@@ -4,7 +4,7 @@
 
 <div class="row wrapper border-bottom white-bg page-heading">
 	<div class="col-sm-4">
-		<h2>Farmer</h2><br>
+		<h2>ผู้ประกอบการ</h2><br>
 		<ol class="breadcrumb">
 			<li>
 				<a href="{{ url('admin/') }}">หน้าแรก</a>
@@ -13,7 +13,7 @@
 				<a href="{{ url('admin/farmer') }}">Farmer</a>
 			</li>
 			<li class="active">
-				<strong>{{ $farmer->farm_name }} ฟาร์ม</strong>
+				<strong>{{ $farmer->farm_name }}</strong>
 			</li>
 		</ol>
 	</div>
@@ -23,9 +23,9 @@
 		<div class="wrapper wrapper-content animated fadeInUp">
 			<div class="ibox">
 				<div class="ibox-title">
-					<h5>{{ $farmer->farm_name }} ฟาร์ม</h5>
+					<h5>{{ $farmer->farm_name }}</h5>
 					<div class="ibox-tools">
-						<a href="{{ url('admin/farmer') }}" class="btn btn-primary"><i class="fa fa-user"> </i> Farmer</a>
+						<a href="{{ url('admin/farmer') }}" class="btn btn-primary"><i class="fa fa-user"> </i> ผู้ประกอบการ</a>
 					</div>
 				</div>
 

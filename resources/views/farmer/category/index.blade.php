@@ -40,7 +40,7 @@
 							<tr>
 								<td>{{ $i++ }}</td>
 								<td>{{ $category->name }}</td>
-								<td>{{ date('d F Y', strtotime($category->created_at)) }}</td>
+								<td>{{ $category->created_at->format('d/m/Y') }}</td>
 							</tr>
 							@endforeach
 						</tbody>

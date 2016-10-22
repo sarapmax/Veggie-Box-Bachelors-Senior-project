@@ -44,7 +44,7 @@
 							<tr>
 								<td>{{ $i++ }}</td>
 								<td>{{ $category->name }}</td>
-								<td>{{ date('d F Y', strtotime($category->created_at)) }}</td>
+								<td>{{ $category->created_at->format('d/m/Y') }}</td>
 								<td align="center">
 									<a href="{{ route('admin.category.edit', $category->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a> 
 									<span style="color:#D9D0D9"> | </span> 

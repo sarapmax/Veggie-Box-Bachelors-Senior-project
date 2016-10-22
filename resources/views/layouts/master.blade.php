@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Dashboard v.4</title>
+    <title>VeggieBox</title>
 
     <link rel="stylesheet" href="{{asset('inspinia/css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('inspinia/font-awesome/css/font-awesome.css')}}">
@@ -24,8 +24,8 @@
     <div id="wrapper">
         <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom white-bg">
-    <nav class="navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+    <nav class="navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button style="background-color:#1E2831;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -34,24 +34,51 @@
         <span style="background-color: #ffffff;" class="icon-bar"></span>
         <span style="background-color: #ffffff;" class="icon-bar"></span>
       </button>
-      <a style="padding-left: 20px;" href="{{ url('customer/home') }}"><img style="height:35px;margin-top:5px;" src="{{ asset('img/logo.png') }}"></a>
+      <a href="{{ url('customer/home') }}"><img style="height:35px;margin-top:5px;" src="{{ asset('img/logo.png') }}"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul style="margin-left: 20px;" class="nav navbar-nav">
+            <li class="active">
+                <a href="{{url('/')}}">
+                    <i class="glyphicon glyphicon-home" aria-hidden="true"></i>
+                    หน้าแรก
+                </a>
+            </li>
+            <li>
+                <a href="{{url('customer/veggiecoin')}}">
+                    สินค้า
+                </a>
+            </li>
+            <li>
+                <a href="{{url('customer/news')}}">
+                    ข่าวสาร
+                </a>
+            </li>
+            <li>
+                <a href="{{url('customer/inbox')}}">
+                    ข้อความ
+                </a>
+            </li>
+            <li>
+                <a href="{{url('customer/veggiecoin')}}">
+                    ซื้อ VeggieCoin
+                </a>
+            </li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
             <li>
                 <a href="{{url('customer/cart')}}">
-                    <i class="fa fa-shopping-cart " aria-hidden="true"></i>
-                    Cart
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    ตระกร้าสินค้า
                 </a>
             </li>
             <li class="dropdown">
-                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"> </i> Teerpong Phothiphun  <span class="caret"></span></a>
+                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"> </i> ธีรพงษ์ โพธิพันธุ์ ( 2,000 <i class="fa fa-viacoin"></i>) <span class="caret"></span></a>
                 <ul style="border: 1px solid #e7eaec;" role="menu" class="dropdown-menu">
-                    <li><a href=""><i class="fa fa-user"> </i> Profile</a></li>
-                    <li><a href=""><i class="fa fa-gear"> </i> Settings</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out"></i> Log out</a></li>
+                    <li><a href=""><i class="fa fa-user"> </i> ข้อมูลส่วนตัว</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out"></i> ออกจากระบบ</a></li>
                 </ul>
             </li>
 
@@ -59,48 +86,11 @@
                 
             </li>
         </ul>
-      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-            {{-- <div class="navbar-collapse collapse" id="navbar">
-                <div class="container">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a  style="padding: 10px 20px; padding-right: 100px;" href="{{ url('customer/home') }}"><img style="height:35px;margin-top:-5px;" src="{{ asset('img/veggibox_logo.png') }}"></a>
-                    </li>
-                    <li>
-                        <div style="margin-top:8px;">
-                            <input type="text" name="" placeholder="Search VeggiBox" class="form-control" style="width:200%;">
-                        </div>
-                    </li>
-
-                </ul>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li>
-                        <a href="{{url('customer/cart')}}">
-                            <i class="fa fa-shopping-cart " aria-hidden="true"></i>
-
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"> </i> Teerpong Phothiphun  <span class="caret"></span></a>
-                        <ul role="menu" class="dropdown-menu">
-                            <li><a href=""><i class="fa fa-user"> </i> Profile</a></li>
-                            <li><a href=""><i class="fa fa-gear"> </i> Settings</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="login.html">
-                            <i class="fa fa-sign-out"></i> Log out
-                        </a>
-                    </li>
-                </ul>
-                </div>
-            </div> --}}
         </nav>
         </div>
-        <div style="margin-top:20px;" class="wrapper wrapper-content">
+        <div class="wrapper wrapper-content">
             <div class="row">
                 <div class="container">
                     @yield('content')
@@ -109,14 +99,92 @@
         </div>
 
         </div>
-       <!--  <div class="footer">
-            <div class="pull-right">
-                10GB of <strong>250GB</strong> Free.
+        <footer>
+            <div style="color:#fff;" class="row">
+                <div style="padding:20px;" class="container">
+                    <div class="col-md-4">
+                        <h4>เกี่ยวกับเรา</h4><hr/>
+                        <p>
+                            Quisque odio sem, molestie interdum sollicitudin ut, mollis a metus. Donec dignissim, odio nec elementum mattis, elit ligula sollicitudin massa, et venenatis neque nibh at urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque egestas, velit non adipiscing pretium, tortor nulla fringilla nisl, ut aliquet felis nisl eu orci.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-12">
+                            <h4>ลิ้งค์ที่เกี่ยวข้อง</h4><hr/>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="{{url('/')}}">
+                                        <i class="fa fa-caret-right"></i>
+                                         หน้าแรก
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('customer/veggiecoin')}}">
+                                        <i class="fa fa-caret-right"></i>
+                                         สินค้า
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('customer/news')}}">
+                                        <i class="fa fa-caret-right"></i>
+                                         ข่าวสาร
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('customer/inbox')}}">
+                                        <i class="fa fa-caret-right"></i>
+                                         ข้อความ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="{{url('customer/veggiecoin')}}">
+                                        <i class="fa fa-caret-right"></i>
+                                         ซื้อ VeggieCoin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('customer/veggiecoin')}}">
+                                        <i class="fa fa-caret-right"></i>
+                                         เกี่ยวกับเรา
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('customer/veggiecoin')}}">
+                                        <i class="fa fa-caret-right"></i>
+                                         ติดต่อเรา
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>ติดต่อเรา</h4><hr/>
+                        <i class="fa fa-phone-square"> </i> &nbsp;ติดต่อ : 02 4506 304 <br/><br/>
+                        <i class="fa fa-envelope"> </i> &nbsp;support@veggiebox.com <br/><br/>
+                        <i class="fa fa-map-marker"> </i> &nbsp; One Mac Company ม.แม่ฟ้าหลวง ประเทศไทย
+                    </div> 
+                </div>
             </div>
-            <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2015
+            <div style="background-color:#f3f3f4;" class="row">
+                <div style="padding:5px;" class="container">
+                    <div class="col-md-12">
+                        <div class="pull-left">
+                            <strong>Copyright</strong> VeggieBox &copy; 2016
+                        </div>
+                        <div class="pull-right">
+                            <strong>SENIOR PROJECT TEAM</strong>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div> 
+                </div>
             </div>
-        </div> -->
+        </footer>
 
     </div>
 

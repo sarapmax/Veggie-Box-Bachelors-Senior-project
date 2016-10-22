@@ -8,8 +8,8 @@ use App\Http\Requests;
 use App\FarmProduct;
 use App\Subcategory;
 use Illuminate\Support\Str;
-use App\SubCategoryProduct;
 use App\Product;
+use App\FarmerNotification;
 use Alert;
 use Image;
 use Storage;
@@ -55,7 +55,7 @@ class FarmProductController extends Controller
 
         $this->validate($request, [
             'category_id' => 'required',
-            'sub_category_ids' => 'required',
+            'sub_category_id' => 'required',
             // 'farmer_id' =>  'required',
             'name' => 'required',
             'status' => 'required',
@@ -113,6 +113,7 @@ class FarmProductController extends Controller
         }
 
         $farm_product->farmer_id = auth()->guard('farmer')->user()->id;
+        $farm_product->sub_category_id = $request->input('sub_category_id');
         $farm_product->name = $request->input('name');
         $farm_product->status = $request->input('status');
         $farm_product->price = $request->input('price');
@@ -127,13 +128,6 @@ class FarmProductController extends Controller
         $farm_product->slug = Str::slug($request->input('name'));
 
         $farm_product->save();
-
-        foreach($request->input('sub_category_ids') as $sub_category_id) {
-            SubCategoryProduct::create([
-                'farm_product_id' => $farm_product->id,
-                'sub_category_id' => $sub_category_id,
-            ]);
-        }
 
         alert()->success('สินค้า '. $farm_product->name . ' ถูกเพิ่มเข้าสู่ระบบแล้ว', 'เพิ่มสินค้าสำเร็จแล้ว', 'สำเร็จ')->persistent('ปิด');;
 
@@ -173,7 +167,6 @@ class FarmProductController extends Controller
     {
         $farm_product = FarmProduct::with('sub_category')->find($id);
 
-        echo "<script>localStorage.setItem('sub_category', JSON.stringify($farm_product->sub_category))</script>";
         return view('farmer.product.edit', compact('farm_product'));
     }
 
@@ -195,7 +188,7 @@ class FarmProductController extends Controller
 
         $this->validate($request, [
             'category_id' => 'required',
-            'sub_category_ids' => 'required',
+            'sub_category_id' => 'required',
             // 'farmer_id' =>  'required',
             'name' => 'required',
             'status' => 'required',
@@ -266,6 +259,7 @@ class FarmProductController extends Controller
         }
 
         $farm_product->farmer_id = 1;
+        $farm_product->sub_category_id = $request->input('sub_category_id');
         $farm_product->name = $request->input('name');
         $farm_product->status = $request->input('status');
         $farm_product->price = $request->input('price');
@@ -278,16 +272,6 @@ class FarmProductController extends Controller
         $farm_product->slug = Str::slug($request->input('name'));
 
         $farm_product->save();
-        foreach ($farm_product->sub_category as $sub_category) {
-            $sub_category_product = SubCategoryProduct::where('farm_product_id', $farm_product->id)->delete();
-        }
-               
-        foreach($request->input('sub_category_ids') as $sub_category_id) {
-            SubCategoryProduct::create([
-                'sub_category_id' => $sub_category_id,
-                'farm_product_id' => $farm_product->id
-            ]);
-        }
 
         alert()->success('สินค้า '. $farm_product->name . ' แก้ไขเรียบร้อยแล้ว', 'แก้ไขสินค้าสำเร็จแล้ว', 'สำเร็จ')->persistent('ปิด');;
 
@@ -305,10 +289,6 @@ class FarmProductController extends Controller
     public function destroy($id)
     {
         $farm_product = FarmProduct::find($id);
-
-        foreach ($farm_product->sub_category as $sub_category) {
-            $sub_category_product = SubCategoryProduct::where('farm_product_id', $farm_product->id)->delete();
-        }
 
         if($farm_product->images) {
             $imagesDelete = explode("|",$farm_product->images);
@@ -340,6 +320,8 @@ class FarmProductController extends Controller
         $farm_product = FarmProduct::find($request->input('farm_product_id'));
         $product = Product::where('farm_product_id', $request->input('farm_product_id'))->first();
 
+        $farmer_notification = new FarmerNotification;
+
         $this->validate($request, [
             'quantity' => 'required|alphaNum',
             'farm_product_id' => 'required',
@@ -353,6 +335,11 @@ class FarmProductController extends Controller
                 $farm_product->quantity -= $request->input('quantity');
                 $farm_product->save();
 
+                $farmer_notification->farmer_id = auth()->guard('farmer')->user()->id;
+                $farmer_notification->text = 'คุณได้เพิ่มจำนวนสินค้า '. $farm_product->name .' จำนวน ' . $request->input('quantity') . ' ' . $farm_product->unit . ' รวมเป็น ' . $product->quantity .  ' ' . $farm_product->unit .' ให้กับแอดมินเรียบร้อยแล้ว';
+                $farmer_notification->icon = '<i class="green fa fa-2x fa-edit"></i>';
+                $farmer_notification->save();
+
                 alert()->success('สินค้า '. $farm_product->name . ' อัพเดทการส่งให้แอดมินเรียบร้อยแล้ว', 'อัพเดทการส่งสินค้าให้แอดมินเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
             }else {
                 Product::create([
@@ -362,6 +349,11 @@ class FarmProductController extends Controller
 
                 $farm_product->quantity -= $request->input('quantity');
                 $farm_product->save();
+
+                $farmer_notification->farmer_id = auth()->guard('farmer')->user()->id;
+                $farmer_notification->text = 'คุณได้ส่งสินค้า '. $farm_product->name .' จำนวน ' . $request->input('quantity') . ' ' . $farm_product->unit .' ให้กับแอดมินเรียบร้อยแล้ว';
+                $farmer_notification->icon = '<i class="green fa fa-2x fa-arrow-circle-o-right"></i>';
+                $farmer_notification->save();
 
                 alert()->success('สินค้า '. $farm_product->name . ' ส่งให้แอดมินเรียบร้อยแล้ว', 'ส่งสินค้าให้แอดมินเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
             }

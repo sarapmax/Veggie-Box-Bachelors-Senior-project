@@ -39,7 +39,7 @@
                                 <select id="category" name="category_id" class="form-control">
                                     <option value="">เลือกประเภทสินค้า</option>
                                     @foreach(App\Category::orderBy('created_at', 'DESC')->get() as $category)
-                                    <option @if(old('category_id') == $category->id) selected="selected" @endif @if($farm_product->sub_category[0]->category_id == $category->id) selected="selected" @endif value="{{ $category->id }}">{{ $category->name }}</option>
+                                    <option @if(old('category_id') == $category->id) selected="selected" @endif @if($farm_product->sub_category->category_id == $category->id) selected="selected" @endif value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
                                 @if($errors->has('category_id'))
@@ -50,7 +50,7 @@
                         <div class="form-group {{ $errors->has('sub_category_id') ? 'has-error' : '' }}">
                             <label class="col-lg-2 control-label">ประเภทสินค้าย่อย : </label>
                             <div class="col-lg-3">
-                                <select id="sub_category" class="form-control" name="sub_category_ids[]" multiple>
+                                <select id="sub_category" class="form-control" name="sub_category_id">
                                     <option value="">เลือกประเภทสินค้าย่อย</option>
                                 </select>
                                 @if($errors->has('sub_category_id'))
@@ -162,7 +162,7 @@
                                 @endif
                                 @if($farm_product->thumb_image) 
                                 <div><br/>
-                                <a href="{{ asset('thumb_image/'.$farm_product->thumb_image) }}" data-gallery=""><img style="width:100px;" src="{{ asset('thumb_image_thumb/'.$farm_product->thumb_image) }}" /></a>
+                                    <img style="width:100px;" src="{{ asset('thumb_image_thumb/'.$farm_product->thumb_image) }}" />
                                 @endif
                                 </div>
                             </div>
@@ -178,16 +178,16 @@
                                 <div><br/>
                                     <?php $images = explode("|",$farm_product->images); ?>
                                     @foreach(array_slice($images ,1) as $image)
-                                        <a href="{{ asset('images/'.$image) }}" data-gallery=""><img style="width:100px;" src="{{ asset('images_thumb/'.$image) }}"></a>
+                                        <img style="width:100px;" src="{{ asset('images_thumb/'.$image) }}">
                                     @endforeach
-                                @endif
                                 </div>
+                                @endif
                             </div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <div class="col-lg-offset-2 col-lg-10">
-                                <button class="btn btn-primary" type="submit">Submit</button>
+                                <button class="btn btn-primary" type="submit">ยืนยัน</button>
                             </div>
                         </div>
                     </form>
@@ -201,30 +201,33 @@
 
 @section('admin-js')
 <script>
-    $.get('{{ url('farmer/selectCategory') }}?category_id=' + {{ $farm_product->sub_category[0]->category_id }} , function(data) {
-        $("select#sub_category").empty();
-        $.each(data, function(index, subCatObj){
-            $('select#sub_category').append('<option value="'+subCatObj.id+'">'+subCatObj.name+'</option>');
+    var category_id = '{{ old('category_id', $farm_product->sub_category->category->id) }}';
+    var sub_category_id = '{{ old('sub_category_id', $farm_product->sub_category_id) }}';
+    
+    $('select#category').val(category_id).prop('selected', true);
 
-            if(subCatObj.id == JSON.parse(localStorage.getItem("sub_category"))[index].id) {
-                $("select#sub_category option").prop("selected",true);
-            }
-        });
-    }); 
+    subCategoryUpdate(category_id);
 
-	$('#growing-product').DataTable();
+    $("select#category").change(function(e){  
+        var category_id = e.target.value;
+        sub_category_id = false;
+        subCategoryUpdate(category_id);
+    });
 
-    $("select#category").change(function(){    
-        $.get('{{ url('farmer/selectCategory') }}?category_id=' + $(this).val() , function(data) {
-            $("select#sub_category").empty();
-            $.each(data, function(index, subCatObj){
+    function subCategoryUpdate(categoryId) {
+        $.get('{{ url('farmer/selectCategory') }}?category_id=' + categoryId , function (data) {
+            $('select#sub_category').empty();
+            $.each(data, function (index, subCatObj) {
                 $('select#sub_category').append($('<option>', {
                     value: subCatObj.id,
                     text: subCatObj.name
                 }));
             });
-        }); 
-    });
+            if (sub_category_id) {
+                $('select#sub_category').val(sub_category_id).prop('selected', true);
+            }
+        });
+    }
 
     $('select#status').change(function() {
 

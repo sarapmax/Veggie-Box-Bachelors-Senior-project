@@ -31,3 +31,32 @@ function productStatus($product_status) {
 		echo '<label class="label label-warning"><i class="fa fa-spinner fa-spin"> </i> กำลังเติบโต</label>';
 	}
 }
+
+function timeAgo($time) {
+	echo $time->diffForHumans() . ' at ' . $time->format('H:i') .' - '. $time->format('d/m/Y');
+}
+
+function farmerNotification($user, $text, $icon) {
+	$farmer_notification = new App\FarmerNotification;;
+	
+	$farmer_notification->farmer_id = $user;
+    $farmer_notification->text = $text;
+    $farmer_notification->icon = $icon;
+    $farmer_notification->save();
+}
+
+function adminNotification($text, $icon) {
+	$admin_notification = new App\AdminNotification;;
+	
+    $admin_notification->text = $text;
+    $admin_notification->icon = $icon;
+    $admin_notification->save();
+}
+
+function getRealPrice($price, $discount_price) {
+	if($discount_price) {
+		echo $discount_price;
+	}else {
+		echo $price;
+	}
+}

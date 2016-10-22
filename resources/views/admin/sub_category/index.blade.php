@@ -46,7 +46,7 @@
 								<td>{{ $i++ }}</td>
 								<td>{{ $sub_category->category->name }}</td>
 								<td>{{ $sub_category->name }}</td>
-								<td>{{ date('d F Y', strtotime($sub_category->created_at)) }}</td>
+								<td>{{ $sub_category->created_at->format('d/m/Y') }}</td>
 								<td align="center">
 									<a href="{{ route('admin.sub_category.edit', $sub_category->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a> 
 									<span style="color:#D9D0D9"> | </span> 

@@ -11,7 +11,7 @@
         <div class="col-md-offset-1 col-md-10">
             <div class="ibox-content"> 
                 <center>
-                <h4><i class="fa fa-edit"> </i> สมัครสมาชิก Farmer</h4><br/>
+                <h4><i class="fa fa-edit"> </i> สมัครสมาชิก ผู้ประกอบการ</h4><br/>
                 </center>
                 <form class="form-horizontal" role="form" action="{{ url('farmer/register') }}" method="POST"  enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">

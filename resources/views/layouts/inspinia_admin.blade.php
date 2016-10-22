@@ -48,11 +48,14 @@
                 <li>
                     <a href="{{ url('admin/inbox') }}"><i class="fa fa-inbox"></i><span class="nav-label"> ข้อความ</span></a>
                 </li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'notification' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/notification') }}"><i class="fa fa-bell"></i><span class="nav-label"> การแจ้งเตือน</span></a>
+                </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'admin' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/admin') }}"><i class="fa fa-user"></i> <span class="nav-label"> แอดมิน</span></a>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'farmer' ? 'class=active' : '' }}>
-                    <a href="{{ url('admin/farmer') }}"><i class="fa fa-user"></i> <span class="nav-label"> Farmer</span></a>
+                    <a href="{{ url('admin/farmer') }}"><i class="fa fa-user"></i> <span class="nav-label"> ผู้ประกอบการ</span></a>
                 </li>
             </ul>
         </div>
@@ -65,6 +68,56 @@
             <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
         </div>
             <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-warning">{{ App\AdminNotification::whereRaw('Date(created_at) = CURDATE()')->count() }}</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        @foreach(App\AdminNotification::orderBy('created_at', 'DESC')->whereRaw('Date(created_at) = CURDATE()')->limit(8)->get() as $admin_notification)
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <p style="padding: 3px 20px;min-height: 0;" class="pull-left">{!! $admin_notification->icon !!}</p>
+                                <div class="media-body">
+                                    {{ $admin_notification->text }} <br>
+                                    <small class="text-muted">{{ timeAgo($admin_notification->created_at) }}</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        @endforeach
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="{{ url('admin/notification') }}">
+                                    <i class="fa fa-bell"></i> <strong>ดูการแจ้งเตือนทั้งหมด</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                         <i class="fa fa-user"></i>{{ auth()->guard('admin')->user()->fullname }} <i class="fa fa-caret-down"></i>

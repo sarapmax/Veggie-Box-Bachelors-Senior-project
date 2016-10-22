@@ -92,6 +92,10 @@ class AdminProductController extends Controller
 
         $product->save();
 
+        if($request->input('activated') == 0) {
+            farmerNotification($product->farm_product->farmer_id, 'สินค้า ' . $product->farm_product->name . ' ของคุณ ถูกนำออกจากหน้าร้านเป็นการชั่วคราว ', '<i class="gray fa fa-2x fa-ban"></i>');
+        }
+
         alert()->success('สินค้า '. $product->farm_product->name .'ถูกแก้ไขเรียบร้อยแล้ว', 'สินค้าถูกแก้ไขเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
 
         return redirect()->route('admin.product.index');
@@ -112,6 +116,8 @@ class AdminProductController extends Controller
         $farm_product->save();
 
         $product->delete();
+
+        farmerNotification($product->farm_product->farmer_id, 'สินค้า ' . $product->farm_product->name . ' ถูกปฏิเสธจากแอดมิน และถูกส่งกลับเข้าสู่ระบบของคุณแล้ว', '<i class="red fa fa-2x fa-close"></i>');
 
         alert()->success('สินค้า '. $product->farm_product->name .' ถูกส่งกลับไปให้ Farmer เรียบร้อยแล้ว', 'สินค้าถูกส่งกลับไปให้ Farmer แล้ว', 'สำเร็จ')->persistent('ปิด');
 

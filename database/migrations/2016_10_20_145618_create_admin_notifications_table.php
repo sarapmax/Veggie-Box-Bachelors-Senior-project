@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSubCategoryProductsTable extends Migration
+class CreateAdminNotificationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,12 @@ class CreateSubCategoryProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sub_category_products', function(Blueprint $table) {
+        Schema::create('admin_notifications', function(Blueprint $table) {
             $table->increments('id')->unsigned();
-            $table->integer('farm_product_id')->unsigned();
-            $table->integer('sub_category_id')->unsigned();
+            $table->text('text');
+            $table->string('icon');
             $table->timestamps();
+
         });
     }
 
@@ -27,6 +28,6 @@ class CreateSubCategoryProductsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('sub_category_products');
+        Schema::drop('admin_notifications');
     }
 }

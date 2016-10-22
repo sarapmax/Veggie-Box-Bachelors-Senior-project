@@ -57,6 +57,8 @@ Route::group(['middleware' => 'admin'], function () {
 
 	Route::resource('admin/product', 'AdminProductController');
 
+	Route::get('admin/notification', 'AdminNotificationController@index');
+
 });
 
 
@@ -92,4 +94,6 @@ Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
 	Route::post('farmer/admin_product/returnProductToFarmer', 'FarmerAdminProduct@returnProductToFarmer');
 
 	Route::post('farmer/admin_product/cancelAdminProduct', 'FarmerAdminProduct@cancelAdminProduct');
+
+	Route::get('farmer/notification', 'FarmerNotificationController@index');
 });

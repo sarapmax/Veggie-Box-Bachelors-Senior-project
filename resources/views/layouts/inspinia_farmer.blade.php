@@ -45,6 +45,9 @@
                 <li>
                     <a href="{{ url('farmer/configuration') }}"><i class="fa fa-gear"></i> <span class="nav-label">Configuration</span> </a>
                 </li>
+                <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'notification' ? 'class=active' : '' }}>
+                    <a href="{{ url('farmer/notification') }}"><i class="fa fa-bell"></i><span class="nav-label"> การแจ้งเตือน</span></a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -58,7 +61,57 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="fa fa-home"></i>{{ auth()->guard('farmer')->user()->farm_name }} ( {{ auth()->guard('farmer')->user()->firstname }} {{ auth()->guard('farmer')->user()->lastname }} ) <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-bell"></i>  <span class="label label-warning">{{ App\FarmerNotification::whereRaw('Date(created_at) = CURDATE()')->where('farmer_id', auth()->guard('farmer')->user()->id)->count() }}</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        @foreach(App\FarmerNotification::orderBy('created_at', 'DESC')->whereRaw('Date(created_at) = CURDATE()')->where('farmer_id', auth()->guard('farmer')->user()->id)->limit(8)->get() as $farmer_notification)
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <p style="padding: 3px 20px;min-height: 0;" class="pull-left">{!! $farmer_notification->icon !!}</p>
+                                <div class="media-body">
+                                    {{ $farmer_notification->text }} <br>
+                                    <small class="text-muted">{{ timeAgo($farmer_notification->created_at) }}</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        @endforeach
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="{{ url('farmer/notification') }}">
+                                    <i class="fa fa-bell"></i> <strong>ดูการแจ้งเตือนทั้งหมด</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        {{ auth()->guard('farmer')->user()->farm_name }} ( {{ auth()->guard('farmer')->user()->firstname }} {{ auth()->guard('farmer')->user()->lastname }} ) <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="profile.html"><i class="fa fa-user"> </i> ดูข้อมูลส่วนตัว</a></li>

@@ -4452,9 +4452,9 @@ ul.clear-list:first-child {
   padding-top: 10px;
   min-height: 100px;
 }
-.timeline-item .content:hover {
+/*.timeline-item .content:hover {
   background: #f6f6f6;
-}
+}*/
 /* PIN BOARD */
 ul.notes li,
 ul.tag-list li {

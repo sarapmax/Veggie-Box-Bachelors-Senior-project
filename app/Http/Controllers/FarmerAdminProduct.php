@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Product;
 use App\FarmProduct;
+use App\FarmerNotification;
 
 class FarmerAdminProduct extends Controller
 {
@@ -32,6 +33,8 @@ class FarmerAdminProduct extends Controller
         	$farm_product->quantity += $request->input('quantity');
         	$farm_product->save();
 
+            farmerNotification(auth()->guard('farmer')->user()->id, 'คุณได้นำสินค้า '. $farm_product->name .' จำนวน ' . $request->input('quantity') . ' ' . $farm_product->unit .' กลับสู้ระบบเรียบร้อยแล้ว', '<i class="orange fa fa-2x fa-arrow-circle-o-left"></i>');
+
         	alert()->success('สินค้า '. $product->farm_product->name . ' นำสินค้ากลับเรียบร้อยแล้ว', 'นำสินค้ากลับเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
         }else {
         	alert()->error('จำนวนสินค้า '. $product->farm_product->name .' ('.$product
@@ -49,6 +52,8 @@ class FarmerAdminProduct extends Controller
     	$farm_product->save();
 
     	$product->delete();
+
+        farmerNotification(auth()->guard('farmer')->user()->id, 'คุณได้ยกเลิกสินค้า '. $product->farm_product->name .' จำนวน ' . $product->quantity . ' ' . $product->farm_product->unit .' ที่ส่งให้แอดมินเรียบร้อยแล้ว', '<i class="gray fa fa-2x fa-close"></i>');
 
     	alert()->success('สินค้า '. $product->farm_product->name . ' ถูกยกเลิกเรียบร้อยแล้ว', 'สินค้าถูกยกเลิกเรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
 

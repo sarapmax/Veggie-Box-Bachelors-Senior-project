@@ -57,17 +57,13 @@
 								<tr>
 									<th style="width:150px;">ประเภทสินค้า</th>
 									<td>
-										@foreach($product->farm_product->sub_category->slice(0, 1) as $sub_category)
-											{{ $sub_category->category->name }}
-										@endforeach
+											{{ $product->farm_product->sub_category->category->name }}
 									</td>
 								</tr>
 								<tr>
 									<th style="width:150px;">ประเภทสินค้าย่อย</th>
 									<td>
-										@foreach($product->farm_product->sub_category as $sub_category)
-										<p>{{ $sub_category->name }}</p>
-										@endforeach
+										<p>{{ $product->farm_product->sub_category->name }}</p>
 									</td>
 								</tr>
 								<tr>

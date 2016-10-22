@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->integer('farm_product_id')->unsigned();
             $table->integer('quantity');
             $table->enum('activated', [1,0])->default(0);
-            $table->integer('price');
+            $table->integer('price')->nullable();
             $table->integer('discount_price')->nullable();
             $table->timestamps();
 

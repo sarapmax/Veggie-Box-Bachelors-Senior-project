@@ -47,14 +47,10 @@
 								<td>{{ $i++ }}</td>
 								<td><img style="width:80px;" src="{{ asset('thumb_image_thumb/'.$farm_product->thumb_image) }}"></td>
 								<td>
-									@foreach($farm_product->sub_category->slice(0, 1) as $sub_category)
-										<strong>{{ $sub_category->category->name }}</strong>
-									@endforeach
-									@foreach($farm_product->sub_category as $sub_category)
-									<p>{{ $sub_category->name }}</p>
-									@endforeach
+									<strong>{{ $farm_product->sub_category->category->name }}</strong>
+									<p>{{ $farm_product->sub_category->name }}</p>
 								</td>
-								<td>{{ $farm_product->name }}</td>
+								<td>{{ $farm_product->name }} <a href="{{ route('farmer.product.show', $farm_product->id) }}"><i class="fa fa-external-link"> </i></a></td>
 								<td>
 									{{ productStatus($farm_product->status) }}
 								</td>
@@ -78,10 +74,7 @@
 									</div>
 								</td>
 								<td align="center">
-									<a class="btn btn-xs btn-success" href="{{ route('farmer.product.show', $farm_product->id) }}"><i class="fa fa-eye"> </i></a>
-									<span style="color:#D9D0D9"> | </span> 
-									<a href="{{ route('farmer.product.edit', $farm_product->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a> 
-									<span style="color:#D9D0D9"> | </span> 
+									<a href="{{ route('farmer.product.edit', $farm_product->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a>
 									<form action="{{ route('farmer.product.destroy', $farm_product->id) }}" method="POST" style="display:inline" onsubmit="return confirm('คูณแน่ใจที่จะลบสินค้านี้ ?')">
 										<input type="hidden" name="_method" value="DELETE">
 										<input type="hidden" name="_token" value="{{ csrf_token() }}">

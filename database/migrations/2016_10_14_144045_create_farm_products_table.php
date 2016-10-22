@@ -15,6 +15,7 @@ class CreateFarmProductsTable extends Migration
         Schema::create('farm_products', function(Blueprint $table) {
             $table->increments('id')->unsigned();
             $table->integer('farmer_id')->unsigned();
+            $table->integer('sub_category_id')->unsigned();
             $table->string('name');
             $table->string('status');
             $table->integer('price');
@@ -30,6 +31,7 @@ class CreateFarmProductsTable extends Migration
             $table->timestamps();
 
             $table->foreign('farmer_id')->references('id')->on('farmers');
+            $table->foreign('sub_category_id')->references('id')->on('sub_categories');
         });
     }
 

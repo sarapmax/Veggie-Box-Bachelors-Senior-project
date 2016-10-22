@@ -28,7 +28,7 @@
         <div class="col-md-6">
             <div class="ibox-content"> 
             	<center>
-                <h4><i class="fa fa-sign-in"> </i> เข้าสู่ระบบ Farmer</h4><hr/>
+                <h4><i class="fa fa-sign-in"> </i> เข้าสู่ระบบ ผู้ประกอบการ</h4><hr/>
                 @if (session('error-login'))
 				    <div class="alert alert-danger">
 				    	<center>

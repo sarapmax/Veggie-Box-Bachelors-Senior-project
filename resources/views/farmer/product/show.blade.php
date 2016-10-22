@@ -35,6 +35,7 @@
 								<a href="{{ asset('thumb_image/'.$farm_product->thumb_image) }}" data-gallery=""><img src="{{ asset('thumb_image_thumb/'.$farm_product->thumb_image) }}" /></a>
 				    	</center>
 					</div><br/>
+					@if($farm_product->images)
 					<div class="row">
 						<center>
 							<?php $images = explode("|",$farm_product->images); ?>
@@ -43,27 +44,22 @@
 								<a href="{{ asset('images/'.$image) }}" data-gallery=""><img style="width:120px;" src="{{ asset('images_thumb/'.$image) }}"></a>
 							@endforeach
 							</div>
-
-							
 						</center>
 					</div><br/>
+					@endif
 					<div class="row">
 						<div class="col-md-12">
 							<table class="table table-striped">
 								<tr>
 									<th style="width:150px;">ประเภทสินค้า</th>
 									<td>
-										@foreach($farm_product->sub_category->slice(0, 1) as $sub_category)
-											{{ $sub_category->category->name }}
-										@endforeach
+										{{ $farm_product->sub_category->category->name }}
 									</td>
 								</tr>
 								<tr>
 									<th style="width:150px;">ประเภทสินค้าย่อย</th>
 									<td>
-										@foreach($farm_product->sub_category as $sub_category)
-										<p>- {{ $sub_category->name }}</p>
-										@endforeach
+										<p>{{ $farm_product->sub_category->name }}</p>
 									</td>
 								</tr>
 								<tr>

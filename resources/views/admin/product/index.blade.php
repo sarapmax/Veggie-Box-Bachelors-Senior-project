@@ -27,7 +27,8 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<td>จากฟาร์ม</td>
+								<th>จากฟาร์ม</th>
+								<th>รูปภาพ</th>
 								<th>ประเภทสินค้า</th>
 								<th>ชื่อสินค้า</th>
 								<th>สถานะ</th>
@@ -42,14 +43,13 @@
 							<tr>
 								<td>{{ $i++ }}</td>
 								<td>{{ $product->farm_product->farmer->farm_name }}  <a target="_blank" href="{{ url('admin/farmer/show?farmer_id='.$product->farm_product->farmer->id) }}"><i class="fa fa-external-link"> </i></a></td>
+								<td style="text-align: center;">
+									<img style="width:70px;" src="{{ asset('thumb_image/'.$product->farm_product->thumb_image) }}">
+								</td>
 								<td>
-									@foreach($product->farm_product->sub_category->slice(0, 1) as $sub_category)
-										<p><strong>{{ $sub_category->category->name }}</strong></p>
-									@endforeach
+										<p><strong>{{ $product->farm_product->sub_category->category->name }}</strong></p>
 
-									@foreach($product->farm_product->sub_category as $sub_category)
-										<p>{{ $sub_category->name }}</p>
-									@endforeach
+										<p>{{ $product->farm_product->sub_category->name }}</p>
 								</td>
 								<td>
 									{{ $product->farm_product->name }} <a href="{{ route('admin.product.show', $product->id) }}"><i class="fa fa-external-link"> </i></a>

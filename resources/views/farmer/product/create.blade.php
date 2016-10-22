@@ -49,7 +49,7 @@
                         <div class="form-group {{ $errors->has('sub_category_id') ? 'has-error' : '' }}">
                             <label class="col-lg-2 control-label">ประเภทสินค้าย่อย : </label>
                             <div class="col-lg-3">
-                                <select id="sub_category" class="form-control" name="sub_category_ids[]" multiple>
+                                <select id="sub_category" class="form-control" name="sub_category_id">
                                     <option value="">เลือกประเภทสินค้าย่อย</option>
                                 </select>
                                 @if($errors->has('sub_category_id'))
@@ -173,7 +173,7 @@
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <div class="col-lg-offset-2 col-lg-10">
-                                <button class="btn btn-primary" type="submit">Submit</button>
+                                <button class="btn btn-primary" type="submit">ยืนยัน</button>
                             </div>
                         </div>
                     </form>
@@ -187,30 +187,35 @@
 
 @section('admin-js')
 <script>
-	$('#growing-product').DataTable();
+    var category_id = '{{ old('category_id') }}';
+    var sub_category_id = '{{ old('sub_category_id') }}';
+    
+    $('select#category').val(category_id).prop('selected', true);
 
-    $("select#category").change(function(){    
-        $.get('{{ url('farmer/selectCategory') }}?category_id=' + $(this).val() , function(data) {
-            $("select#sub_category").empty();
-            $.each(data, function(index, subCatObj){
+    subCategoryUpdate(category_id);
+
+    $("select#category").change(function(e){  
+        var category_id = e.target.value;
+        sub_category_id = false;
+        subCategoryUpdate(category_id);
+    });
+
+    function subCategoryUpdate(categoryId) {
+        $.get('{{ url('farmer/selectCategory') }}?category_id=' + categoryId , function (data) {
+            $('select#sub_category').empty();
+            $.each(data, function (index, subCatObj) {
                 $('select#sub_category').append($('<option>', {
                     value: subCatObj.id,
                     text: subCatObj.name
                 }));
             });
-        }); 
-    });
+            if (sub_category_id) {
+                $('select#sub_category').val(sub_category_id).prop('selected', true);
+            }
+        });
+    }
 
-    $('select#status').change(function() {
-
-        $('#plant_date').prop('disabled', false);
-        $('#grow_estimate').prop('disabled', false);
-
-        if($(this).val() == 'release') {
-            $('#plant_date').prop('disabled', true);
-            $('#grow_estimate').prop('disabled', true);
-        }
-    });
+    $('#growing-product').DataTable();
 
     $('#description').summernote({
         height: 300,

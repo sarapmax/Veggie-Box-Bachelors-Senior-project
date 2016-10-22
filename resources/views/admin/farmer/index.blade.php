@@ -4,13 +4,13 @@
 
 <div class="row wrapper border-bottom white-bg page-heading">
 	<div class="col-sm-4">
-		<h2>Farmer</h2><br>
+		<h2>ผู้ประกอบการ</h2><br>
 		<ol class="breadcrumb">
 			<li>
 				<a href="{{ url('admin/') }}">หน้าแรก</a>
 			</li>
 			<li class="active">
-				<strong>Farmer</strong>
+				<strong>ผู้ประกอบการ</strong>
 			</li>
 		</ol>
 	</div>
@@ -20,7 +20,7 @@
 		<div class="wrapper wrapper-content animated fadeInUp">
 			<div class="ibox">
 				<div class="ibox-title">
-					<h5>จัดการ Farmer</h5>
+					<h5>จัดการ ผู้ประกอบการ</h5>
 				</div>
 				{{-- @if(Session::has('alert-success')) --}}
 				
