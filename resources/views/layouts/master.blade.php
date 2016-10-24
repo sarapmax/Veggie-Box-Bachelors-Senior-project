@@ -24,7 +24,21 @@
     <div id="wrapper">
         <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom white-bg">
-    <nav class="navbar-inverse navbar-static-top" role="navigation">
+        <div style="background-color:#f3f3f4;" class="row">
+                <div style="padding:7px;" class="container">
+                    <div class="col-md-12">
+                        <div class="pull-left">
+                            ยินดีต้อนรับสู่ <strong>Veggiebox</strong>, <a href="#">เข้าสู่ระบบ</a> หรือ <a href="#">สมัครสมาชิก</a>
+                        </div>
+                        <div class="pull-right">
+                            <a href="">เช็คเอาท์</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="{{ url('cart') }}">ตระกร้าสินค้า</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div> 
+                </div>
+            </div>
+    <nav style="padding: 15px;" class="navbar-inverse navbar-static-top" role="navigation">
 <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -40,14 +54,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul style="margin-left: 20px;" class="nav navbar-nav">
-            <li class="active">
+            <li {{ Request::segment(1) == '' ? 'class=active' : '' }}>
                 <a href="{{url('/')}}">
                     <i class="glyphicon glyphicon-home" aria-hidden="true"></i>
                     หน้าแรก
                 </a>
             </li>
-            <li>
-                <a href="{{url('customer/veggiecoin')}}">
+            <li {{ Request::segment(1) == 'products' ? 'class=active' : '' }}>
+                <a href="{{url('products')}}">
                     สินค้า
                 </a>
             </li>
@@ -68,22 +82,46 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a href="{{url('customer/cart')}}">
-                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                    ตระกร้าสินค้า
-                </a>
-            </li>
             <li class="dropdown">
-                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"> </i> ธีรพงษ์ โพธิพันธุ์ ( 2,000 <i class="fa fa-viacoin"></i>) <span class="caret"></span></a>
+                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    {{ Cart::count() }} &nbsp;สินค้าในตระกร้า <span class="caret"></span></a>
                 <ul style="border: 1px solid #e7eaec;" role="menu" class="dropdown-menu">
-                    <li><a href=""><i class="fa fa-user"> </i> ข้อมูลส่วนตัว</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out"></i> ออกจากระบบ</a></li>
+                    <li>
+                        <h4>สินค้าในตระกร้าทั้งหมด</h4>
+                    </li>
+                    @foreach(Cart::content() as $cart)
+                        <li>
+                            <div class="row">
+                            <div class="col-lg-2">
+                                <img style="width:30px;border:1px solid #ECF2EB;" src="{{ asset('thumb_image/'.$cart->options->image) }}">
+                            </div>
+                            <div class="col-lg-5">
+                                {{ $cart->name }}
+                            </div>
+                            <div class="col-lg-5">
+                                {{  viaCoin($cart->price) }} x {{ $cart->qty }} {{ $cart->options->size }}
+                            </div>
+                            </div>
+                        </li>
+                    @endforeach
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <h4>ราคารวม : {{ Cart::total() }} <i class="fa fa-viacoin"> </i></h4>
+                                </div>
+                                <div class="col-lg-5">
+                                    <button class="btn btn-primary btn-outline btn-sm pull-right"><i class="fa fa fa-shopping-cart"></i> เช็คเอาท์</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <center>
+                                <a class="text-center" href=""><h4><i class="fa fa-shopping-basket"> </i> ตระกร้าสินค้า</h4></a>
+                                </center>
+                            </div>
+                        </li>
                 </ul>
-            </li>
-
-            <li>
-                
             </li>
         </ul>
     </div><!-- /.navbar-collapse -->
@@ -91,8 +129,13 @@
         </nav>
         </div>
         <div class="wrapper wrapper-content">
+                
             <div class="row">
+
                 <div class="container">
+                    <div class="col-lg-12">
+                        @include('customer.layouts.alert')
+                    </div>
                     @yield('content')
                 </div>
             </div>
@@ -215,95 +258,11 @@
      <script src="{{ asset('inspinia/js/plugins/peity/jquery.peity.min.js') }}"></script>
     <!-- Peity demo -->
      <script src="{{ asset('inspinia/js/demo/peity-demo.js') }}"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 
 
     <script>
-        // $(document).ready(function() {
-
-        //     var d1 = [[1262304000000, 6], [1264982400000, 3057], [1267401600000, 20434], [1270080000000, 31982], [1272672000000, 26602], [1275350400000, 27826], [1277942400000, 24302], [1280620800000, 24237], [1283299200000, 21004], [1285891200000, 12144], [1288569600000, 10577], [1291161600000, 10295]];
-        //     var d2 = [[1262304000000, 5], [1264982400000, 200], [1267401600000, 1605], [1270080000000, 6129], [1272672000000, 11643], [1275350400000, 19055], [1277942400000, 30062], [1280620800000, 39197], [1283299200000, 37000], [1285891200000, 27000], [1288569600000, 21000], [1291161600000, 17000]];
-
-        //     var data1 = [
-        //         { label: "Data 1", data: d1, color: '#17a084'},
-        //         { label: "Data 2", data: d2, color: '#127e68' }
-        //     ];
-        //     $.plot($("#flot-chart1"), data1, {
-        //         xaxis: {
-        //             tickDecimals: 0
-        //         },
-        //         series: {
-        //             lines: {
-        //                 show: true,
-        //                 fill: true,
-        //                 fillColor: {
-        //                     colors: [{
-        //                         opacity: 1
-        //                     }, {
-        //                         opacity: 1
-        //                     }]
-        //                 },
-        //             },
-        //             points: {
-        //                 width: 0.1,
-        //                 show: false
-        //             },
-        //         },
-        //         grid: {
-        //             show: false,
-        //             borderWidth: 0
-        //         },
-        //         legend: {
-        //             show: false,
-        //         }
-        //     });
-
-        //     var lineData = {
-        //         labels: ["January", "February", "March", "April", "May", "June", "July"],
-        //         datasets: [
-        //             {
-        //                 label: "Example dataset",
-        //                 fillColor: "rgba(220,220,220,0.5)",
-        //                 strokeColor: "rgba(220,220,220,1)",
-        //                 pointColor: "rgba(220,220,220,1)",
-        //                 pointStrokeColor: "#fff",
-        //                 pointHighlightFill: "#fff",
-        //                 pointHighlightStroke: "rgba(220,220,220,1)",
-        //                 data: [65, 59, 40, 51, 36, 25, 40]
-        //             },
-        //             {
-        //                 label: "Example dataset",
-        //                 fillColor: "rgba(26,179,148,0.5)",
-        //                 strokeColor: "rgba(26,179,148,0.7)",
-        //                 pointColor: "rgba(26,179,148,1)",
-        //                 pointStrokeColor: "#fff",
-        //                 pointHighlightFill: "#fff",
-        //                 pointHighlightStroke: "rgba(26,179,148,1)",
-        //                 data: [48, 48, 60, 39, 56, 37, 30]
-        //             }
-        //         ]
-        //     };
-
-        //     var lineOptions = {
-        //         scaleShowGridLines: true,
-        //         scaleGridLineColor: "rgba(0,0,0,.05)",
-        //         scaleGridLineWidth: 1,
-        //         bezierCurve: true,
-        //         bezierCurveTension: 0.4,
-        //         pointDot: true,
-        //         pointDotRadius: 4,
-        //         pointDotStrokeWidth: 1,
-        //         pointHitDetectionRadius: 20,
-        //         datasetStroke: true,
-        //         datasetStrokeWidth: 2,
-        //         datasetFill: true,
-        //         responsive: true,
-        //     };
-
-
-        //     var ctx = document.getElementById("lineChart").getContext("2d");
-        //     var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
-
-        // });
+        $('.box').matchHeight();
     </script>
 
 </body>

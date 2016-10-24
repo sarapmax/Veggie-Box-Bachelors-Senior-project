@@ -60,3 +60,27 @@ function getRealPrice($price, $discount_price) {
 		echo $price;
 	}
 }
+
+function bahtToCoin($baht) {
+	$coin = $baht * 10;
+
+	return $coin;
+}
+
+function coinToBaht($coin) {
+	$baht = $coin / 10;
+
+	return $baht;
+}
+
+function discountCoinPrice($price, $discount_price, $unit) {
+	if($discount_price) {
+		echo '<p style="color: #999;text-decoration: line-through;"> ' . number_format(bahtToCoin($price)) . '  <i class="fa fa-viacoin"></i> / '  . $unit . '</p><p> ' . number_format(bahtToCoin($discount_price)) . ' <i class="fa fa-viacoin"></i> / ' . $unit . '</p>';
+	}else {
+	 	echo number_format(bahtToCoin($price)) . ' <i class="fa fa-viacoin"></i> / ' . $unit;
+	}
+}
+
+function viaCoin($coin) {
+	echo number_format($coin). ' <i class="fa fa-viacoin"></i>';
+}

@@ -97,3 +97,29 @@ Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
 
 	Route::get('farmer/notification', 'FarmerNotificationController@index');
 });
+
+//================ CUSTOMER ===============//
+
+// NOT AUTH
+Route::get('products/category/{category}', 'CustomerCategoryController@getProductByCategory');
+
+Route::get('products/category/{category}/{sub_category}', 'CustomerCategoryController@getProductBySubCategory');
+
+Route::get('products', 'CustomerProductController@getProductsPage');
+
+Route::get('cart', 'CustomerCartController@index');
+
+Route::get('/cart/{id}', [
+	'uses' => 'CustomerCartController@addCart',
+	'as' => 'cart'
+]);
+
+Route::get('/remove_cart/{rowId}', [
+	'uses' => 'CustomerCartController@removeCart',
+	'as' => 'cart.remove'
+]);
+
+Route::post('/update_cart/{rowId}', [
+	'uses' => 'CustomerCartController@updateCart',
+	'as' => 'cart.update'
+]);

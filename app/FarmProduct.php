@@ -17,4 +17,8 @@ class FarmProduct extends Model
     public function farmer() {
     	return $this->belongsTo('App\Farmer', 'farmer_id');
     }
+
+    public function product() {
+    	return $this->hasOne('App\Product');
+    }
 }
