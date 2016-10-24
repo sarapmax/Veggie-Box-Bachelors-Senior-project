@@ -17,6 +17,7 @@ class CreateFarmerCertificationsTable extends Migration
             $table->integer('farmer_id')->unsigned();
             $table->string('name');
             $table->string('certification_file');
+            $table->timestamps();
 
             $table->foreign('farmer_id')->references('id')->on('farmers');
         });

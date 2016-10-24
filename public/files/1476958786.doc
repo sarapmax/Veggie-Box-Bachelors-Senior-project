@@ -1,0 +1,2440 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<title></title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Angsana New";
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-2130706429 0 0 0 65537 0;}
+@font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2130706429 0 0 0 65537 0;}
+@font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2130706429 0 0 0 65537 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:EucrosiaUPC;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-2130706393 2 0 0 65537 0;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;
+	mso-font-charset:2;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"TH SarabunPSK";
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 1342185562 0 0 65923 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Angsana New";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Angsana New";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Angsana New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Angsana New";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-bidi-font-family:"Angsana New";}
+ /* Page Definitions */
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:21.3pt 37.3pt 0in 42.55pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-page-numbers:1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+div.MsoNormal1 {mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Angsana New";}
+li.MsoNormal1 {mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Angsana New";}
+p.MsoNormal1 {mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Angsana New";}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:\0E15\0E32\0E23\0E32\0E07\0E1B\0E01\0E15\0E34;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-bidi-font-family:"Angsana New";}
+table.MsoTableGrid
+	{mso-style-name:\0E40\0E2A\0E49\0E19\0E15\0E32\0E23\0E32\0E07;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-bidi-font-family:"Angsana New";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1241"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+<div class=WordSection1>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=728
+ style='width:545.8pt;margin-left:-8.8pt;border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt;'>
+ <tr>
+  <td width="97" valign="top"><p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-fareast-language:
+EN-US;mso-no-proof:yes'><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75"
+ style='width:77pt;height:115pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="http://internship.mfu.ac.th/genwordformdox/image002.jpg"
+  o:title="logo_bw" chromakey="#fefefe"/>
+</v:shape></span><span style='font-family:"Calibri","sans-serif";mso-bidi-font-family:
+EucrosiaUPC'><o:p></o:p></span></p></td>
+  <td width="497" align="center"><p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>INTERNSHIP APPLICATION
+FORM<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=TH
+style='font-size:15.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ใบคำร้องฝึกปฏิบัติงาน</span></b><b><span
+style='font-size:15.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=TH style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ระยะเวลาการฝึกปฏิบัติงานระหว่างวันที่_____________</span></b><b><span
+lang=TH style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'> ถึง
+</span></b><b><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>_________
+<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span
+style='font-size:11.0pt;mso-bidi-font-family:EucrosiaUPC'>Period of Internship
+From<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>To 
+<o:p></o:p>
+</span> &nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=TH
+style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span lang=TH
+style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ภาคการศึกษา
+</span><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'> 2 </span><span
+lang=TH style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ปีการศึกษา</span><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'> 2016 </span></b><span
+lang=TH style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><span
+style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span style='mso-tab-count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-size:11.0pt;
+mso-bidi-font-family:EucrosiaUPC'><span
+style='mso-spacerun:yes'>&nbsp;</span>Semester<span style='mso-tab-count:
+1'> 2</span> Academic Year
+    <o:p> 2016 </o:p></span></p></td>
+<td width="131" valign="top"><table border="1" cellpadding="0" cellspacing="0"><tr><td><div v:shape="_x0000_s1172" style='padding:3.85pt 7.45pt 3.85pt 7.45pt'
+    class=shape>
+            <p class=MsoNormal1 align=center style='text-align:center'><b><span
+    style='font-size:9.0pt;mso-bidi-font-family:"TH SarabunPSK"'>FM:
+              Coop/Pro-Ex 01
+              <o:p></o:p>
+            </span></b></p>
+            <p class=MsoNormal1 align=center style='text-align:center'><b><span lang=TH
+    style='font-size:10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+    "Times New Roman";mso-hansi-font-family:"Times New Roman"'>ปรับปรุง
+              24/07/2015
+              <o:p></o:p>
+            </span></b></p>
+          </div></td>
+ </tr>
+ </table></td>
+ </tr>
+ </table>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=728
+ style='width:545.8pt;margin-left:-8.8pt;border-collapse:collapse;border:none;
+ mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:480;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
+ .5pt solid windowtext'>
+ 
+ 
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=234 valign=top style='width:175.5pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:1.35pt;mso-height-rule:exactly'><span lang=TH
+  style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>1.</span><span
+  lang=TH style='font-size:11.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> </span><b><span
+  lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif"'>ระบุรายวิชาตามแผนการศึกษา
+  /<br>
+  <span style='mso-spacerun:yes'>&nbsp;&nbsp; </span></span></b><b><span
+  lang=TH style='font-size:11.0pt;font-family:"EucrosiaUPC","serif"'>Specify
+  Course Name By The Curriculum</span></b><span style='font-size:11.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:368.55pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-top:1.35pt;mso-height-rule:
+  exactly'><!--[if gte vml 1]><v:rect id="_x0000_s1240" style='position:absolute;
+   margin-left:302.75pt;margin-top:.4pt;width:60.15pt;height:85.7pt;z-index:251663872;
+   mso-position-horizontal-relative:text;mso-position-vertical-relative:text'
+   wrapcoords="-600 -419 -600 21600 22200 21600 22200 -419 -600 -419"
+   strokeweight="2.25pt">
+   <v:textbox style='mso-next-textbox:#_x0000_s1240'/>
+  </v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+  relative;z-index:251663872'><span style='position:absolute; left:395px; top:-27px; width:88px; height:122px'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=88 height=122 bgcolor=white style='border:2.25pt solid black;
+    vertical-align:top;background:white'><![endif]><![if !mso]><span
+    style='position:absolute; mso-ignore:vglayout; z-index:251663872; height: 116px; left: -9px; top: -26px;'>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div v:shape="_x0000_s1240" style='padding:5.85pt 9.45pt 5.85pt 9.45pt'
+      class=shape>
+      <p class=MsoNormal align=center style='text-align:center'><b><span
+      style='font-size:5.0pt;font-family:"TH SarabunPSK","sans-serif"'><o:p>&nbsp;</o:p></span></b></p>
+      <p class=MsoNormal align=center style='text-align:center'><b><span
+      lang=TH style='mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+      mso-ascii-font-family:"TH SarabunPSK";mso-hansi-font-family:"TH SarabunPSK"'>								<img src="http://internship.mfu.ac.th/images/userimg/0020117001476084240.jpg" width="60" height="90" />
+							<o:p></o:p></span></b></p>
+      <p class=MsoNormal align=center style='text-align:center'><span
+      style='font-size:15.0pt'><o:p>&nbsp;</o:p></span></p>
+      <p class=MsoNormal align=center style='text-align:center'><span
+      style='font-size:15.0pt'><o:p>&nbsp;</o:p></span></p>
+      <p class=MsoNormal align=center style='text-align:center'><span
+      style='font-size:20.0pt'><o:p>&nbsp;</o:p></span></p>
+      <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+   </tr>
+  </table>
+  </span></span><![endif]><b><span lang=TH style='font-size:13.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>2.
+  สำหรับเจ้าหน้าที่เป็นผู้ตรวจสอบ</span></b><span
+  lang=TH style='font-size:11.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> <b>/ For
+  Officials Use Only</b></span><span style='font-size:11.0pt;mso-bidi-font-family:
+  EucrosiaUPC'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=234 valign=top style='width:175.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:4.0pt;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-top:1.35pt;mso-height-rule:
+  exactly'><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:4.0pt;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-top:1.35pt;mso-height-rule:
+  exactly'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;font-family:
+  Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>x</span></span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  </span><span lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif"'>สหกิจศึกษา</span><span
+  style='font-size:14.0pt;font-family:"EucrosiaUPC","serif"'>/</span><span
+  style='mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:4.0pt;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-top:1.35pt;mso-height-rule:
+  exactly'><span lang=TH style='mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:9.0pt;mso-bidi-font-family:"Times New Roman"'>Co-operative
+  Education</span><span style='font-size:9.0pt;mso-bidi-font-family:"Cordia New"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:4.0pt;mso-element:frame;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-top:1.35pt;mso-height-rule:
+  exactly'><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;font-family:
+  Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  </span><span lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif"'>ฝึกประสบการณ์วิชาชีพ</span><span
+  lang=TH style='font-size:14.0pt;font-family:"EucrosiaUPC","serif"'>/</span><span
+  lang=TH style='mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span><span style='mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:1.35pt;mso-height-rule:exactly'><span lang=TH
+  style='mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:9.0pt;mso-bidi-font-family:"Times New Roman"'>Professional
+  Experience</span><span style='font-size:11.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:368.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:1.35pt;mso-height-rule:exactly'><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  </span><span lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>สำเนาผลการเรียน
+  2 ฉบับ</span><span lang=TH style='font-size:14.0pt;
+  mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> /</span><span
+  lang=TH style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:
+  EucrosiaUPC'> </span><span style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'>2</span><span
+  lang=TH style='font-size:9.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> </span><span
+  style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'>Copies of Transcript</span><span
+  lang=TH style='font-size:9.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:1.35pt;mso-height-rule:exactly'><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  </span><span lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>สำเนาใบรับรองสถานะนักศึกษา
+  2<span style='mso-spacerun:yes'>&nbsp; </span>ฉบับ</span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  / </span><span style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'>2</span><span
+  lang=TH style='font-size:9.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> </span><span
+  style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'>Copies of Certification of Student Status</span><span style='font-size:10.0pt;mso-bidi-font-size:
+  14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:1.35pt;mso-height-rule:exactly'><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Angsana New";mso-hansi-font-family:"Angsana New"'><span
+  style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Angsana New";
+  mso-hansi-font-family:"Angsana New";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Angsana New";mso-hansi-font-family:"Angsana New"'> </span><span
+  lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>ประวัติย่อจำนวน
+  2 ฉบับ
+  พร้อมติดรูป</span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  / </span><span style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'>2
+  Originals Resume</span><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'> <o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:1.35pt;mso-height-rule:exactly'><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Angsana New";
+  mso-hansi-font-family:"Angsana New";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Angsana New";mso-hansi-font-family:"Angsana New"'> </span><span
+  lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Angsana New";mso-hansi-font-family:"Angsana New"'>เอกสารตรวจสอบผลการเรียน
+  </span><span lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>จำนวน
+  1 ฉบับ </span><span lang=TH style='font-size:14.0pt;
+  mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Angsana New";mso-hansi-font-family:"Angsana New"'>/</span><span
+  style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'> Copy of </span><span
+  style='font-size:9.0pt;mso-bidi-font-size:11.0pt'>School Record Check</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Angsana New","serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:1.35pt;mso-height-rule:exactly'><span lang=TH
+  style='font-size:11.0pt;mso-ansi-font-size:10.0pt;font-family:"Angsana New","serif"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Angsana New";
+  mso-hansi-font-family:"Angsana New";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Angsana New";mso-hansi-font-family:"Angsana New"'> </span><span
+  lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Angsana New";mso-hansi-font-family:"Angsana New"'>ระเบียนประวัติ
+  </span><span lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>จำนวน
+  1 ฉบับ </span><span lang=TH style='font-size:14.0pt;
+  mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Angsana New";mso-hansi-font-family:"Angsana New"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>(</span><span lang=TH style='font-size:
+  13.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Angsana New";
+  mso-hansi-font-family:"Angsana New"'>ตรวจสอบการทำผิดวินัย</span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Angsana New";mso-hansi-font-family:"Angsana New"'>) /</span><span
+  lang=TH> </span><span style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'>Copy
+  of </span><span style='font-size:9.0pt;mso-bidi-font-family:"Times New Roman"'>Biography</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Angsana New","serif"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=728
+ style='width:545.8pt;margin-left:-8.8pt;border-collapse:collapse;border:none;
+ mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:480;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
+ .5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:16.95pt'>
+  <td width=728 colspan=14 align="right" valign=bottom style='width:545.8pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt;
+  height:16.95pt'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td width="32%"><p class=MsoNormal style='margin-right:-61.7pt'><b><span style='font-size:
+  3.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='margin-right:-61.7pt'><b><span lang=TH style='font-size:14.0pt;
+  mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>1.ประวัติส่วนตัว/
+  </span></b><b><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>Personal Data</span></b><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-no-proof:yes'><o:p></o:p></span></p>
+      </td>
+      <td width="29%" align="center" valign="middle"><table width="187" height="31" border="1" cellpadding=0 cellspacing=0>
+     <tr>
+      <td align="center" valign="middle" bgcolor="#FFFFFF"><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><strong>รหัสประจำตัว/Student ID</strong></span></td></tr></table></td>
+      <td width="39%">
+      <table width="25" height="31" border="0" cellpadding=0 cellspacing=0>
+     <tr>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">5</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0><tr>
+      	<td width="25" align="center" valign="middle" bgcolor="#FFFFFF">6</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0 style="margin-right:15px;"><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">3</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">1</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">3</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">0</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0 style="margin-right:15px;"><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">1</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">0</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">3</td></tr></table>
+      </td>
+      <td align="left" valign="middle">
+      	<table width="25" height="31" border="1" cellpadding=0 cellspacing=0><tr>
+      	<td align="center" valign="middle" bgcolor="#FFFFFF">3</td></tr></table>
+      </td>
+     </tr>
+      </table>
+      
+      </td>
+      </tr>
+      </table>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=161 valign=bottom style='width:120.55pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ชื่อ-สกุล<o:p></o:p></span></p>
+  </td>
+  <td width=247 colspan=6 style='width:185.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p>นายทวีศักดิ์ อินทรทัต</o:p></span></p>
+  </td>
+  <td width=89 colspan=2 style='width:67.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ชื่อเล่น<o:p></o:p></span></p>
+  </td>
+  <td width=230 colspan=5 style='width:172.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p>เกมส์</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:15.15pt'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt;height:15.15pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>Name- Surname</span><span style='mso-bidi-font-size:
+  12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  </td>
+  <td width=247 colspan=6 style='width:185.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:15.15pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>Taweesak Intaratat<o:p></o:p></span></p>
+  </td>
+  <td width=89 colspan=2 style='width:67.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt;
+  height:15.15pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>Nickname<o:p></o:p></span></p>
+  </td>
+  <td width=230 colspan=5 style='width:172.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:15.15pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>Game</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>สาขาวิชา</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/Program<o:p></o:p></span></p>
+  </td>
+  <td width=247 colspan=6 style='width:185.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>Information Technology</o:p></span></p>
+  </td>
+  <td width=129 colspan=4 style='width:96.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>สำนักวิชา</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/School<o:p></o:p></span></p>
+  </td>
+  <td width=190 colspan=3 style='width:142.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>Information Technology</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>เกรดเฉลี่ยรวม/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>GPAX<o:p></o:p></span></p>
+  </td>
+  <td width=247 colspan=6 style='width:185.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>3.29</o:p></span></p>
+  </td>
+  <td width=90 colspan=3 style='width:67.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";background:#F3F3F3'>อีเมล์/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC;
+  background:#F3F3F3'>Email</span><b><span style='font-size:10.0pt;mso-bidi-font-size:
+  14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></b></p>
+  </td>
+  <td width=229 colspan=4 style='width:171.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>taweesak.in@gmail.com</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ที่อยู่ปัจจุบัน
+  </span><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>/ Address<o:p></o:p></span></p>
+  </td>
+  <td width=567 colspan=13 style='width:425.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>เลขที่ 333/113 หมู่ 1 ถนน - ซอย - ตำบล ท่าสุด อำเภอ เมืองเชียงราย</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>จังหวัด/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Province<o:p></o:p></span></p>
+  </td>
+  <td width=247 colspan=6 style='width:185.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>เชียงราย</o:p></span></p>
+  </td>
+  <td width=168 colspan=6 style='width:125.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-left:2.85pt'><span lang=TH style='font-size:
+  14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>รหัสไปรษณีย์</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/Postal
+  code<o:p></o:p></span></p>
+  </td>
+  <td width=152 style='width:114.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>57100</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>เบอร์โทรศัพท์/</span><span
+  style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'>Home</span><span
+  lang=TH style='font-size:9.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> </span><span
+  style='font-size:9.0pt;mso-bidi-font-family:EucrosiaUPC'>phone</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  </td>
+  <td width=247 colspan=6 style='width:185.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>-</o:p></span></p>
+  </td>
+  <td width=168 colspan=6 style='width:125.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-left:1.35pt'><span lang=TH style='font-size:
+  14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>มือถือ/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Mobile
+  phone<o:p></o:p></span></p>
+  </td>
+  <td width=152 style='width:114.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>0881529433</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=728 colspan=14 style='width:545.8pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='tab-stops:center 180.8pt'><b><span
+  style='font-size:8.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=728 colspan=14 style='width:545.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='tab-stops:center 180.8pt'><b><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>2.บุคคลที่ติดต่อกรณีฉุกเฉิน
+  /</span></b><b><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'> Contact Person In Case of Emergency</span></b><b><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ชื่อ-สกุล</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/Name-Surname</span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=247 colspan=6 style='width:185.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p>จุฬา อินทรทัต</o:p></span></p>
+  </td>
+  <td width=156 colspan=5 style='width:116.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ความสัมพันธ์</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/Relationship<o:p></o:p></span></p>
+  </td>
+  <td width=164 colspan=2 style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p>บิดา</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ที่อยู่/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Address<o:p></o:p></span></p>
+  </td>
+  <td width=567 colspan=13 style='width:425.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>เลขที่ 328/52  ถนน วิเชียร์จำนงค์ ซอย ภัทรโชค ตำบล ปากแคว อำเภอ เมือง จังหวัด สุโขทัย ไปรษณีย์ 64000</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>เบอร์โทรศัพท์/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Home
+  phone <o:p></o:p></span></p>
+  </td>
+  <td width=247 colspan=6 style='width:185.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>-</o:p></span></p>
+  </td>
+  <td width=156 colspan=5 style='width:116.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-left:.05in'><span lang=TH style='font-size:
+  14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>มือถือ/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Mobile
+  phone<o:p></o:p></span></p>
+  </td>
+  <td width=164 colspan=2 style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>0812848167</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;
+  mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>อีเมล์/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Email
+  <o:p></o:p></span></p>
+  </td>
+  <td width=567 colspan=13 style='width:425.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>-</span></span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=728 colspan=14 style='width:545.8pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'><span
+  style='mso-bookmark:OLE_LINK1'><span style='mso-bookmark:OLE_LINK2'></span></span>
+  <p class=MsoNormal style='tab-stops:center 180.8pt'><span style='mso-bookmark:
+  OLE_LINK1'><span style='mso-bookmark:OLE_LINK2'><b><span lang=TH
+  style='font-size:8.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=728 colspan=14 style='width:545.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='tab-stops:center 180.8pt'><span style='mso-bookmark:
+  OLE_LINK1'><span style='mso-bookmark:OLE_LINK2'><b><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>3.ข้อมูล</span></b></span></span><b><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>สถานประกอบการที่ต้องการเข้ารับการฝึกปฏิบัติงาน
+  /</span></b><b><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'> Information of Organisation<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ชื่อสถานประกอบ<o:p></o:p></span></p>
+  </td>
+  <td width=567 colspan=13 style='width:425.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p>บริษัท บานาน่าโคดดิ้ง จำกัด</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>Name of organisation<o:p></o:p></span></p>
+  </td>
+  <td width=567 colspan=13 style='width:425.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p>Banana Coding</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ที่อยู่/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Address<o:p></o:p></span></p>
+  </td>
+  <td width=567 colspan=13 style='width:425.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>- เลขที่ 34/12 หมู่ 5 ถนน คลองชลประทาน ซอย - ตำบล สุเทพ อำเภอ เมือง จังหวัด เชียงใหม่ </span></span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>รหัสไปรษณีย์</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/Postal
+  code </span><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;
+  font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=211 colspan=5 style='width:158.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p>50200</o:p></span></p>
+  </td>
+  <td width=192 colspan=6 style='width:143.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>เบอร์โทรศัพท์/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Telephone
+  number<o:p></o:p></span></p>
+  </td>
+  <td width=164 colspan=2 style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p>+66 81 993 5985</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20;height:13.95pt'>
+  <td width=161 style='width:120.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt;height:13.95pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>อีเมล์/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Email<o:p></o:p></span></p>
+  </td>
+  <td width=211 colspan=5 style='width:158.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:13.95pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>info@bananacoding.com</o:p></span></p>
+  </td>
+  <td width=192 colspan=6 style='width:143.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt;
+  height:13.95pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>แฟกซ์/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Fax<o:p></o:p></span></p>
+  </td>
+  <td width=164 colspan=2 style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:13.95pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>-</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td width=255 colspan=4 style='width:191.4pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  font-family:"Wingdings 2";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:"Wingdings 2"'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:"Wingdings 2"'>-</span></span><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  ฝึกปฏิบัติงานในตำแหน่ง/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Applied
+  position<o:p></o:p></span></p>
+  </td>
+  <td width=473 colspan=10 style='width:354.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>Developer</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width=180 colspan=2 style='width:134.7pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ฝ่าย/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Department<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span></span><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=548 colspan=12 style='width:411.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p>-</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td width=180 colspan=2 style='width:134.7pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+  font-family:"Wingdings 2";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:"Wingdings 2"'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:"Wingdings 2"'>-</span></span><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  เรียนหนังสือถึง/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Attention
+  to</span><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;
+  font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=548 colspan=12 style='width:411.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:
+  14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p>นายวิริยะ  จามร</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td width=180 colspan=2 style='width:134.7pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ตำแหน่ง/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Position<o:p></o:p></span></p>
+  </td>
+  <td width=192 colspan=4 style='width:144.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:
+  14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p>-</o:p></span></p>
+  </td>
+  <td width=108 colspan=2 style='width:81.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span>ฝ่าย/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Department</span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=248 colspan=6 style='width:185.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><o:p>-</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25;height:7.95pt'>
+  <td width=728 colspan=14 valign=top style='width:545.8pt;border:none;
+  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.95pt'>
+  <p class=MsoNormal style='tab-stops:135.65pt'><b><span lang=TH
+  style='font-size:8.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td width=728 colspan=14 style='width:545.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='tab-stops:135.65pt'><b><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>4.
+  ข้อมูลอื่นๆ<span
+  style='mso-spacerun:yes'>&nbsp; </span></span></b><b><span style='font-size:
+  10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/ Other
+  Informations<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27;height:22.95pt'>
+  <td width=228 colspan=3 style='width:170.95pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt;height:22.95pt'>
+  <p class=MsoNormal style='tab-stops:135.65pt'><span lang=TH style='font-size:
+  14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>โรคประจำตัว
+  / </span><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Chronic disease<o:p></o:p></span></p>
+  </td>
+  <td width=108 colspan=2 style='width:80.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:22.95pt'>
+  <p class=MsoNormal style='tab-stops:135.65pt'><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>x</span></span><b><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span></b><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ไม่มี</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/
+  No<o:p></o:p></span></p>
+  </td>
+  <td width=392 colspan=9 style='width:294.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:22.95pt'>
+  <p class=MsoNormal style='tab-stops:135.65pt'><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><b><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span></b><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>มี</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/Yes</span><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  </span><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>(</span><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:
+  10.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ระบุ/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Identify)
+  <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28;mso-yfti-lastrow:yes;height:16.95pt'>
+  <td width=228 colspan=3 style='width:170.95pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt;height:16.95pt'>
+  <p class=MsoNormal style='tab-stops:135.65pt'><span lang=TH style='font-size:
+  14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>การทำผิดวินัย
+  /<span style='mso-spacerun:yes'>&nbsp; </span></span><span style='font-size:
+  10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Indiscipline<o:p></o:p></span></p>
+  </td>
+  <td width=108 colspan=2 style='width:80.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:16.95pt'>
+  <p class=MsoNormal style='tab-stops:135.65pt'><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>x</span></span><b><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span></b><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ไม่เคย</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/
+  No<b><u><o:p></o:p></u></b></span></p>
+  </td>
+  <td width=392 colspan=9 style='width:294.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:16.95pt'>
+  <p class=MsoNormal style='tab-stops:135.65pt'><span style='font-size:10.0pt;
+  mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><b><span
+  lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span></b><span lang=TH
+  style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>เคย</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>/
+  Yes </span><span lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;
+  font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>(ระบุ/</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'>Identify)<b><u><o:p></o:p></u></b></span></p>
+  </td>
+ </tr>
+ <![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=161 style='border:none'></td>
+  <td width=19 style='border:none'></td>
+  <td width=48 style='border:none'></td>
+  <td width=27 style='border:none'></td>
+  <td width=81 style='border:none'></td>
+  <td width=36 style='border:none'></td>
+  <td width=36 style='border:none'></td>
+  <td width=72 style='border:none'></td>
+  <td width=17 style='border:none'></td>
+  <td width=1 style='border:none'></td>
+  <td width=39 style='border:none'></td>
+  <td width=27 style='border:none'></td>
+  <td width=12 style='border:none'></td>
+  <td width=152 style='border:none'></td>
+ </tr>
+ <![endif]>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-cluster'><span
+lang=TH style='font-size:14.0pt;mso-ansi-font-size:10.0pt;font-family:"EucrosiaUPC","serif";
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><u><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-cluster'><span
+lang=TH style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-cluster'><span
+style='font-size:13.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-cluster'><span
+lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ข้าพเจ้าขอรับรองว่า ข้อความที่กรอกในใบคำร้องและเอกสารอื่นใดที่เกี่ยวข้องเป็นความจริงทุกประการ และข้าพเจ้าได้รับทราบประกาศมหาวิทยาลัยแม่ฟ้าหลวง เรื่อง หลักเกณฑ์การฝึกปฏิบัติงาน พ.ศ. 2556</span><span lang=TH style='font-size:13.0pt;mso-bidi-font-family:
+EucrosiaUPC'> </span><span lang=TH style='font-size:13.0pt;font-family:"EucrosiaUPC","serif";
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>และยินดีปฏิบัติตามระเบียบดังกล่าวโดยไม่มีข้อโต้แย้งใดๆทั้งสิ้น<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-cluster'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1209" type="#_x0000_t202" style='position:absolute;left:0;
+ text-align:left;margin-left:207.8pt;margin-top:15.5pt;width:324pt;height:99pt;
+ z-index:251657728' filled="f" stroked="f">
+ <v:textbox style='mso-next-textbox:#_x0000_s1209'/>
+ <w:wrap side="left"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251657728;left:0px;margin-left:277px;margin-top:21px;
+width:436px;height:136px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=436 height=136 style='vertical-align:top'><![endif]><![if !mso]><span
+  style='position:absolute;mso-ignore:vglayout;left:0pt;z-index:251657728'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1209" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span lang=TH
+    style='mso-bidi-font-size:12.0pt;font-family:"Angsana New","serif"'><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+    lang=TH style='mso-bidi-font-size:12.0pt;font-family:"TH SarabunPSK","sans-serif"'><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span
+    lang=TH style='mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+    mso-ascii-font-family:"TH SarabunPSK";mso-hansi-font-family:"TH SarabunPSK"'>
+    </span><span style='mso-bidi-font-size:12.0pt;font-family:"TH SarabunPSK","sans-serif";
+    mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+    <p class=MsoNormal align=center style='text-align:center'><span lang=TH
+    style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+    "TH SarabunPSK";mso-hansi-font-family:"TH SarabunPSK"'>ลงชื่อนักศึกษา</span><span
+    style='font-size:14.0pt;font-family:"TH SarabunPSK","sans-serif";
+    mso-bidi-font-family:EucrosiaUPC'><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>________________________</span><span style='font-size:11.0pt;
+    mso-bidi-font-family:EucrosiaUPC'>Student's signature<o:p></o:p></span></p>
+    <p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span lang=TH
+    style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+    "TH SarabunPSK";mso-hansi-font-family:"TH SarabunPSK"'><span
+    style='mso-spacerun:yes'>&nbsp;</span>(</span><span style='font-size:14.0pt;
+    font-family:"TH SarabunPSK","sans-serif";mso-bidi-font-family:EucrosiaUPC'>___________________________</span><span
+    lang=TH style='font-size:14.0pt;font-family:"EucrosiaUPC","serif";
+    mso-ascii-font-family:"TH SarabunPSK";mso-hansi-font-family:"TH SarabunPSK"'>)</span><span
+    style='font-size:14.0pt;font-family:"TH SarabunPSK","sans-serif";
+    mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:EucrosiaUPC'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;letter-spacing:
+-.4pt'>I hereby certify that all statements given in the application form are
+true and correct and I will </span><span style='font-size:11.0pt;mso-bidi-font-family:
+EucrosiaUPC;letter-spacing:-.4pt'>perform my duty according to The Mae Fah
+Luang University's Announcement on Internship Requirements 2013.</span><span
+style='mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;letter-spacing:
+-.3pt'><br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span><b><u><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='tab-stops:135.65pt'><b><u><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal style='tab-stops:135.65pt'><b><u><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal style='tab-stops:135.65pt'><b><u><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal style='tab-stops:135.65pt'><b><u><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal style='tab-stops:135.65pt'><b><u><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:EucrosiaUPC'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal><b><u><span lang=TH style='font-size:13.0pt;font-family:
+"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>นักศึกษาต้องยื่นเอกสารตามลำดับ
+1- 4 ด้วยตนเองเพื่อขอคำแนะนำในการเลือกสถานประกอบการ</span></u></b><span
+style='font-size:13.0pt;font-family:"Arial","sans-serif";mso-bidi-font-family:
+Tahoma'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><u><span style='font-size:11.0pt;mso-bidi-font-family:
+Tahoma'>Students must submit No.1-4 documents on requesting for recommendation
+themselves<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1223" type="#_x0000_t202"
+ style='position:absolute;margin-left:-18.2pt;margin-top:547.75pt;width:468pt;
+ height:30.2pt;z-index:251661824' wrapcoords="0 0 21600 0 21600 21600 0 21600 0 0"
+ filled="f" stroked="f">
+ <v:textbox style='mso-next-textbox:#_x0000_s1223'/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:251661824;left:-24px;top:730px;width:628px;height:775px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=628 height=45 style='vertical-align:top'><![endif]><![if !mso]><span
+  style='position:absolute;mso-ignore:vglayout;z-index:251661824'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1223" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal><b><span lang=TH style='font-size:10.0pt;font-family:
+    "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+    "Times New Roman"'>ส่วนจัดหางานและฝึกงานของนักศึกษา มหาวิทยาลัยแม่ฟ้าหลวง<o:p></o:p></span></b></p>
+    <p class=MsoNormal><b><span style='font-size:8.0pt;mso-bidi-font-family:
+    EucrosiaUPC'>Division of Placement and Co-Operative Education, <st1:place
+    w:st="on"><st1:PlaceName w:st="on">Mae</st1:PlaceName><span
+     style='mso-spacerun:yes'>&nbsp; </span><st1:PlaceName w:st="on">Fah</st1:PlaceName><span
+     style='mso-spacerun:yes'>&nbsp; </span><st1:PlaceName w:st="on">Luang</st1:PlaceName>
+     <st1:PlaceType w:st="on">University</st1:PlaceType></st1:place> </span></b><b><span
+    style='font-size:8.0pt'><o:p></o:p></span></b></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><b><u><span style='font-size:2.0pt;mso-bidi-font-family:Tahoma'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<br style='mso-ignore:vglayout' clear=ALL>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=736
+ style='width:552.15pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=108 style='width:81.15pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ลำดับที่</span></b><b><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  / No.<o:p></o:p></span></b></p>
+  </td>
+  <td width=457 style='width:342.45pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ความเห็น
+  / </span></b><b><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>Recommendations<o:p></o:p></span></b></p>
+  </td>
+  <td width=171 style='width:128.55pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ลงนาม</span></b><b><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  /</span></b><b><span style='font-size:8.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  Signature</span></b><span lang=TH style='font-size:8.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=108 valign=top style='width:81.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>1</span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>.</span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>ผู้ปกครอง/</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";color:white'>1</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:white'>.</span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>Parents<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>ยินยอมและรับทราบ</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>/Accept<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>ไม่ยินยอม</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  / Unaccept </span><span lang=TH style='font-size:5.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>เนื่องจาก/</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>Due
+  to________________________________________</span><span lang=TH
+  style='font-size:5.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:white'>or Co-oeratition <o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:line
+   id="_x0000_s1169" style='position:absolute;left:0;text-align:left;flip:y;
+   z-index:251653632' from="21.55pt,8.25pt" to="106.3pt,8.45pt"/><![endif]--><![if !vml]><span
+  style='mso-ignore:vglayout;position:absolute;z-index:251653632;left:0px;
+  margin-left:28px;margin-top:10px;width:115px;height:2px'><img width=115
+  height=2 src="http://internship.mfu.ac.th/genwordformdox/image007.gif"
+  v:shapes="_x0000_s1169"></span><![endif]><b><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;color:white'>Advisor
+  Only<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span>(</span></b><b><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>)</span></b><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC;color:white'><span
+  style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>วันที่
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Date ____ /____ /____<span style='color:white'> </span><span
+  style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=108 valign=top style='width:81.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>2</span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>.</span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>อาจารย์ที่ปรึกษา/</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";color:white'>2</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:white'>.</span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'>General Advisor<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><u><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>โปรดตรวจสอบข้อมูลก่อนลงนามยินยอม</span></u><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  /<o:p></o:p></span></u></p>
+  <p class=MsoNormal align=center style='text-align:center'><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>Please
+  check </span></u><u><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>qualification </span></u><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></u></p>
+  <p class=MsoNormal align=center style='text-align:center'><u><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>of
+  the interns</span></u><u><span lang=TH style='font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;mso-bidi-font-family:EucrosiaUPC'> </span></u><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></u></p>
+  </td>
+  <td width=457 valign=top style='width:342.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><b><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>โปรดระบุเครื่องหมาย
+  </span></b><b><span style='font-size:10.0pt;font-family:Wingdings;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+  EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uuml;</span></span></b><b><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> หรือ </span></b><b><span lang=TH
+  style='font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>&times;</span></b><b><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> / Please check </span></b><b><span style='font-size:10.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uuml;</span></span></b><b><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  or </span></b><b><span lang=TH style='font-size:10.0pt;mso-bidi-font-family:
+  "Times New Roman"'>&times;</span></b><b><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>เกรดเฉลี่ยสะสม
+  </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:"Times New Roman"'>≥</span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  2.00 / GPAX </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;mso-bidi-font-family:"Times New Roman"'>≥</span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  2.00</span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>นักศึกษาไม่เคยอยู่ระหว่างต้องโทษทางวินัย
+  / Students have not been punished</span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>นักศึกษาไม่อยู่ระหว่างพักการศึกษาในภาคการศึกษาที่จะฝึกปฏิบัติงาน
+  / Students have not been <span style='mso-spacerun:yes'>&nbsp;&nbsp;</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>in a study
+  suspension period in the semester which the intrenship intended.</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>สำหรับรายวิชาสหกิจศึกษา
+  / For Co-operative Education Course</span></b><b><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>จำนวนหน่วยกิตสะสม
+  </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:"Times New Roman"'>≥</span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  90 หน่วยกิต ไม่นับรวมรายวิชาที่ได้รับผลการศึกษา
+  F/<br>
+  <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+  style='mso-spacerun:yes'>&nbsp;</span>Accumalate </span><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>≥</span><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> 90 credits </span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>นักศึกษาลงทะเบียนเป็นรายวิชาสุดท้ายตามแผนการศึกษา
+  / <br>
+  <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Students may
+  register for the last couse requirement to be fulfilled in the curiculum.</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>สำหรับรายวิชาฝึกประสบการณ์วิชาชีพ
+  / For Professional Experience Course</span></b><b><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>จำนวนหน่วยกิตสะสม
+  </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:"Times New Roman"'>≥</span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  75<span style='mso-spacerun:yes'>&nbsp; </span><span style='mso-bookmark:OLE_LINK22'>หน่วยกิต ไม่นับรวมรายวิชาที่ได้รับผลการศึกษา
+  F/<br>
+  <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+  style='mso-spacerun:yes'>&nbsp;</span>Accumalate </span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  "Times New Roman"'>≥</span><span lang=TH style='mso-ansi-font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> 75 credits</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'><span style='mso-spacerun:yes'>&nbsp;
+  </span>ยินยอมและรับทราบ</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>/
+  Accept</span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span></span><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>ไม่ยินยอม</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  / Unaccept </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>เนื่องจาก/</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>Due
+  to____________</span><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><br
+  style='mso-special-character:line-break'>
+  <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+  <![endif]></span><b><u><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></u></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>_________________________<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+   style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>_________________________<b><u><o:p></o:p></u></b></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+   style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+   style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+   style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:line
+   id="_x0000_s1219" style='position:absolute;left:0;text-align:left;flip:y;
+   z-index:251659776' from="16.35pt,12.7pt" to="101.1pt,12.9pt"/><![endif]--><![if !vml]><span
+  style='mso-ignore:vglayout;position:absolute;z-index:251659776;left:0px;
+  margin-left:21px;margin-top:16px;width:115px;height:2px'><img width=115
+  height=2 src="http://internship.mfu.ac.th/genwordformdox/image008.gif"
+  v:shapes="_x0000_s1219"></span><![endif]><b><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;color:white'>or
+  Co-operatition Advisor Only<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span>(</span></b><b><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>)</span></b><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC;color:white'><span
+  style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC;color:white'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>วันที่
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Date ____ /____ /____<span style='color:white'> </span><span
+  style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:72.45pt'>
+  <td width=108 valign=top style='width:81.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:72.45pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>3</span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>.</span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>อาจารย์ที่ปรึกษา</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";color:white'>3</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:white'>.</span><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>การฝึกปฏิบัติงาน/</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";color:white'>3</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:white'>.</span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC;color:black'>Internship </span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";color:white'>3</span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;color:white'>.</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:black'>Advisor</span><span style='font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;mso-bidi-font-family:EucrosiaUPC;color:white'><o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:72.45pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;
+  </span>ยินยอมและรับทราบ</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>/
+  Accept<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:3.0pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'><span style='mso-spacerun:yes'>&nbsp;
+  </span>ไม่ยินยอม</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  / Unaccept</span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'> เนื่องจาก/</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>Due
+  to______________________________________</span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+  margin-left:7.65pt'><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span>ข้อคิดเห็นเพิ่มเติม/</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>Recommendations______________________________________<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:7.65pt'><span lang=TH style='mso-ansi-font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>___________________________________________________________________<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:72.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:line
+   id="_x0000_s1222" style='position:absolute;left:0;text-align:left;flip:y;
+   z-index:251660800' from="16.35pt,12.7pt" to="101.1pt,12.9pt"/><![endif]--><![if !vml]><span
+  style='mso-ignore:vglayout;position:absolute;z-index:251660800;left:0px;
+  margin-left:21px;margin-top:16px;width:115px;height:2px'><img width=115
+  height=2 src="http://internship.mfu.ac.th/genwordformdox/image008.gif"
+  v:shapes="_x0000_s1222"></span><![endif]><b><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;color:white'>or
+  Co-operatition Advisor Only<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span>(</span></b><b><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>)</span></b><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:white'><span style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC;color:white'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>วันที่
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Date ____ /____ /____<span style='color:white'> </span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td width=108 valign=top style='width:81.15pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>4.เจ้าหน้าที่</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span>ส่วนจัดหางาน/</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span></span><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>Official<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+  Symbol'>·</span></span><span style='font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;mso-bidi-font-family:EucrosiaUPC'> </span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>ที่พักของนักศึกษาระหว่างปฏิบัติงาน
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Accommodation during internship period</span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal style='tab-stops:7.65pt 163.3pt'><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp; </span><span style='mso-tab-count:1'> </span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>
+  บริษัทมีที่พักให้ 
+  </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>/ Company's residence</span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-tab-count:1'>&nbsp; </span></span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>
+  พักบ้านตัวเอง
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Home<o:p></o:p></span></p>
+  <p class=MsoNormal style='tab-stops:7.65pt 163.3pt'><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;</span><span style='mso-spacerun:yes'>&nbsp;
+  </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>
+  บ้านเพื่อน / </span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>Friend's
+  residence</span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-tab-count:1'>&nbsp;&nbsp; </span></span><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+  EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> เช่าหอพักอยู่เอง
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Dormitory <o:p></o:p></span></p>
+  <p class=MsoNormal style='tab-stops:163.3pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>·</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>การเดินทางระหว่างที่พักไปสถานประกอบการได้โดยสะดวก</span><b><span
+  lang=TH style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'> </span></b><span style='font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;mso-bidi-font-family:EucrosiaUPC'>/ Transportation during internship<o:p></o:p></span></p>
+  <p class=MsoNormal style='tab-stops:7.65pt 163.3pt'><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>รถยนต์ส่วนตัว
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Private car</span><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> </span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span><span lang=TH style='mso-ansi-font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>รถรับ-ส่งของสถานประกอบการ
+  </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>/ </span><span style='font-size:8.0pt;mso-bidi-font-family:EucrosiaUPC'>Company's
+  transportation<o:p></o:p></span></p>
+  <p class=MsoNormal style='tab-stops:7.65pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-tab-count:1'>&nbsp;&nbsp; </span></span><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+  EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>ขนส่งมวลชน
+  </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>/ Public transportation<span style='mso-spacerun:yes'>&nbsp;
+  </span></span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>จักรยานยนต์
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Motorcycle <span style='mso-spacerun:yes'>&nbsp;&nbsp;</span><o:p></o:p></span></p>
+  <p class=MsoNormal style='tab-stops:7.65pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> อื่นๆ</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  / Others_______________________________________________________<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+  Symbol'>·</span></span><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  การทำงานตามช่วงเวลาที่สถานประกอบการกำหนด
+  (ทำงานเป็นกะ)
+  / </span><span style='font-size:8.0pt;mso-bidi-font-family:EucrosiaUPC'>Working
+  time</span><span lang=TH style='font-size:8.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  (</span><span style='font-size:8.0pt;mso-bidi-font-family:EucrosiaUPC'>Shift
+  system)</span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'> </span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC;color:white'><span style='mso-tab-count:
+  1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";color:white'><span style='mso-spacerun:yes'>&nbsp;&nbsp;
+  </span></span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>
+  ได้ / </span><span style='font-size:9.0pt;mso-bidi-font-size:
+  12.0pt;mso-bidi-font-family:EucrosiaUPC'>Yes</span><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> ไม่ได้ / </span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:black'>No</span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><span style='mso-spacerun:yes'>&nbsp;
+  </span></span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Wingdings'>&uml;</span></span><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'> </span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>ทำงานเป็นเวลาที่แน่นอน
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Full time<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+  Symbol'>·</span></span><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'> ปัญหาค่าใช้จ่าย</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  / Expense problem<span style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:4.0pt;tab-stops:9.0pt'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span></span><span
+
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> มี / </span><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>Yes</span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> <span style='mso-spacerun:yes'>&nbsp;&nbsp;</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:
+  Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> ไม่มี</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp; </span></span><span lang=TH style='mso-ansi-font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>/ </span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:black'>No</span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;</span></span><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+  EucrosiaUPC;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>&uml;</span></span><span
+  lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:
+  "EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'> อื่นๆ</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp; </span>/ Others________________________________<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt'><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:EucrosiaUPC;
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>·</span></span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>
+  </span><span lang=TH style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"EucrosiaUPC","serif";mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>รายละเอียดอื่นๆ</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'>/
+  Other informations _______________________________________<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+  mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><u><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><o:p><span
+   style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:line
+   id="_x0000_s1224" style='position:absolute;left:0;text-align:left;flip:y;
+   z-index:251662848' from="16.35pt,12.7pt" to="101.1pt,12.9pt"/><![endif]--><![if !vml]><span
+  style='mso-ignore:vglayout;position:absolute;z-index:251662848;left:0px;
+  margin-left:21px;margin-top:16px;width:115px;height:2px'><img width=115
+  height=2 src="http://internship.mfu.ac.th/genwordformdox/image008.gif"
+  v:shapes="_x0000_s1224"></span><![endif]><b><span style='font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;color:white'>or
+  Co-operatition Advisor Only<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b><span lang=TH style='mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>(</span></b><b><span style='font-size:
+  9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>)</span></b><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:white'><span style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:EucrosiaUPC;
+  color:white'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=TH
+  style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"EucrosiaUPC","serif";
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>วันที่
+  / </span><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  EucrosiaUPC'>Date ____ /____ /____<span style='color:white'> </span><span
+  style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

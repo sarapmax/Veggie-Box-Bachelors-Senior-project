@@ -59,7 +59,12 @@ Route::group(['middleware' => 'admin'], function () {
 
 	Route::get('admin/notification', 'AdminNotificationController@index');
 
+	Route::resource('admin/admininformation'  , 'AdminInformationController');
+	Route::resource('admin/coinpackage' , 'CoinPackageController');
+
 });
+
+
 
 
 //================ FARMER ===============//
@@ -95,7 +100,10 @@ Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
 
 	Route::post('farmer/admin_product/cancelAdminProduct', 'FarmerAdminProduct@cancelAdminProduct');
 
+
 	Route::get('farmer/notification', 'FarmerNotificationController@index');
+
+	Route::resource('farmer/certification' , 'FarmerCertificationController');
 });
 
 //================ CUSTOMER ===============//
@@ -123,3 +131,5 @@ Route::post('/update_cart/{rowId}', [
 	'uses' => 'CustomerCartController@updateCart',
 	'as' => 'cart.update'
 ]);
+
+
