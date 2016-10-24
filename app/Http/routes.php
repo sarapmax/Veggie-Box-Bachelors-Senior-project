@@ -60,6 +60,8 @@ Route::group(['middleware' => 'admin'], function () {
 });
 
 
+
+
 //================ FARMER ===============//
 
 Route::get('farmer/register', 'FarmerController@getRegister');
@@ -93,3 +95,10 @@ Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
 
 	Route::post('farmer/admin_product/cancelAdminProduct', 'FarmerAdminProduct@cancelAdminProduct');
 });
+
+
+
+// เพิ่มขึ้นมาใหม่ๆ
+Route::resource('farmer/certification' , 'FarmerCertificationController');
+Route::resource('admin/admininformation'  , 'AdminInformationController');
+Route::resource('admin/coinpackage' , 'CoinPackageController');

@@ -43,6 +43,9 @@
                     <a href="{{ url('farmer/order') }}"><i class="fa fa-list"></i> <span class="nav-label">Order</span> </a>
                 </li>
                 <li>
+                    <a href="{{ url('farmer/certification') }}"><i class="fa fa-list"></i> <span class="nav-label">Certification</span> </a>
+                </li>
+                <li>
                     <a href="{{ url('farmer/configuration') }}"><i class="fa fa-gear"></i> <span class="nav-label">Configuration</span> </a>
                 </li>
             </ul>

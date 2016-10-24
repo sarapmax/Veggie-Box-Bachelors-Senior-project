@@ -36,7 +36,7 @@
                     <a href="{{ url('admin/feed') }}"><i class="fa fa-newspaper-o"></i><span class="nav-label"> ข่าวสาร</span></a>
                 </li>
                 <li>
-                    <a href="{{ url('admin/coins') }}"><i class="fa fa-money"></i><span class="nav-label"> เหรียญ​ VeggieBox</span></a>
+                    <a href="{{ url('admin/coinpackage') }}"><i class="fa fa-money"></i><span class="nav-label"> เหรียญ​ VeggieBox</span></a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-truck"></i><span class="nav-label"> การสั่งซื้อสินค้า</span><span class="fa arrow"></span></a>
@@ -53,6 +53,9 @@
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'farmer' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/farmer') }}"><i class="fa fa-user"></i> <span class="nav-label"> Farmer</span></a>
+                </li>
+                <li>
+                    <a href="{{ url('admin/admininformation') }}"><i class="fa fa-user"></i> <span class="nav-label"> ข้อมูลแอดมิน</span></a>
                 </li>
             </ul>
         </div>
