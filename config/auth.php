@@ -56,7 +56,7 @@ return [
         'customer' => [
             'driver' => 'session',
             'provider' => 'customer',
-        ]
+        ],
     ],
 
     /*

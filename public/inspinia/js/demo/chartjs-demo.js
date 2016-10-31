@@ -76,8 +76,16 @@ $(function () {
         barShowStroke: true,
         barStrokeWidth: 2,
         barValueSpacing: 5,
-        barDatasetSpacing: 1,
+        barDatasetSpacing: 2,
         responsive: true,
+        scales: {
+            yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: 'probability'
+              }
+            }]
+        }
     }
 
 

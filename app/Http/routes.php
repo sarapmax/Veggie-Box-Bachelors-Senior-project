@@ -27,9 +27,11 @@ Route::post('admin/login', 'AdminController@postLogin');
 
 Route::group(['middleware' => 'admin'], function () {
 
-	Route::get('admin', function () {
-	    return view('layouts.inspinia_admin');
-	});
+	Route::get('admin', 'AdminHomeController@index');
+
+	Route::get('admin/analyze', 'AdminAnalyzeController@index');
+
+	Route::get('admin/analyze/get_top_product_seller/{start_date}/{end_date}', 'AdminAnalyzeController@getTopProductSeller');
 
 	Route::resource('admin/category', 'AdminCategoryController');
 
@@ -117,19 +119,49 @@ Route::get('products', 'CustomerProductController@getProductsPage');
 
 Route::get('cart', 'CustomerCartController@index');
 
-Route::get('/cart/{id}', [
+Route::get('cart/{id}', [
 	'uses' => 'CustomerCartController@addCart',
 	'as' => 'cart'
 ]);
 
-Route::get('/remove_cart/{rowId}', [
+Route::get('remove_cart/{rowId}', [
 	'uses' => 'CustomerCartController@removeCart',
 	'as' => 'cart.remove'
 ]);
 
-Route::post('/update_cart/{rowId}', [
+Route::post('update_cart/{rowId}', [
 	'uses' => 'CustomerCartController@updateCart',
 	'as' => 'cart.update'
 ]);
+
+Route::get('product/{slug}', 'CustomerProductController@getProduct');
+
+Route::get('login', 'CustomerController@getLogin');
+
+Route::get('register', 'CustomerController@getRegister');
+
+Route::post('register', 'CustomerController@postRegister');
+
+Route::post('login', 'CustomerController@postLogin');
+
+//AUTH
+Route::group(['middleware' => ['member']], function () {
+	Route::get('logout', 'CustomerController@getLogout');
+
+	Route::get('member/my_account', 'CustomerController@getAccount');
+
+	Route::get('member/orders', 'CustomerController@getOrders');
+
+	Route::get('member/order_coin', 'CustomerController@getOrderCoin');
+
+	Route::get('checkout', 'CustomerOrderController@getCheckout');
+
+	Route::post('order', 'CustomerOrderController@placeOrder');
+
+	Route::get('order_success/{order_number}', [
+		'as' => 'order_success',
+		'uses' => 'CustomerOrderController@getOrderSuccess'
+	]);
+});
 
 

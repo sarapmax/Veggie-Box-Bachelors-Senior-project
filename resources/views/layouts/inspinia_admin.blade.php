@@ -19,6 +19,9 @@
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == '' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/') }}"><i class="fa fa-desktop"></i> <span class="nav-label"> หน้าแรก</span></a>
                 </li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'analyze' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/analyze') }}"><i class="fa fa-signal"></i> <span class="nav-label"> วิเคราะห์การขาย</span></a>
+                </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'category' || Request::segment(2) == 'sub_category' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/category') }}"><i class="fa fa-list"></i> <span class="nav-label"> ประเภทสินค้า</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">

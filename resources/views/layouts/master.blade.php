@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="{{asset('vegicon/style.css')}}">
     <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.css')}}">
 
+    <link href="{{ asset('bower_components/slick-carousel/slick/slick.css') }} " rel="stylesheet">
+    <link href="{{ asset('bower_components/slick-carousel/slick/slick-theme.css') }} " rel="stylesheet">
+
+
 </head>
 
 <body class="top-navigation">
@@ -28,11 +32,24 @@
                 <div style="padding:7px;" class="container">
                     <div class="col-md-12">
                         <div class="pull-left">
-                            ยินดีต้อนรับสู่ <strong>Veggiebox</strong>, <a href="#">เข้าสู่ระบบ</a> หรือ <a href="#">สมัครสมาชิก</a>
+                            ยินดีต้อนรับสู่ <strong>Veggiebox</strong>, 
+                            @if(Auth::guard('customer')->check())
+                                <a href="{{ url('member/my_account') }}">{{ Auth::guard('customer')->user()->firstname }} {{ Auth::guard('customer')->user()->lastname }}</a>
+                            @else
+                            <a href="{{ url('login') }}">เข้าสู่ระบบ</a> หรือ <a href="{{ url('register') }}">สมัครสมาชิก</a>
+                            @endif
                         </div>
                         <div class="pull-right">
-                            <a href="">เช็คเอาท์</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="{{ url('cart') }}">ตระกร้าสินค้า</a>
+                            <ul class="member-nav">
+                                <li><a href="{{ url('cart') }}">ตระกร้าสินค้า</a></li>
+                                <li><a href="{{ url('checkout') }}">เช็คเอาท์</a></li>
+                                @if(Auth::guard('customer')->check())
+                                <li><a href="{{ url('member/orders') }}">รายการสั่งซื้อ</a></li>
+                                <li><a href="{{ url('member/order_coin') }}">การสั่งซื้อ VeggieCoin</a></li>
+
+                                <li class="logout"><a href="{{ url('logout') }}"><i class="fa fa-sign-out"> </i> ออกจากระบบ</a></li>
+                                @endif
+                            </ul>
                         </div>
                         <div class="clearfix"></div>
                     </div> 
@@ -60,7 +77,7 @@
                     หน้าแรก
                 </a>
             </li>
-            <li {{ Request::segment(1) == 'products' ? 'class=active' : '' }}>
+            <li {{ Request::segment(1) == 'products' || Request::segment(1) == 'product' ? 'class=active' : '' }}>
                 <a href="{{url('products')}}">
                     สินค้า
                 </a>
@@ -117,7 +134,7 @@
                         <li>
                             <div class="row">
                                 <center>
-                                <a class="text-center" href=""><h4><i class="fa fa-shopping-basket"> </i> ตระกร้าสินค้า</h4></a>
+                                <a class="text-center" href="{{ url('cart') }}"><h4><i class="fa fa-shopping-basket"> </i> ตระกร้าสินค้า</h4></a>
                                 </center>
                             </div>
                         </li>
@@ -260,9 +277,20 @@
      <script src="{{ asset('inspinia/js/demo/peity-demo.js') }}"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 
+     <!-- slick carousel-->
+    <script src="{{  asset('bower_components/slick-carousel/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('script.js') }}"></script>
+
+    @yield('customer-js')
 
     <script>
         $('.box').matchHeight();
+
+        $('.product-images').slick({
+            dots: true,
+            autoplay:true,
+            autoplaySpeed: 2000,
+        });
     </script>
 
 </body>

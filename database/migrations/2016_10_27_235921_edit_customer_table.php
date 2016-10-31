@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class EditFarmerCertificationTable extends Migration
+class EditCustomerTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,8 @@ class EditFarmerCertificationTable extends Migration
      */
     public function up()
     {
-        //
-        Schema::table('farmer_certifications' , function (Blueprint $table){
-          $table->timestamps();
+        Schema::table('customers', function(Blueprint $table) {
+            $table->string('latLng');
         });
     }
 

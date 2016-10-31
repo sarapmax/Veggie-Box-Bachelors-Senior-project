@@ -52,5 +52,6 @@ class Kernel extends HttpKernel
         'farmer' => \App\Http\Middleware\RedirectIfNotFarmer::class,
         'farmer_not_activated' => \App\Http\Middleware\RedirectIfFarmerNotActivated::class,
         'admin' => \App\Http\Middleware\RedirectIfNotAdmin::class,
+        'member' => \App\Http\Middleware\RedirectIfNotMember::class,
     ];
 }

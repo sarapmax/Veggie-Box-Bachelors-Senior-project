@@ -27,6 +27,7 @@ class CreateCustomersTable extends Migration
             $table->string('zipcode');
             $table->enum('activated', [1, 0])->default(0);
             $table->string('token')->nullable();
+            $table->rememberToken();
             $table->timestamps();
         });
     }

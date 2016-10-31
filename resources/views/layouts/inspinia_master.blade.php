@@ -93,6 +93,10 @@
 <script src="{{ asset('app/app.js') }}"></script>
 <script src="{{ asset('app/controller.js') }}"></script>
 
+<!-- ChartJS-->
+<script src="{{ asset('bower_components/chart.js/dist/Chart.min.js') }}"></script>
+<script src="{{ asset('bower_components/chart.js/dist/Chart.bundle.min.js') }}"></script>
+
 
 <!-- Include this after the sweet alert js file -->
 @include('sweet::alert')

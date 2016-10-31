@@ -124,8 +124,9 @@ a:hover {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #1B242C;
+  /*border-bottom: 1px solid #1ab394;*/
+  color: #1ab394 !important;
+  background-color: #2f4050;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -259,5 +260,28 @@ table.table-cart {
 
 .table-cart thead {
   border: 1px solid #E9ECEC;
+}
+
+.member-link {
+  list-style: none;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.member-link li {
+  padding: 15px;
+}
+
+.member-nav {
+  list-style: none;
+}
+
+.member-nav li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.member-nav li.logout a {
+  color: #2f4050;
 }
 

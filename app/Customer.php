@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Customer extends Model
+class Customer extends Authenticatable
 {
     //
     protected $fillable = [
@@ -22,7 +22,12 @@ class Customer extends Model
                             'zipcode' ,
                             'activate' ,
                             'token' ,
+                            'latLng',
                           ];
+
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 
 
 }

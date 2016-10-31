@@ -33,16 +33,19 @@
                             </a>
                             </h3>
                             <div class="m-t-sm">
-                                <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                <a href="{{ route('cart.remove', $cart->rowId) }}" class="text-muted"><i class="fa fa-trash"></i> ลบสินค้าออกจากตระกร้า</a>
                             </div>
                         </td>
 
-                        <td width="65">
+                        <td>
                             <div class="input-group">
-                            <input style="width: 50px;" value="{{ $cart->qty }}" type="text" name="quantity" class="form-control">
-                            <span class="input-group-btn">
+                            <form method="POST" action="{{ route('cart.update', $cart->rowId) }}">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <input style="width: 50px;" value="{{ $cart->qty }}" type="text" name="qty" class="form-control">
+                            {{-- <span class="input-group-btn"> --}}
                                 <button type="submit" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
-                            </span>
+                            </form>
+                            {{-- </span> --}}
                             </div><br/>
                             <small>(*หน่วยเป็น {{ $cart->options->size }})</small>
                         </td>
@@ -62,10 +65,10 @@
 
         </div>
         <div class="pull-left">
-            <button class="btn btn-white"><i class="fa fa-arrow-left"></i> เลือกซื้อสินค้าต่อ</button>
+            <a href="{{ url('products') }}" class="btn btn-white"><i class="fa fa-arrow-left"></i> เลือกซื้อสินค้าต่อ</a>
         </div>
         <div class="pull-right">
-        <button class="btn btn-primary btn-outline pull-right"><i class="fa fa fa-shopping-cart"></i> เช็คเอาท์</button>
+        <a href="{{ url('checkout') }}" class="btn btn-primary btn-outline pull-right"><i class="fa fa fa-shopping-cart"></i> เช็คเอาท์</a>
         </div>
     </div>
 </div>
@@ -84,7 +87,7 @@
             *ราคานี้รวมภาษีมูลค่าเพิ่มแล้ว
         </span>
         <div class="m-t-sm">
-            <a href="#" class="btn btn-primary btn-sm btn-outline"><i class="fa fa-shopping-cart"></i> เช็คเอาท์</a>
+            <a href="{{ url('checkout') }}" class="btn btn-primary btn-sm btn-outline"><i class="fa fa-shopping-cart"></i> เช็คเอาท์</a>
         </div>
     </div>
 

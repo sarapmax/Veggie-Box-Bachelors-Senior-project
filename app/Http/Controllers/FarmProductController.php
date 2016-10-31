@@ -258,7 +258,7 @@ class FarmProductController extends Controller
                 $farm_product->thumb_image = $input['thumb_name'];
         }
 
-        $farm_product->farmer_id = 1;
+        $farm_product->farmer_id = auth()->guard('farmer')->user()->id;
         $farm_product->sub_category_id = $request->input('sub_category_id');
         $farm_product->name = $request->input('name');
         $farm_product->status = $request->input('status');
