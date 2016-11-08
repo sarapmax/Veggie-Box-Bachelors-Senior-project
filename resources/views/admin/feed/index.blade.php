@@ -1,28 +1,28 @@
 @extends('layouts.inspinia_admin')
 
 @section('content')
-
 <div class="row wrapper border-bottom white-bg page-heading">
 	<div class="col-sm-4">
-		<h2>ข้อมูลแพคเกจเหรียญ</h2><br>
+		<h2>ข่าวสาร</h2><br>
 		<ol class="breadcrumb">
 			<li>
 				<a href="{{ url('admin/') }}">หน้าแรก</a>
 			</li>
 			<li class="active">
-				<strong>ข้อมูลแพคเกจเหรียญ</strong>
+				<strong>ข้อมูลข่าวสาร</strong>
 			</li>
 		</ol>
 	</div>
 </div>
+
 <div class="row">
 	<div class="col-lg-12">
 		<div class="wrapper wrapper-content animated fadeInUp">
 			<div class="ibox">
 				<div class="ibox-title">
-					<h5>ข้อมูลแอดมิน</h5>
+					<h5>ข้อมูลข่าวสาร</h5>
 					<div class="ibox-tools">
-						<a href="{{ route('admin.coinpackage.create') }}" class="btn btn-primary"><i class="fa fa-plus"> </i> เพิ่มแพคเกจเหรียญ</a>
+						<a href="{{ route('admin.feed.create') }}" class="btn btn-primary"><i class="fa fa-plus"> </i> เพิ่มข่าวสาร</a>
 					</div>
 				</div>
 				{{-- @if(Session::has('alert-success')) --}}
@@ -33,27 +33,23 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>ชื่อแพคเกจ</th>
-								<th>จำนวนเหรียญ</th>
-								<th>ราคา</th>
-								<th>ราคาเพิ่มเป็นเปอร์เซน</th>
-                <th>เพิ่มเมื่อ</th>
+								<th>หัวข้อข่าว</th>
+								<th style="width:600px;">เนื้อหาข่าว</th>
+								<th>เพิ่มเมื่อ</th>
 								<th></th>
 							</tr>
 						</thead>
 						<tbody>
-							@foreach ($coins as $coin)
+							@foreach ($feeds as $feed)
 							<tr>
-									<td>{{ $coin->id }}</td>
-									<td>{{ $coin->name }}</td>
-									<td>{{ $coin->coin_amount }}</td>
-									<td>{{ $coin->price }}</td>
-									<td>{{ $coin->increase_percent }}%</td>
-                  <td>{{ $coin->created_at }}</td>
+                  <td>{{ $feed->id }}</td>
+                  <td>{{ $feed->topic }}</td>
+                  <td>{!! $feed->detail !!}</td>
+                  <td>{{ $feed->created_at }}</td>
 									<td align="center">
-										<a href="{{ route('admin.coinpackage.edit', $coin->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a>
+										<a href="{{ route('admin.feed.edit', $feed->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a>
 										<span style="color:#D9D0D9"> | </span>
-										<form action="{{ route('admin.coinpackage.destroy', $coin->id) }}" method="POST" style="display:inline" onsubmit="return confirm('Are you sure to delete ?')">
+										<form action="{{ route('admin.feed.destroy', $feed->id) }}" method="POST" style="display:inline" onsubmit="return confirm('Are you sure to delete ?')">
 											<input type="hidden" name="_method" value="DELETE">
 											<input type="hidden" name="_token" value="{{ csrf_token() }}">
 											<button type="submit" class="btn btn-xs btn-danger"><i class="fa fa-trash"> </i></button>
@@ -85,4 +81,5 @@
         }
 	});
 </script>
+
 @endsection

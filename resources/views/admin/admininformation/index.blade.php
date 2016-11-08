@@ -34,7 +34,7 @@
 							<tr>
 								<th>#</th>
 								<th>หัวข้อ</th>
-								<th>เนื้อหา</th>
+								<th style="width:600px;">เนื้อหา</th>
 								<th>วันที่เพิ่ม</th>
 								<th></th>
 							</tr>
@@ -44,7 +44,7 @@
 							<tr>
 									<td>{{ $information->id }}</td>
 									<td>{{ $information->topic }}</td>
-									<td>{{ $information->text }}</td>
+									<td>{!! $information->text !!}</td>
 									<td>{{ $information->created_at }}</td>
 									<td align="center">
 										<a href="{{ route('admin.admininformation.edit', $information->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a>

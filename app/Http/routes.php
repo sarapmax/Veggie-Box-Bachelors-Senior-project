@@ -72,6 +72,8 @@ Route::group(['middleware' => 'admin'], function () {
 
 	Route::get('admin/order/sendToFarm/{order_id}', 'AdminOrderController@sendToFarm');
 
+	Route::resource('admin/feed' , 'FeedController');
+
 });
 
 

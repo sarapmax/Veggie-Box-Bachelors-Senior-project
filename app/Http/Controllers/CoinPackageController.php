@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
-
-use App\CoinPackage;
+use App\CoinPackage ;
+use Alert;
 
 class CoinPackageController extends Controller
 {
@@ -43,17 +42,18 @@ class CoinPackageController extends Controller
     public function store(Request $request)
     {
         //
-        $this->validate($request , [
-          'name' => 'required|min:4|unique:CoinPackage' ,
-          'coin_amount' => 'required|min:4|unique:CoinPackage',
-          'price' => 'required|min:4|unique:CoinPackage',
-          'slug' => 'required',
 
+        $this->validate($request , [
+          'name' => 'required|unique:coin_packages' ,
+          'coin_amount' => 'required|unique:coin_packages',
+          'increase_percent' => 'required|unique:coin_packages',
+          'price' => 'required|unique:coin_packages'
         ]);
 
         $coin = new CoinPackage ;
 
         $coin->name = $request->input('name');
+        $coin->increase_percent = $request->input('increase_percent');
         $coin->coin_amount = $request->input('coin_amount');
         $coin->price = $request->input('price');
 
@@ -99,16 +99,17 @@ class CoinPackageController extends Controller
     {
         //
         $this->validate($request , [
-          'name' => 'required|min:4|unique:CoinPackage' ,
-          'coin_amount' => 'required|min:4|unique:CoinPackage',
-          'price' => 'required|min:4|unique:CoinPackage',
-          'slug' => 'required',
+          'name' => 'required' ,
+          'coin_amount' => 'required',
+          'increase_percent' => 'required',
+          'price' => 'required',
 
         ]);
 
         $coin =  CoinPackage::find($id) ;
 
         $coin->name = $request->input('name');
+        $coin->increase_percent = $request->input('increase_percent');
         $coin->coin_amount = $request->input('coin_amount');
         $coin->price = $request->input('price');
 

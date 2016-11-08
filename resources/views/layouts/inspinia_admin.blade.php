@@ -35,16 +35,16 @@
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'product' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/product') }}"><i class="fa fa-cubes"></i><span class="nav-label"> สินค้า</span></a>
                 </li>
-                <li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'feed' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/feed') }}"><i class="fa fa-newspaper-o"></i><span class="nav-label"> ข่าวสาร</span></a>
                 </li>
-                <li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'coinpackage' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/coinpackage') }}"><i class="fa fa-money"></i><span class="nav-label"> เหรียญ​ VeggieBox</span></a>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'order' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/order') }}"><i class="fa fa-truck"></i><span class="nav-label"> การสั่งซื้อสินค้า</span></a>
                 </li>
-                <li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'inbox' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/inbox') }}"><i class="fa fa-inbox"></i><span class="nav-label"> ข้อความ</span></a>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'notification' ? 'class=active' : '' }}>
@@ -56,8 +56,8 @@
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'farmer' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/farmer') }}"><i class="fa fa-user"></i> <span class="nav-label"> ผู้ประกอบการ</span></a>
                 </li>
-                <li>
-                    <a href="{{ url('admin/admininformation') }}"><i class="fa fa-user"></i> <span class="nav-label"> ข้อมูลแอดมิน</span></a>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'admininformation' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/admininformation') }}"><i class="fa fa-user"></i> <span class="nav-label"> ข้อมูลอื่นๆ</span></a>
                 </li>
             </ul>
         </div>

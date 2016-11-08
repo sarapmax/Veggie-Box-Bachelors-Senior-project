@@ -39,16 +39,18 @@
                                 @if($errors->has('name'))
                                     <span class="help-block">{{ $errors->first('name') }}</span>
                                 @endif
-															<label class="col-lg-2 control-label">ไฟล์ใบรับรอง</label>
-                              <input type="file" name="certification_file" class="form-control">
-																@if($errors->has('certification_file'))
-																		<span class="help-block">{{ $errors->first('certification_file') }} </span>
-																@endif
-                            </div>
-                            <div class="col-md-2">
-                                 <button class="btn btn-primary" type="submit"><i class="fa fa-check"> </i> Submit</button>
                             </div>
                         </div>
+
+						<div class="form-group {{ $error->has('certification_file') ? 'has-error' : '' }}" >
+							<label class="col-lg-2 control-label">ไฟล์ใบรับร้อง</label>
+                            <div class="col-lg-6">
+                                <input type="file" name="certification_file" class="form-control">
+                                @if($errors->has('certification_file'))
+                                    <span class="help-block">{{ $errors->first('certification_file') }}</span>
+                                @endif
+                            </div>
+						</div>
                     </form>
                 </div>
             </div>
