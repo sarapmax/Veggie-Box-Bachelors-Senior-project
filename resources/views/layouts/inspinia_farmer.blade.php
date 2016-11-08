@@ -34,19 +34,13 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="{{ url('farmer/inbox') }}"><i class="fa fa-inbox"></i> <span class="nav-label">Inbox</span> </a>
+                    <a href="{{ url('farmer/inbox') }}"><i class="fa fa-inbox"></i> <span class="nav-label">ข้อความ</span> </a>
                 </li>
-                <li>
-                    <a href="{{ url('farmer/preorder') }}"><i class="fa fa-reorder"></i> <span class="nav-label">Pre-Order</span> </a>
+                <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'order' ? 'class=active' : '' }}>
+                    <a href="{{ url('farmer/order') }}"><i class="fa fa-truck"></i> <span class="nav-label">รายการสั่งซื้อสินค้า</span> </a>
                 </li>
-                <li>
-                    <a href="{{ url('farmer/order') }}"><i class="fa fa-list"></i> <span class="nav-label">Order</span> </a>
-                </li>
-                <li>
-                    <a href="{{ url('farmer/certification') }}"><i class="fa fa-list"></i> <span class="nav-label">Certification</span> </a>
-                </li>
-                <li>
-                    <a href="{{ url('farmer/configuration') }}"><i class="fa fa-gear"></i> <span class="nav-label">Configuration</span> </a>
+                <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'certification' ? 'class=active' : '' }}>
+                    <a href="{{ url('farmer/certification') }}"><i class="fa fa-list"></i> <span class="nav-label">ใบรับรองคุณภาพ</span> </a>
                 </li>
                 <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'notification' ? 'class=active' : '' }}>
                     <a href="{{ url('farmer/notification') }}"><i class="fa fa-bell"></i><span class="nav-label"> การแจ้งเตือน</span></a>

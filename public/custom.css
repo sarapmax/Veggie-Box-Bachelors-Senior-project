@@ -90,6 +90,17 @@ a:hover {
 	color: #676A6C !important;
 }
 
+.btn-default {
+    color: inherit;
+    background: white;
+    border: 1px solid #e7eaec;
+}
+
+.note-editor.note-frame {
+    /* border: 1px solid #a9a9a9; */
+    border: 1px solid #e5e6e7 !important;
+}
+
 .lightBoxGallery {
 	text-align: center;
 }

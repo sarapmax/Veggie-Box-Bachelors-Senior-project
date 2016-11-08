@@ -7,7 +7,7 @@
 		<h2>สินค้า</h2><br>
 		<ol class="breadcrumb">
 			<li>
-				<a href="{{ url('farmer/') }}">หน้าแรก</a>
+				<a href="{{ url('admin/') }}">หน้าแรก</a>
 			</li>
 			<li class="active">
 				<strong>สินค้า</strong>
@@ -95,7 +95,8 @@
         	"sInfoEmpty": "แสดง 0 ถึง 0 ของ 0 เร็คคอร์ด",
         	"sInfoFiltered": "(จากเร็คคอร์ดทั้งหมด _MAX_ เร็คคอร์ด)",
         	"sSearch": "ค้นหา :"
-        }
+        },
+         "iDisplayLength": 50
 	});
 </script>
 

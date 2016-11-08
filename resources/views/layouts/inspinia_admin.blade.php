@@ -41,12 +41,8 @@
                 <li>
                     <a href="{{ url('admin/coinpackage') }}"><i class="fa fa-money"></i><span class="nav-label"> เหรียญ​ VeggieBox</span></a>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-truck"></i><span class="nav-label"> การสั่งซื้อสินค้า</span><span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="{{ url('admin/order') }}"><i class="fa fa-shopping-cart "></i> <span class="nav-label"> Admin Order</span> </a></li>
-                        <li><a href="{{ url('admin/preorder') }}"><i class="fa fa-shopping-cart"></i> <span class="nav-label"> Pre-Order</span> </a></li>
-                    </ul>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'order' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/order') }}"><i class="fa fa-truck"></i><span class="nav-label"> การสั่งซื้อสินค้า</span></a>
                 </li>
                 <li>
                     <a href="{{ url('admin/inbox') }}"><i class="fa fa-inbox"></i><span class="nav-label"> ข้อความ</span></a>

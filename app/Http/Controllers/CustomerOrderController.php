@@ -61,7 +61,7 @@ class CustomerOrderController extends Controller
 	   		$order->district = $request->input('district');
 	   		$order->province = $request->input('province');
 	   		$order->zipcode = $request->input('zipcode');
-	   		$order->order_status = 'จ่ายเงินเรียบร้อยแล้ว';
+	   		$order->order_status = 'paid';
 	   		$order->latLng = $request->input('latLng');
 
 	   		$order->save();

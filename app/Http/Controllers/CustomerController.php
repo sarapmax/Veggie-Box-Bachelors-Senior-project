@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Customer;
 use Hash;
 use Cart;
+use App\Order;
 
 class CustomerController extends Controller
 {
@@ -96,5 +97,21 @@ class CustomerController extends Controller
         $member = Customer::find(auth()->guard('customer')->user()->id);
 
         return view('customer.profile', compact('member'));
+    }
+
+    public function getOrders() {
+        $orders = Order::whereCustomerId(auth()->guard('customer')->user()->id)->paginate(10);
+
+        return view('customer.member_orders', compact('orders'));
+    }
+
+    public function getOrder($order_number) {
+        if(auth()->guard('customer')->check()) {
+            $order = Order::whereOrderNumber($order_number)->first();
+
+            return view('customer.member_order', compact('order'));
+        }else {
+            return redirect('/');
+        }
     }
 }

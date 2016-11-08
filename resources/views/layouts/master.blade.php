@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{{asset('custom.css')}}">
     <link rel="stylesheet" href="{{asset('vegicon/style.css')}}">
     <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.css')}}">
+    <!-- note -->
+    <link href="{{ asset('bower_components/summernote/dist/summernote.css') }}" rel="stylesheet">
 
     <link href="{{ asset('bower_components/slick-carousel/slick/slick.css') }} " rel="stylesheet">
     <link href="{{ asset('bower_components/slick-carousel/slick/slick-theme.css') }} " rel="stylesheet">
@@ -32,7 +34,7 @@
                 <div style="padding:7px;" class="container">
                     <div class="col-md-12">
                         <div class="pull-left">
-                            ยินดีต้อนรับสู่ <strong>Veggiebox</strong>, 
+                            ยินดีต้อนรับสู่ <strong>Veggiebox</strong>,
                             @if(Auth::guard('customer')->check())
                                 <a href="{{ url('member/my_account') }}">{{ Auth::guard('customer')->user()->firstname }} {{ Auth::guard('customer')->user()->lastname }}</a>
                             @else
@@ -52,7 +54,7 @@
                             </ul>
                         </div>
                         <div class="clearfix"></div>
-                    </div> 
+                    </div>
                 </div>
             </div>
     <nav style="padding: 15px;" class="navbar-inverse navbar-static-top" role="navigation">
@@ -65,7 +67,7 @@
         <span style="background-color: #ffffff;" class="icon-bar"></span>
         <span style="background-color: #ffffff;" class="icon-bar"></span>
       </button>
-      <a href="{{ url('customer/home') }}"><img style="height:35px;margin-top:5px;" src="{{ asset('img/logo.png') }}"></a>
+      <a href="{{ url('/') }}"><img style="height:35px;margin-top:5px;" src="{{ asset('img/logo.png') }}"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -83,17 +85,17 @@
                 </a>
             </li>
             <li>
-                <a href="{{url('customer/news')}}">
+                <a href="{{url('news')}}">
                     ข่าวสาร
                 </a>
             </li>
-            <li>
-                <a href="{{url('customer/inbox')}}">
+            <li {{ Request::segment(1) == 'member' && Request::segment(2) == 'inbox' ? 'class=active' : '' }}>
+                <a href="{{url('member/inbox')}}">
                     ข้อความ
                 </a>
             </li>
             <li>
-                <a href="{{url('customer/veggiecoin')}}">
+                <a href="{{url('veggiecoin')}}">
                     ซื้อ VeggieCoin
                 </a>
             </li>
@@ -146,7 +148,7 @@
         </nav>
         </div>
         <div class="wrapper wrapper-content">
-                
+
             <div class="row">
 
                 <div class="container">
@@ -228,7 +230,7 @@
                         <i class="fa fa-phone-square"> </i> &nbsp;ติดต่อ : 02 4506 304 <br/><br/>
                         <i class="fa fa-envelope"> </i> &nbsp;support@veggiebox.com <br/><br/>
                         <i class="fa fa-map-marker"> </i> &nbsp; One Mac Company ม.แม่ฟ้าหลวง ประเทศไทย
-                    </div> 
+                    </div>
                 </div>
             </div>
             <div style="background-color:#f3f3f4;" class="row">
@@ -241,7 +243,7 @@
                             <strong>SENIOR PROJECT TEAM</strong>
                         </div>
                         <div class="clearfix"></div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </footer>
@@ -265,7 +267,7 @@
     <script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.js') }}"></script>
     <script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.tooltip.min.js') }}"></script>
     <script src="{{ asset('inspinia/js/plugins/flot/jquery.flot.resize.js') }}"></script>
-   
+
 
      <script src="{{ asset('inspinia/js/plugins/blueimp/jquery.blueimp-gallery.min.js') }}"></script>
     <!-- ChartJS-->
@@ -280,6 +282,9 @@
      <!-- slick carousel-->
     <script src="{{  asset('bower_components/slick-carousel/slick/slick.min.js') }}"></script>
     <script src="{{ asset('script.js') }}"></script>
+
+    {{-- summernote --}}
+    <script src="{{ asset('bower_components/summernote/dist/summernote.min.js') }}"></script>
 
     @yield('customer-js')
 

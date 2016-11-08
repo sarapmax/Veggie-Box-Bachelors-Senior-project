@@ -64,6 +64,14 @@ Route::group(['middleware' => 'admin'], function () {
 	Route::resource('admin/admininformation'  , 'AdminInformationController');
 	Route::resource('admin/coinpackage' , 'CoinPackageController');
 
+	Route::get('admin/order', 'AdminOrderController@index');
+
+	Route::get('admin/order/detail/{order_id}', 'AdminOrderController@getOrderDetail');
+
+	Route::get('admin/order/activeShipped/{order_id}', 'AdminOrderController@activeShipped');
+
+	Route::get('admin/order/sendToFarm/{order_id}', 'AdminOrderController@sendToFarm');
+
 });
 
 
@@ -106,6 +114,8 @@ Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
 	Route::get('farmer/notification', 'FarmerNotificationController@index');
 
 	Route::resource('farmer/certification' , 'FarmerCertificationController');
+
+	Route::get('farmer/order', 'FarmerOrderController@index');
 });
 
 //================ CUSTOMER ===============//
@@ -152,6 +162,8 @@ Route::group(['middleware' => ['member']], function () {
 
 	Route::get('member/orders', 'CustomerController@getOrders');
 
+	Route::get('member/order/{order_number}', 'CustomerController@getOrder');
+
 	Route::get('member/order_coin', 'CustomerController@getOrderCoin');
 
 	Route::get('checkout', 'CustomerOrderController@getCheckout');
@@ -162,6 +174,10 @@ Route::group(['middleware' => ['member']], function () {
 		'as' => 'order_success',
 		'uses' => 'CustomerOrderController@getOrderSuccess'
 	]);
+
+	Route::get('member/inbox', 'CustomerInboxController@index');
+
+	Route::get('member/inbox/send', 'CustomerInboxController@getSendInbox');
+
+	Route::post('member/inbox/send', 'CustomerInboxController@postSendInbox');
 });
-
-

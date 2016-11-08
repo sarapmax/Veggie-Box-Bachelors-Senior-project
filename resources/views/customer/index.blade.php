@@ -43,99 +43,39 @@
 			</div>
 		</div>
 	</div>
-	{{-- <div style="margin-bottom: 10px;" class="row wrapper border-bottom white-bg page-heading">
-  		<div class="col-lg-12">
-  			<div class="pull-left">
-  				<br/>
-    			<h3>สินค้าโปรโมชั่น</h3>
-    		</div>
-  			<div class="pull-right">
-  				<br/><a href="#" class="btn btn-primary btn-sm">ดูสินค้าโปรโมชั่นทั้งหมด</a>
-    		</div>
-    		<div class="clearfix"></div><hr/>
-		</div>
-		<div class="col-lg-3">
-			<div class="ibox">
-				<div class="ibox-content product-box">
-					<div style="padding: 0px;" class="product-imitation">
-						<img src="{{ asset('gallery/13.jpg')}}" style="height:150px;">
-					</div>
-					<div class="product-desc">
-						<span class="product-price">
-							100฿/กก
-						</span>
-						<small class="text-muted">ประเภทสินค้า : ผล้ไม้สด</small>
-						<a href="#" class="product-name">แอปเปิ้ลสด</a>
-						<br/>
-						<div class="small m-t-xs">
-							<a href="" class="btn btn-primary btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<div class="ibox">
-				<div class="ibox-content product-box">
-					<div style="padding: 0px;" class="product-imitation">
-						<img src="{{ asset('gallery/20.jpg')}}" style="height:150px">
-					</div>
-					<div class="product-desc">
-						<span class="product-price">
-							100฿/กก
-						</span>
-						<small class="text-muted">ประเภทสินค้า : ผล้ไม้สด</small>
-						<a href="#" class="product-name">แอปเปิ้ลสด</a>
-						<br/>
-						<div class="small m-t-xs">
-							<a href="" class="btn btn-primary btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<div class="ibox">
-				<div class="ibox-content product-box">
-					<div style="padding: 0px;" class="product-imitation">
-						<img src="{{ asset('gallery/15.jpg')}}" style="height:150px">
-					</div>
-					<div class="product-desc">
-						<span class="product-price">
-							100฿/กก
-						</span>
-						<small class="text-muted">ประเภทสินค้า : ผล้ไม้สด</small>
-						<a href="#" class="product-name">แอปเปิ้ลสด</a>
-						<br/>
-						<div class="small m-t-xs">
-							<a href="" class="btn btn-primary btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<div class="ibox">
-				<div class="ibox-content product-box">
-					<div style="padding: 0px;" class="product-imitation">
-						<img src="{{ asset('gallery/15.jpg')}}" style="height:150px">
-					</div>
-					<div class="product-desc">
-						<span class="product-price">
-							100฿/กก
-						</span>
-						<small class="text-muted">ประเภทสินค้า : ผล้ไม้สด</small>
-						<a href="#" class="product-name">แอปเปิ้ลสด</a>
-						<br/>
-						<div class="small m-t-xs">
-							<a href="" class="btn btn-primary btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> --}}
 
+	<div style="margin-bottom: 10px;" class="row ibox-content border-box">
+		<div class="pull-left">
+			<h3>สินค้าขายดี</h3>
+		</div>
+		<div class="pull-right">
+			<a href="{{ url('products') }}" class="btn btn-primary btn-sm">ดูสินค้าทั้งหมด</a>
+		</div>
+		<div class="clearfix"></div><hr/>
+		@foreach(App\OrderDetail::select('quantity', 'product_id', DB::raw('sum(quantity) as sum'))->orderBy('sum', 'DESC')->groupBy('product_id')->limit(4)->get() as $popularProduct)
+		<div class="col-lg-3 box">
+			<div class="ibox">
+				<div class="ibox-content product-box">
+					<div style="padding: 0px;" class="product-imitation">
+						<a href="{{ url('product/'.$popularProduct->product->farm_product->slug) }}"><img src="{{ asset('thumb_image/'.$popularProduct->product->farm_product->thumb_image)}}" style="height:150px;"></a>
+					</div>
+					<div class="product-desc">
+						<small class="text-muted">จากฟาร์ม : <span class="btn btn-xs btn-warning btn-outline"><i class="fa fa-home"> </i> {{ $popularProduct->product->farm_product->farmer->farm_name }}</span></small><br/>
+						<small class="text-muted">ประเภทสินค้า : {{ $popularProduct->product->farm_product->sub_category->name }}</small><hr/>
+						<a href="{{ url('product/'.$popularProduct->product->farm_product->slug) }}" class="product-name">{{ $popularProduct->product->farm_product->name }}</a>
+						<div style="padding: 10px 0;" class="m-t-xs">
+							{{ discountCoinPrice($popularProduct->product->price, $popularProduct->product->discount_price, $popularProduct->product->farm_product->unit) }}
+						</div>
+						<div class="small m-t-xs">
+							<a href="{{ route('cart', $popularProduct->product->id) }}" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@endforeach
+	</div>
+	
 	<div style="margin-bottom: 10px;" class="row ibox-content border-box">
 		<div class="pull-left">
 			<h3>สินค้าล่าสุด</h3>
@@ -145,7 +85,7 @@
 		</div>
 		<div class="clearfix"></div><hr/>
 		@foreach(App\Product::orderBy('created_at', 'DESC')->limit(4)->get() as $recent_product)
-		<div class="col-lg-3">
+		<div class="col-lg-3 box">
 			<div class="ibox">
 				<div class="ibox-content product-box">
 					<div style="padding: 0px;" class="product-imitation">
@@ -180,7 +120,7 @@
 		<div class="clearfix"></div><hr/>
 		@foreach($category->sub_category as $sub_category)
 			@foreach($sub_category->farm_product->slice(0, 2) as $farm_product) 
-				<div class="col-lg-3">
+				<div class="col-lg-3 box">
 					<div class="ibox">
 						<div class="ibox-content product-box">
 							<div style="padding: 0px;" class="product-imitation">

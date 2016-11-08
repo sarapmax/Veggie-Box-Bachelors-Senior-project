@@ -84,3 +84,20 @@ function discountCoinPrice($price, $discount_price, $unit) {
 function viaCoin($coin) {
 	echo number_format($coin). ' <i class="fa fa-viacoin"></i>';
 }
+
+function slug($str) {
+    $str = strtolower(trim($str));
+    $str = preg_replace('~[^a-z0-9_ก-๙]~ui', '-', $str);
+    $str = preg_replace('/-+/', "-", $str);
+    return $str;
+}
+
+function adminOrderStatus($status) {
+	if($status == 'paid') {
+		echo '<label class="label label-success"><i class="fa fa-check"> </i> จ่ายเงินแล้ว</label>';
+	}else if($status == 'shipped') {
+		echo '<label class="label label-primary"><i class="fa fa-truck"> </i> จัดส่งแล้ว</label>';
+	}else if($status == 'cancel'){
+		echo '<label class="label label-default"><i class="fa fa-close"> </i> ยกเลิก</label>';
+	}
+}
