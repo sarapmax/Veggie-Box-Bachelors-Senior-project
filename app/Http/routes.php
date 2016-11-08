@@ -102,3 +102,4 @@ Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
 Route::resource('farmer/certification' , 'FarmerCertificationController');
 Route::resource('admin/admininformation'  , 'AdminInformationController');
 Route::resource('admin/coinpackage' , 'CoinPackageController');
+Route::resource('admin/feed' , 'FeedController');

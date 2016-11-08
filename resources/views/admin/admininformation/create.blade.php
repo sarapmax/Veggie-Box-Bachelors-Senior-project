@@ -34,29 +34,38 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label"> ชื่อหัวข้อ</label>
-                            <div class="col-lg-6">
+                            <div class="col-lg-10">
                             	<input type="text" placeholder="กรอกชื่อหัวข้อ" name="topic" class="form-control" value="{{ old('topic') }}">
                                 @if($errors->has('topic'))
                                     <span class="help-block">{{ $errors->first('topic') }}</span>
                                 @endif
-
-															<label class="col-lg-2 control-label">เนื้อหา</label>
-                              <div class="col-lg-6">
-                              <textarea name="text" rows="8" cols="40" class="form-control"></textarea>
-																@if($errors->has('text'))
-																		<span class="help-block">{{ $errors->first('text') }} </span>
-																@endif
-                              </div>
-                            </div>
-                            <div class="col-md-2">
-                                 <button class="btn btn-primary" type="submit"><i class="fa fa-check"> </i> Submit</button>
-                            </div>
 													</div>
                         </div>
+												<div class="form-group {{ $errors->has('') ? 'has-error' : '' }}">
+													<label class="col-lg-2 control-label"> เนื้อหา</label>
+													<div class="col-lg-10">
+														<textarea id="textarea" rows="8" cols="40"></textarea>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<div class="col-lg-2 col-lg-offset-2">
+														<button type="submit" class="btn btn-primary">เพิ่มข้อมูลแอดมิน</button>
+													</div>
+												</div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+@endsection
+
+@section('admin-js')
+<script>
+	$('#textarea').summernote({
+		height: 300
+	})
+
+</script>
 @endsection
