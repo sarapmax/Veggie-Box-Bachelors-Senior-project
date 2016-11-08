@@ -10,7 +10,9 @@ use App\CustomerInbox;
 class CustomerInboxController extends Controller
 {
     public function index() {
-        return view('customer.inbox');
+        $inboxes = CustomerInbox::orderBy('created_at', 'DESC')->paginate(20);
+
+        return view('customer.inbox', compact('inboxes'));
     }
 
     public function getSendInbox() {
@@ -31,9 +33,19 @@ class CustomerInboxController extends Controller
     	$customer_inbox->message = $request->input('message');
     	$customer_inbox->customer_id = auth()->guard('customer')->user()->id;
     	$customer_inbox->slug = slug($request->input('topic'));
+        $customer_inbox->read = 1;
 
     	$customer_inbox->save();
 
     	return redirect('member/inbox')->with('alert-success', 'ส่งข้อความให้แอดมินเรียบร้อยแล้ว');
+    }
+
+    public function getInBoxDetail($slug) {
+        $inbox = CustomerInbox::whereSlug($slug)->first();
+
+        $inbox->read = 1;
+        $inbox->save();
+
+        return view('customer.inbox_detail', compact('inbox'));
     }
 }

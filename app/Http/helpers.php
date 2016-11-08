@@ -101,3 +101,15 @@ function adminOrderStatus($status) {
 		echo '<label class="label label-default"><i class="fa fa-close"> </i> ยกเลิก</label>';
 	}
 }
+
+function inboxStatus($status) {
+	if($status == 'general') {
+		echo '<span class="label label-primary"> ทั่วไป</span>';
+	}
+	if($status == 'question') {
+		echo '<span class="label label-warning"> สอบถามปัญหา</span>';
+	}
+	if($status == 'request') {
+		echo '<span class="label label-success"> Request สินค้า</span>';
+	}
+}

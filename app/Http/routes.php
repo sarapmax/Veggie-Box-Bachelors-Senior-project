@@ -182,4 +182,6 @@ Route::group(['middleware' => ['member']], function () {
 	Route::get('member/inbox/send', 'CustomerInboxController@getSendInbox');
 
 	Route::post('member/inbox/send', 'CustomerInboxController@postSendInbox');
+
+	Route::get('member/inbox/detail/{inbox_slug}', 'CustomerInboxController@getInBoxDetail');
 });

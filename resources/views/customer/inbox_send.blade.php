@@ -4,7 +4,7 @@
 
 <div class="col-lg-8">
     <div style="margin-bottom: 10px;" class="row ibox-content border-box">
-        <h3> <i class="fa fa-reply"> </i> สิ่งข้อความให้แอดมิน</h3><hr/>
+        <h3> <i class="fa fa-reply"> </i> ส่งข้อความให้แอดมิน</h3><hr/>
         <div class="col-lg-12">
             <form action="{{ url('member/inbox/send') }}" method="POST" role="form" class="form-horizontal">
                 {{ csrf_field() }}
