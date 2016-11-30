@@ -7,7 +7,7 @@
 		<div style="border: 7px solid #fff;" class="carousel slide" id="carousel1">
             <div class="carousel-inner">
                 <div class="item active">
-                    <img alt="image" class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=200&txt=VeggieBox&w=1140&h=500">
+                    <img alt="image" class="img-responsive" src="{{ asset('img/slide.png') }}">
                 </div>
             </div>
             <a data-slide="prev" href="#carousel1" class="left carousel-control">
@@ -109,7 +109,7 @@
 	</div>
 	
 	<?php $i = 1; ?>
-	@foreach(App\Category::orderBy('created_at', 'ASC')->get() as $category)
+	@foreach(App\Category::orderBy('created_at', 'ASC')->limit(2)->get() as $category)
 	<div style="margin-bottom: 10px;" class="row ibox-content border-box">
 		<div class="pull-left">
 			<h3><i class="fa fa-cube"> </i> {{ $category->name }}</h3>
@@ -124,14 +124,14 @@
 					<div class="ibox">
 						<div class="ibox-content product-box">
 							<div style="padding: 0px;" class="product-imitation">
-								<a href="{{ url('product/'.$farm_product->product->farm_product->slug) }}"><img src="{{ asset('thumb_image/'.$farm_product->product->farm_product->thumb_image)}}" style="height:150px;"></a>
+								<a href="{{ url('product/'.$farm_product->slug) }}"><img src="{{ asset('thumb_image/'.$farm_product->thumb_image)}}" style="height:150px;"></a>
 							</div>
 							<div class="product-desc">
-								<small class="text-muted">จากฟาร์ม : <span class="btn btn-xs btn-warning btn-outline"><i class="fa fa-home"> </i> {{ $farm_product->product->farm_product->farmer->farm_name }}</span></small><br/>
-								<small class="text-muted">ประเภทสินค้า : {{ $farm_product->product->farm_product->sub_category->name }}</small><hr/>
-								<a href="{{ url('product/'.$farm_product->product->farm_product->slug) }}" class="product-name">{{ $farm_product->product->farm_product->name }}</a>
+								<small class="text-muted">จากฟาร์ม : <span class="btn btn-xs btn-warning btn-outline"><i class="fa fa-home"> </i> {{ $farm_product->farmer->farm_name }}</span></small><br/>
+								<small class="text-muted">ประเภทสินค้า : {{ $farm_product->sub_category->name }}</small><hr/>
+								<a href="{{ url('product/'.$farm_product->slug) }}" class="product-name">{{ $farm_product->name }}</a>
 								<div style="padding: 10px 0;" class="m-t-xs">
-									{{ discountCoinPrice($farm_product->product->price, $farm_product->product->discount_price, $farm_product->product->farm_product->unit) }}
+									{{ discountCoinPrice($farm_product->price, $farm_product->discount_price, $farm_product->unit) }}
 								</div>
 								<div class="small m-t-xs">
 									<a href="{{ route('cart', $farm_product->id) }}" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>

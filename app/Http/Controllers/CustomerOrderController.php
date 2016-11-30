@@ -84,7 +84,7 @@ class CustomerOrderController extends Controller
 
 	        Cart::destroy();
 
-	        return redirect()->route('order_success', ['order_number' => $order->order_number])->with('alert-success', 'คุณได้ทำการสั่งซื้อสินค้าเรียบร้อยแล้ว เราจะดำเนินการจัดส่งสินค้าให้ถึงมือคุณ โดยเร็วที่สุด'); 
+	        return redirect()->route('order_success', ['order_number' => $order->order_number])->with('alert-success', 'คุณได้ทำการสั่งซื้อสินค้าเรียบร้อยแล้ว คุณจะได้รับสินค้าภายในวันนี้ เวลา 19.00 น. โดยประมาณ'); 
    		}else {
    			return redirect()->back()->with('alert-danger', 'จำนวน VeggieCoin ของคุณไม่พอในการทำการสั่งซื้อสินค้า <a href="order_coin">ซื้อ VeggieCoin</a>');
    		}

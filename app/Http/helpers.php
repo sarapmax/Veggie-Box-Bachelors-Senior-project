@@ -113,3 +113,15 @@ function inboxStatus($status) {
 		echo '<span class="label label-success"> Request สินค้า</span>';
 	}
 }
+
+function customerInboxStatus($status) {
+	if($status == 'general') {
+		echo '<i class="fa fa-circle text-navy"></i>';
+	}
+	if($status == 'question') {
+		echo '<i class="fa fa-circle text-warning"></i>';
+	}
+	if($status == 'request') {
+		echo ' <i style="color:#1c84c6;" class="fa fa-circle text-primary"></i>';
+	}
+}

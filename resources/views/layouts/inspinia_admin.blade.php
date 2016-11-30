@@ -45,7 +45,11 @@
                     <a href="{{ url('admin/order') }}"><i class="fa fa-truck"></i><span class="nav-label"> การสั่งซื้อสินค้า</span></a>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'inbox' ? 'class=active' : '' }}>
-                    <a href="{{ url('admin/inbox') }}"><i class="fa fa-inbox"></i><span class="nav-label"> ข้อความ</span></a>
+                    <a href="{{ url('admin/inbox') }}"><i class="fa fa-inbox"></i> <span class="nav-label"> ข้อความ</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li {{ Request::segment(3) == 'customer' ? 'class=active' : '' }}><a href="{{ url('admin/inbox/customer') }}"> ข้อความลูกค้า</a></li>
+                        <li {{ Request::segment(3) == 'farmer' ? 'class=active' : '' }}><a href="{{ url('admin/inbox/farmer') }}"> ข้อความฟาร์มเมอร์</a></li>
+                    </ul>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'notification' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/notification') }}"><i class="fa fa-bell"></i><span class="nav-label"> การแจ้งเตือน</span></a>
@@ -98,22 +102,24 @@
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope"></i>  <span class="label label-primary">8</span>
+                        <i class="fa fa-envelope"></i>  <span class="label label-primary">{{ App\CustomerInbox::whereRaw('Date(created_at) = CURDATE()')->count() }}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
+                        @foreach(App\CustomerInbox::orderBy('created_at', 'DESC')->whereRaw('Date(created_at) = CURDATE()')->limit(8)->get() as $customer_inbox)
                         <li>
-                            <a href="mailbox.html">
+                            <a href="{{ url('admin/inbox/customer/detail/'.$customer_inbox->slug) }}">
                                 <div>
-                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                    <i class="fa fa-envelope fa-fw"></i> {{ str_limit($customer_inbox->topic, 20) }}
+                                    <span class="pull-right text-muted small">{{ $customer_inbox->created_at->diffForHumans() }}</span>
                                 </div>
                             </a>
                         </li>
                         <li class="divider"></li>
+                        @endforeach
                         <li>
                             <div class="text-center link-block">
-                                <a href="notifications.html">
-                                    <strong>See All Alerts</strong>
+                                <a href="{{ url('admin/inbox/customer') }}">
+                                    <strong>ดูข้อความทั้งหมด</strong>
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>

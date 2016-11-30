@@ -45,12 +45,45 @@
 
 	                <h2 class="font-bold m-b-xs">
 	                    {{ $product->name }}
+	                    <div class="pull-right">
+	                    	<img style="width:130px;" src="{{ asset('img/like.png') }}">
+	                    </div>
 	                </h2><br/>
-	                <small>จากฟาร์ม <span class="btn btn-xs btn-warning btn-outline">{{ $product->farm_name }}</span></small>
+	                <table class="table">
+	                	<tr>
+	                		<th style="width:180px;">จากฟาร์ม</th>
+	                		<td>
+	                			<span class="btn btn-xs btn-warning btn-outline">{{ $product->farm_name }}</span>
+	                		</td>
+	                	</tr>
+	                	<tr>
+	                		<th>ข้อมูลการรับรองคุณภาพสินค้า</th>
+	                		<td>
+	                			<img src="{{ asset('img/cer1.jpg') }}" style="width:50px;">
+	                			<img src="{{ asset('img/cer2.jpg') }}" style="width:50px;">
+	                			<img src="{{ asset('img/cer3.jpg') }}" style="width:50px;">
+	                		</td>
+	                	</tr>
+	                	<tr>
+	                		<th>สถานะ</th>
+	                		<td>
+	                			{{ productStatus($product->status) }}
+	                		</td>
+	                	</tr>
+	                	@if($product->grow_estimate && $product->plant_date)
+	                	<tr>
+	                		<th>ข้อมูลการเก็บเกี่ยว</th>
+	                		<td>
+	                			<label class="label label-default"> วันที่เก็บเกี่ยวโดยประมาณ : {{ $havest['havest_date'] }}</label>
+										<label class="label label-default">อีกประมาณ {{ $havest['havest_countdown'] }} วันจะสามารถเก็บเกี่ยวได้</label>
+	                		</td>
+	                	</tr>
+	                	@endif
+	                </table>
 	                <hr>
 	                <div>
 	                    <a href="{{ route('cart', $product->product_id) }}" class="btn btn-primary pull-right"><i class="fa fa-shopping-basket"> </i> หยิบใส่ตระกร้า</a>
-	                    <h3 class="product-main-price">{{ discountCoinPrice($product->product_price, $product->product_discount_price, $product->unit) }} <small class="text-muted">รวมภาษามูลค่าเพิ่มแล้ว</small> </h3>
+	                    <h3 style="color:#D61614;" class="product-main-price">{{ discountCoinPrice($product->product_price, $product->product_discount_price, $product->unit) }} <small style="color:#D61614;" class="text-muted">รวมภาษามูลค่าเพิ่มแล้ว</small> </h3>
 	                </div>
 	                
 	            </div>

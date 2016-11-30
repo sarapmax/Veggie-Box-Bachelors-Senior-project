@@ -74,6 +74,22 @@ Route::group(['middleware' => 'admin'], function () {
 
 	Route::resource('admin/feed' , 'FeedController');
 
+	Route::get('admin/inbox/customer', 'AdminInboxController@getCustomerInbox');
+
+	Route::get('admin/inbox/customer/detail/{slug}', 'AdminInboxController@getCustomerInboxDetail');
+
+	Route::get('admin/inbox/customer/send', 'AdminInboxController@getCustomerInboxSend');
+
+	Route::post('admin/inbox/customer/send', 'AdminInboxController@postCustomerInboxSend');
+
+	Route::get('admin/inbox/farmer', 'AdminInboxController@getFarmerInbox');
+
+	Route::get('admin/inbox/farmer/detail/{slug}', 'AdminInboxController@getFarmerInboxDetail');
+
+	Route::get('admin/inbox/farmer/send', 'AdminInboxController@getFarmerInboxSend');
+
+	Route::post('admin/inbox/farmer/send', 'AdminInboxController@postFarmerInboxSend');
+
 });
 
 
@@ -155,6 +171,8 @@ Route::get('register', 'CustomerController@getRegister');
 Route::post('register', 'CustomerController@postRegister');
 
 Route::post('login', 'CustomerController@postLogin');
+
+Route::get('veggiecoin', 'CustomerCoinController@getVeggiecion');
 
 //AUTH
 Route::group(['middleware' => ['member']], function () {

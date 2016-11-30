@@ -12,11 +12,11 @@ class CreateFarmerInboxsTable extends Migration
      */
     public function up()
     {
-        Schema::create('farmer_inboxs', function(Blueprint $table) {
+        Schema::create('farmer_inboxes', function(Blueprint $table) {
             $table->increments('id')->unsigned();
-            $table->integer('admin_id')->unsigned();
+            $table->integer('admin_id')->nullable();
             $table->integer('farmer_id')->unsigned();
-            $table->integer('admin_information_id')->unsigned();
+            $table->integer('admin_information_id')->nullable();
             $table->string('topic');
             $table->text('message');
             $table->string('status');

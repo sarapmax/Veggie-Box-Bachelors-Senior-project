@@ -94,7 +94,7 @@
                     ข้อความ
                 </a>
             </li>
-            <li>
+            <li {{ Request::segment(1) == 'veggiecoin' ? 'class=active' : '' }}>
                 <a href="{{url('veggiecoin')}}">
                     ซื้อ VeggieCoin
                 </a>

@@ -23,7 +23,13 @@ class CustomerProductController extends Controller
     					  ->where('farm_products.slug', $slug)
     					  ->select('farm_products.*', 'products.id AS product_id', 'products.price AS product_price', 'products.discount_price AS product_discount_price', 'products.quantity AS product_quantity', 'sub_categories.name AS sub_category_name', 'categories.slug AS category_slug', 'sub_categories.slug AS sub_category_slug', 'categories.name AS category_name', 'farmers.farm_name')
     					  ->first();
+        $havest_date = date('Y-m-d', strtotime($product->plant_date. ' + '.$product->grow_estimate.' days'));
 
-    	return view('customer.product', compact('product'));
+        $secs = strtotime($havest_date) - strtotime(date('Y-m-d'));
+
+        $havest['havest_date'] = $havest_date;
+        $havest['havest_countdown'] = $secs / 86400;
+
+    	return view('customer.product', compact(['product', 'havest']));
     }
 }
