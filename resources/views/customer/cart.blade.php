@@ -14,6 +14,7 @@
                     <thead>
                         <th>รูปภาพ</th>
                         <th>ชื่อสินค้า</th>
+                        <th>สถานะ</th>
                         <th>จำนวน</th>
                         <th>ราคา</th>
                         <th>ราคารวม</th>
@@ -36,7 +37,9 @@
                                 <a href="{{ route('cart.remove', $cart->rowId) }}" class="text-muted"><i class="fa fa-trash"></i> ลบสินค้าออกจากตระกร้า</a>
                             </div>
                         </td>
-
+                        <td>
+                            {{ productStatus($cart->options->status) }}
+                        </td>
                         <td>
                             <div class="input-group">
                             <form method="POST" action="{{ route('cart.update', $cart->rowId) }}">

@@ -17,7 +17,24 @@
 </div>
 <div class="row">
 	<div class="col-lg-12">
-		<div class="wrapper wrapper-content animated fadeInUp">
+		<div style="padding: 20px 10px 10px;" class="wrapper animated fadeInUp">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>แผนที่แสดงพื้นที่จัดส่งสินค้า</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div id="map_canvas" style="width:400;height:400px;"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+	<div class="col-lg-12">
+		<div style="padding: 0px 10px 40px;" class="wrapper animated fadeInUp">
 			<div class="ibox">
 				<div class="ibox-title">
 					<h5>การสั่งซื้อสินค้า</h5>
@@ -102,7 +119,45 @@
 @endsection
 
 @section('admin-js')
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyDpdWsxjo5HJOPsERUyqQnGkgCwdtlr0HI"></script>
 <script>
+    setupMap()
+
+    function setupMap() { 
+        var myOptions = {
+            zoom: 14,
+             center: new google.maps.LatLng(20.050408302817274, 99.87903010100126),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById('map_canvas'),
+            myOptions);
+
+        $.get('get_order_map', function(result) {
+
+            for(var i = 0; i<result.length; i++) {
+                var latLng = result[i].latLng.split(',');
+                var lat = latLng[0].substring(1)
+                var lng = latLng[1].substring(1).slice(0, -1)
+                var name = 'คุณ '+ result[i].firstname + ' ' + result[i].lastname
+                var latLng = new google.maps.LatLng(lat, lng)
+
+                var markeroption = {map:map, html:name, position:latLng}
+                var marker = new google.maps.Marker(markeroption)
+
+                var infowindow = new google.maps.InfoWindow({
+                    map:map,
+                    content: name,
+                    position:  new google.maps.LatLng(lat, lng)
+                });
+
+                google.maps.event.addListener(marker, 'click', function(e) {
+                    infowindow.setContent(this.html)
+                    infowindow.open(map, this)
+                })
+            }
+        })  
+    }
 	$('#products').DataTable({
 		"oLanguage": {
         	"sLengthMenu": "แสดง _MENU_ Record ต่อหน้า",

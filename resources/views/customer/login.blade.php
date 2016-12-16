@@ -8,19 +8,15 @@
         <div class="col-lg-6">
         	<div class="ibox-content border-box">
             <p>
-                ยินดีต้อนรับสู่ VeggieBox online community support agriculture
+                ยินดีต้อนรับสู่ VeggieBox
             </p>
             
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Veggie Box คือเว็บไซต์องค์กรทางสังคมในท้องถิ่น ซึ่งเป็นเสมือนตัวกลางสำหรับการสนับสนุนการซื้อและขายสินค้าเกษตรอินทรีย์ ของลูกค้าและเกษตรกรภายในจังหวัดเชียงราย
             </p>
 
             <p>
-                When an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-
-            <p>
-                <small>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</small>
+                <small>ลองใช้เลย</small>
             </p>
             <p class="text-muted text-center">
                 <small>ยังไม่ได้เป็นสามาชิก ?</small>
@@ -47,8 +43,10 @@
                 @endif
             </div>
             <div class="form-group">
-             <input type="checkbox" id="remember" name="remember"> <label style="font-weight: 100;" for="remember"> &nbsp;จดจำฉันในครั้งต่อไป</label>
+             <input type="checkbox" id="remember" name="remember"> <label style="font-weight: 100;" for="remember"> &nbsp;จดจำฉันในครั้งต่อไป</label><br/>
+             <a href="{{ url('forgot_password') }}">ลืมรหัสผ่าน ?</a>
             </div>
+
             <button type="submit" class="btn btn-primary block full-width m-b"><i class="fa fa-sign-in"> </i> เข้าสู่ระบบ</button>
         </form>
         </div>

@@ -33,6 +33,8 @@ Route::group(['middleware' => 'admin'], function () {
 
 	Route::get('admin/analyze/get_top_product_seller/{start_date}/{end_date}', 'AdminAnalyzeController@getTopProductSeller');
 
+	Route::get('admin/analyze/get_top_sell_date/{product_id}', 'AdminAnalyzeController@getTopSellDate');
+
 	Route::resource('admin/category', 'AdminCategoryController');
 
 	Route::resource('admin/sub_category' , 'AdminSubCategoryController');
@@ -62,7 +64,7 @@ Route::group(['middleware' => 'admin'], function () {
 	Route::get('admin/notification', 'AdminNotificationController@index');
 
 	Route::resource('admin/admininformation'  , 'AdminInformationController');
-	Route::resource('admin/coinpackage' , 'CoinPackageController');
+	Route::resource('admin/veggiecoin/package' , 'CoinPackageController');
 
 	Route::get('admin/order', 'AdminOrderController@index');
 
@@ -90,6 +92,22 @@ Route::group(['middleware' => 'admin'], function () {
 
 	Route::post('admin/inbox/farmer/send', 'AdminInboxController@postFarmerInboxSend');
 
+	Route::get('admin/veggiecoin/order', function() {
+		return view('admin.coinpackage.order');
+	});
+
+	Route::get('admin/get_order_graph/{start_date}/{end_date}', 'AdminHomeController@getOrderGraph');
+
+	Route::get('admin/get_order_map', 'AdminHomeController@getOrderMap');
+
+	Route::get('admin/pre-order', 'AdminOrderController@getPreOrder');
+
+	Route::get('admin/pre-order/detail/{order_id}', 'AdminOrderController@getPreOrderDetail');
+
+	Route::get('admin/pre-order/activeShipped/{order_id}', 'AdminOrderController@activeShippedPre');
+
+	Route::get('admin/pre-order/sendToFarm/{order_id}', 'AdminOrderController@sendToFarmPre');
+
 });
 
 
@@ -106,9 +124,7 @@ Route::get('farmer/login', 'FarmerController@getLogin');
 Route::post('farmer/login', 'FarmerController@postLogin');
 
 Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
-	Route::get('farmer', function () {
-    	return view('layouts.inspinia_farmer');
-	});
+	Route::get('farmer', 'FarmerHomeController@index');
 
 	Route::get('farmer/category', 'FarmerCategoryController@getCategory');
 
@@ -134,6 +150,22 @@ Route::group(['middleware' => ['farmer', 'farmer_not_activated']], function () {
 	Route::resource('farmer/certification' , 'FarmerCertificationController');
 
 	Route::get('farmer/order', 'FarmerOrderController@index');
+
+	Route::get('farmer/inbox', 'FarmerInboxController@index');
+
+	Route::get('farmer/inbox/detail/{slug}', 'FarmerInboxController@getInboxDetail');
+
+	Route::get('farmer/inbox/send', 'FarmerInboxController@getSendInbox');
+
+	Route::post('farmer/inbox/send', 'FarmerInboxController@postSendInbox');
+
+	Route::get('farmer/get_order_graph/{start_date}/{end_date}', 'FarmerHomeController@getOrderGraph');
+
+	Route::get('farmer/analyze', 'FarmerAnalyzeController@index');
+
+	Route::get('farmer/analyze/get_top_product_seller/{start_date}/{end_date}', 'FarmerAnalyzeController@getTopProductSeller');
+
+	Route::get('farmer/analyze/get_top_sell_date/{product_id}', 'FarmerAnalyzeController@getTopSellDate');
 });
 
 //================ CUSTOMER ===============//
@@ -145,9 +177,11 @@ Route::get('products/category/{category}/{sub_category}', 'CustomerCategoryContr
 
 Route::get('products', 'CustomerProductController@getProductsPage');
 
+Route::get('pre-order', 'CustomerProductController@getProductPreorderPage');
+
 Route::get('cart', 'CustomerCartController@index');
 
-Route::get('cart/{id}', [
+Route::post('cart', [
 	'uses' => 'CustomerCartController@addCart',
 	'as' => 'cart'
 ]);
@@ -174,6 +208,14 @@ Route::post('login', 'CustomerController@postLogin');
 
 Route::get('veggiecoin', 'CustomerCoinController@getVeggiecion');
 
+Route::get('feed', 'CustomerFeedController@index');
+
+Route::get('feed/{slug}', 'CustomerFeedController@getFeedDetail');
+
+Route::get('forgot_password', 'CustomerController@getForgotPassword');
+
+Route::post('forgot_password', 'CustomerController@postForgotPassword');
+
 //AUTH
 Route::group(['middleware' => ['member']], function () {
 	Route::get('logout', 'CustomerController@getLogout');
@@ -182,7 +224,11 @@ Route::group(['middleware' => ['member']], function () {
 
 	Route::get('member/orders', 'CustomerController@getOrders');
 
+	Route::get('member/pre-orders', 'CustomerController@getPreOrders');
+
 	Route::get('member/order/{order_number}', 'CustomerController@getOrder');
+
+	Route::get('member/pre-order/{order_number}', 'CustomerController@getPreOrder');
 
 	Route::get('member/order_coin', 'CustomerController@getOrderCoin');
 
@@ -202,4 +248,8 @@ Route::group(['middleware' => ['member']], function () {
 	Route::post('member/inbox/send', 'CustomerInboxController@postSendInbox');
 
 	Route::get('member/inbox/detail/{inbox_slug}', 'CustomerInboxController@getInBoxDetail');
+
+	Route::get('veggiecoin/order_coin/{coin_id}', 'CustomerCoinController@orderCoin');
+
+	Route::post('veggiecoin/order_coin', 'CustomerCoinController@postOrderCoin');
 });

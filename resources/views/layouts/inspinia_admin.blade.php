@@ -1,5 +1,7 @@
 @extends('layouts.inspinia_master')
 
+@section('title', '| Admin')
+
 @section('app')
 <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
@@ -38,11 +40,18 @@
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'feed' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/feed') }}"><i class="fa fa-newspaper-o"></i><span class="nav-label"> ข่าวสาร</span></a>
                 </li>
-                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'coinpackage' ? 'class=active' : '' }}>
-                    <a href="{{ url('admin/coinpackage') }}"><i class="fa fa-money"></i><span class="nav-label"> เหรียญ​ VeggieBox</span></a>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'veggiecoin' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/veggiecoin') }}"><i class="fa fa-inbox"></i> <span class="nav-label"> VeggoiCoin</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li {{ Request::segment(3) == 'package' ? 'class=active' : '' }}><a href="{{ url('admin/veggiecoin/package') }}"> จัดการแพ็คเกจ</a></li>
+                        <li {{ Request::segment(3) == 'order' ? 'class=active' : '' }}><a href="{{ url('admin/veggiecoin/order') }}"> การสั่งซื้อ</a></li>
+                    </ul>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'order' ? 'class=active' : '' }}>
-                    <a href="{{ url('admin/order') }}"><i class="fa fa-truck"></i><span class="nav-label"> การสั่งซื้อสินค้า</span></a>
+                    <a href="{{ url('admin/order') }}"><i class="fa fa-truck"></i><span class="nav-label"> การสั่งซื้อและจัดส่งสินค้า</span></a>
+                </li>
+                <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'pre-order' ? 'class=active' : '' }}>
+                    <a href="{{ url('admin/pre-order') }}"><i class="fa fa-truck"></i><span class="nav-label"> การสั่งซื้อสินค้า Pre-Order</span></a>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'inbox' ? 'class=active' : '' }}>
                     <a href="{{ url('admin/inbox') }}"><i class="fa fa-inbox"></i> <span class="nav-label"> ข้อความ</span> <span class="fa arrow"></span></a>
@@ -58,10 +67,10 @@
                     <a href="{{ url('admin/admin') }}"><i class="fa fa-user"></i> <span class="nav-label"> แอดมิน</span></a>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'farmer' ? 'class=active' : '' }}>
-                    <a href="{{ url('admin/farmer') }}"><i class="fa fa-user"></i> <span class="nav-label"> ผู้ประกอบการ</span></a>
+                    <a href="{{ url('admin/farmer') }}"><i class="fa fa-user"></i> <span class="nav-label"> ฟาร์มเมอร์</span></a>
                 </li>
                 <li {{ Request::segment(1) == 'admin' && Request::segment(2) == 'admininformation' ? 'class=active' : '' }}>
-                    <a href="{{ url('admin/admininformation') }}"><i class="fa fa-user"></i> <span class="nav-label"> ข้อมูลอื่นๆ</span></a>
+                    <a href="{{ url('admin/admininformation') }}"><i class="fa fa-list"></i> <span class="nav-label"> ข้อมูลอื่นๆ</span></a>
                 </li>
             </ul>
         </div>

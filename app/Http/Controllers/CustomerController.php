@@ -9,6 +9,10 @@ use App\Customer;
 use Hash;
 use Cart;
 use App\Order;
+use App\OrderCoin;
+use App\OrderDetail;
+use App\PreOrder;
+use App\PreOrderDetail;
 
 class CustomerController extends Controller
 {
@@ -105,6 +109,12 @@ class CustomerController extends Controller
         return view('customer.member_orders', compact('orders'));
     }
 
+    public function getPreOrders() {
+        $orders = PreOrder::whereCustomerId(auth()->guard('customer')->user()->id)->paginate(10);
+
+        return view('customer.member_pre_orders', compact('orders'));
+    }
+
     public function getOrder($order_number) {
         if(auth()->guard('customer')->check()) {
             $order = Order::whereOrderNumber($order_number)->first();
@@ -113,5 +123,33 @@ class CustomerController extends Controller
         }else {
             return redirect('/');
         }
+    }
+
+    public function getPreOrder($order_number) {
+        if(auth()->guard('customer')->check()) {
+            $order = PreOrder::whereOrderNumber($order_number)->first();
+
+            return view('customer.member_pre_order', compact('order'));
+        }else {
+            return redirect('/');
+        }
+    }
+
+    public function getOrderCoin() {
+        $order_coins = OrderCoin::whereCustomerId(auth()->guard('customer')->user()->id)->paginate(20);
+
+        return view('customer.member_order_coin', compact('order_coins'));
+    }
+
+    public function getForgotPassword() {
+        return view('customer.forgot_password');
+    }
+
+    public function postForgotPassword(Request $request) {
+        $this->validate($request, [
+            'email' => 'required|email'
+        ]);
+
+        
     }
 }

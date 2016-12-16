@@ -19,29 +19,26 @@
         </div>
 	</div>
 	<div style="margin-bottom: 10px;" class="row ibox-content border-box">
-		<div style="margin-bottom: 30px;" class="col-lg-12">
+		<div class="col-lg-12">
 			<div class="pull-left">
 				<h3>ข่าวสาร</h3>
 			</div>
 			<div class="pull-right">
-				<a href="#" class="btn btn-primary btn-sm">ดูข่าวสารทั้งหมด</a>
+				<a href="{{ url('feed') }}" class="btn btn-primary btn-sm">ดูข่าวสารทั้งหมด</a>
 			</div>
 			<div class="clearfix"></div>
 			<hr/>
-			<div>
-				<a class="link" href="#"><h4>ผักสวนครัว คือผักที่ปลูกไว้</h4></a>
-				<p>ผักสวนครัว คือผักที่ปลูกไว้ในบริเวณบ้านหรือที่ว่างต่าง ๆ ในชุมชนต่าง ๆ โดยมีวัตถุประสงค์เพื่อปลูกไว้สำหรับรับประทานเองภายในครอบครัวหรือชุมชน การปลูกผักสวนครัวไว้รับประทานจะทำให้ผู้ปลูกได้รับประทานผักสดที่อุดมด้วยวิตามินและเกลือแร่ต่าง ๆ มีความมปลอดภัยจากสารเคมี ลดรายจ่ายในครัวเรือน และที่สำคัญทำให้สมาชิกในครอบครัวมีกิจกรรมร่วมกันในการปลูกผัก..</p>
-				<p><i class="fa fa-user"> </i> Admin Big &nbsp;&nbsp;<i class="fa fa-clock-o"></i> Today, 2 September 2016</p>
-			</div>
 		</div>
-		<hr/>
+		@foreach(App\Feed::orderBy('created_at', 'DESC')->limit(2)->get() as $feed)
 		<div class="col-lg-12">
 			<div>
-				<a class="link" href="#"><h4>ผักสวนครัว คือผักที่ปลูกไว้</h4></a>
-				<p>ผักสวนครัว คือผักที่ปลูกไว้ในบริเวณบ้านหรือที่ว่างต่าง ๆ ในชุมชนต่าง ๆ โดยมีวัตถุประสงค์เพื่อปลูกไว้สำหรับรับประทานเองภายในครอบครัวหรือชุมชน การปลูกผักสวนครัวไว้รับประทานจะทำให้ผู้ปลูกได้รับประทานผักสดที่อุดมด้วยวิตามินและเกลือแร่ต่าง ๆ มีความมปลอดภัยจากสารเคมี ลดรายจ่ายในครัวเรือน และที่สำคัญทำให้สมาชิกในครอบครัวมีกิจกรรมร่วมกันในการปลูกผัก..</p>
-				<p><i class="fa fa-user"> </i> Admin Big &nbsp;&nbsp;<i class="fa fa-clock-o"></i> Today, 2 September 2016</p>
+				<a class="link" href="{{ url('feed/'.$feed->slug) }}"><h4>{{ $feed->topic }}</h4></a>
+				<p>{!! str_limit(strip_tags($feed->detail), 400) !!}</p>
+				<p><i class="fa fa-user"> </i> {{ $feed->admin->fullname }} &nbsp;&nbsp;<i class="fa fa-clock-o"></i> {{ $feed->created_at->diffForHumans() }}, {{ $feed->created_at->format('d/m/Y H:i:s') }}</p>
 			</div>
+			<hr/>
 		</div>
+		@endforeach
 	</div>
 
 	<div style="margin-bottom: 10px;" class="row ibox-content border-box">
@@ -67,7 +64,23 @@
 							{{ discountCoinPrice($popularProduct->product->price, $popularProduct->product->discount_price, $popularProduct->product->farm_product->unit) }}
 						</div>
 						<div class="small m-t-xs">
-							<a href="{{ route('cart', $popularProduct->product->id) }}" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
+							<div class="input-group">
+								<form action="{{ route('cart') }}" method="POST" style="display:inline">
+									{{ csrf_field() }}
+									<center>
+										<input style="height: 22px;width:80px;" min="1" max="{{ $popularProduct->product->quantity }}" type="number" name="qty{{ $popularProduct->product->id }}" class="form-control"> 
+										<input type="hidden" name="product_id" value="{{ $popularProduct->product->id }}">
+										<span class="input-group-btn">
+											<button disabled="disabled" class="btn btn-primary btn-xs">{{ $popularProduct->product->farm_product->unit }} </button>
+										</span>
+										@if($errors->has('qty'.$popularProduct->product->id))
+										<span style="color:#B12725;">กรุณาใส่จำนวนสินค้า</span><br/>
+										@endif
+										<br/>
+										<button type="submit" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า </button>
+									</center>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -99,7 +112,23 @@
 							{{ discountCoinPrice($recent_product->price, $recent_product->discount_price, $recent_product->farm_product->unit) }}
 						</div>
 						<div class="small m-t-xs">
-							<a href="{{ route('cart', $recent_product->id) }}" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
+							<div class="input-group">
+								<form action="{{ route('cart') }}" method="POST" style="display:inline">
+									{{ csrf_field() }}
+									<center>
+										<input style="height: 22px;width:80px;" min="1" max="{{ $recent_product->quantity }}" type="number" name="qty{{ $recent_product->id }}" class="form-control"> 
+										<input type="hidden" name="product_id" value="{{ $recent_product->id }}">
+										<span class="input-group-btn">
+											<button disabled="disabled" class="btn btn-primary btn-xs">{{ $recent_product->farm_product->unit }} </button>
+										</span>
+										@if($errors->has('qty'.$recent_product->id))
+										<span style="color:#B12725;">กรุณาใส่จำนวนสินค้า</span><br/>
+										@endif
+										<br/>
+										<button type="submit" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า </button>
+									</center>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -134,7 +163,23 @@
 									{{ discountCoinPrice($farm_product->price, $farm_product->discount_price, $farm_product->unit) }}
 								</div>
 								<div class="small m-t-xs">
-									<a href="{{ route('cart', $farm_product->id) }}" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
+									<div class="input-group">
+										<form action="{{ route('cart') }}" method="POST" style="display:inline">
+											{{ csrf_field() }}
+											<center>
+												<input style="height: 22px;width:80px;" min="1" max="{{ $farm_product->product->quantity }}" type="number" name="qty{{ $farm_product->product->id }}" class="form-control"> 
+												<input type="hidden" name="product_id" value="{{ $farm_product->product->id }}">
+												<span class="input-group-btn">
+													<button disabled="disabled" class="btn btn-primary btn-xs">{{ $farm_product->product->farm_product->unit }} </button>
+												</span>
+												@if($errors->has('qty'.$farm_product->product->id))
+												<span style="color:#B12725;">กรุณาใส่จำนวนสินค้า</span><br/>
+												@endif
+												<br/>
+												<button type="submit" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า </button>
+											</center>
+										</form>
+									</div>
 								</div>
 							</div>
 						</div>

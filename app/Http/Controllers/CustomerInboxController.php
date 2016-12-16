@@ -10,7 +10,7 @@ use App\CustomerInbox;
 class CustomerInboxController extends Controller
 {
     public function index() {
-        $inboxes = CustomerInbox::orderBy('created_at', 'DESC')->paginate(20);
+        $inboxes = CustomerInbox::whereCustomerId(auth()->guard('customer')->user()->id)->orderBy('created_at', 'DESC')->paginate(20);
 
         return view('customer.inbox', compact('inboxes'));
     }

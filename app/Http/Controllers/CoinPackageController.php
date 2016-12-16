@@ -60,7 +60,7 @@ class CoinPackageController extends Controller
         $coin->save();
         alert()->success('แพคเกจเหรียญ '. $coin->name . ' ถูกเพิ่มเข้าสู่ระบบแล้ว', 'เพิ่มแพคเกจเหรียญสำเร็จแล้ว', 'สำเร็จ')->persistent('ปิด');
 
-        return redirect()->route('admin.coinpackage.index');
+        return redirect()->route('admin.veggiecoin.package.index');
     }
 
     /**
@@ -116,7 +116,7 @@ class CoinPackageController extends Controller
         $coin->save();
 
         alert()->success('แพคเกจเหรียญ '. $coin->name . ' ถูกแก้ไขแล้ว', 'แก้ไขแพคเกจเหรียญสำเร็จแล้ว', 'สำเร็จ')->persistent('ปิด');
-        return redirect()->route('admin.coinpackage.index');
+        return redirect()->route('admin.veggiecoin.package.index');
     }
 
     /**

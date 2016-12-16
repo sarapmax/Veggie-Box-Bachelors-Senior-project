@@ -10,7 +10,7 @@
 				<a href="{{ url('admin/') }}">หน้าแรก</a>
 			</li>
 			<li class="active">
-				<strong>ข้อมูลแพคเกจเหรียญ</strong>
+				<strong>ข้อมูลแพคเกจเหรียญ VeggieCoin</strong>
 			</li>
 		</ol>
 	</div>
@@ -22,7 +22,7 @@
 				<div class="ibox-title">
 					<h5>ข้อมูลแอดมิน</h5>
 					<div class="ibox-tools">
-						<a href="{{ route('admin.coinpackage.create') }}" class="btn btn-primary"><i class="fa fa-plus"> </i> เพิ่มแพคเกจเหรียญ</a>
+						<a href="{{ route('admin.veggiecoin.package.create') }}" class="btn btn-primary"><i class="fa fa-plus"> </i> เพิ่มแพคเกจเหรียญ</a>
 					</div>
 				</div>
 				{{-- @if(Session::has('alert-success')) --}}
@@ -51,9 +51,9 @@
 									<td>{{ $coin->increase_percent }}%</td>
                   <td>{{ $coin->created_at }}</td>
 									<td align="center">
-										<a href="{{ route('admin.coinpackage.edit', $coin->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a>
+										<a href="{{ route('admin.veggiecoin.package.edit', $coin->id) }}" class="btn btn-xs btn-primary" href=""><i class="fa fa-edit"> </i></a>
 										<span style="color:#D9D0D9"> | </span>
-										<form action="{{ route('admin.coinpackage.destroy', $coin->id) }}" method="POST" style="display:inline" onsubmit="return confirm('Are you sure to delete ?')">
+										<form action="{{ route('admin.veggiecoin.package.destroy', $coin->id) }}" method="POST" style="display:inline" onsubmit="return confirm('Are you sure to delete ?')">
 											<input type="hidden" name="_method" value="DELETE">
 											<input type="hidden" name="_token" value="{{ csrf_token() }}">
 											<button type="submit" class="btn btn-xs btn-danger"><i class="fa fa-trash"> </i></button>

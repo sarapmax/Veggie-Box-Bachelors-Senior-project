@@ -1,5 +1,7 @@
 @extends('layouts.inspinia_master')
 
+@section('title', '| Farmer')
+
 @section('app')
 <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
@@ -19,6 +21,9 @@
                 <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == '' ? 'class=active' : '' }}>
                     <a href="{{ url('farmer/') }}"><i class="fa fa-desktop"></i> <span class="nav-label"> หน้าแรก</span></a>
                 </li>
+                <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'analyze' ? 'class=active' : '' }}>
+                    <a href="{{ url('farmer/analyze') }}"><i class="fa fa-certificate"></i> <span class="nav-label">ข้อมูลการขาย VeggieBox</span> </a>
+                </li>
                 <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'category' || Request::segment(2) == 'sub_category' ? 'class=active' : '' }}>
                     <a href="{{ url('farmer/category') }}"><i class="fa fa-list"></i> <span class="nav-label"> ประเภทสินค้า</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
@@ -33,7 +38,7 @@
                         <li {{ Request::segment(2) == 'admin_product' ? 'class=active' : '' }}><a href="{{ url('farmer/admin_product') }}"> สินค้าที่ส่งให้แอดมิน</a></li>
                     </ul>
                 </li>
-                <li>
+                <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'inbox' ? 'class=active' : '' }}>
                     <a href="{{ url('farmer/inbox') }}"><i class="fa fa-inbox"></i> <span class="nav-label">ข้อความ</span> </a>
                 </li>
                 <li {{ Request::segment(1) == 'farmer' && Request::segment(2) == 'order' ? 'class=active' : '' }}>
@@ -84,22 +89,24 @@
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope"></i>  <span class="label label-primary">8</span>
+                        <i class="fa fa-envelope"></i>  <span class="label label-primary">{{ App\FarmerInbox::where('farmer_id', auth()->guard('farmer')->user()->id)->whereRaw('Date(created_at) = CURDATE()')->count() }}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
+                        @foreach(App\FarmerInbox::orderBy('created_at', 'DESC')->where('farmer_id', auth()->guard('farmer')->user()->id)->whereRaw('Date(created_at) = CURDATE()')->limit(8)->get() as $farmer_inbox)
                         <li>
-                            <a href="mailbox.html">
+                            <a href="{{ url('farmer/inbox/detail/'.$farmer_inbox->slug) }}">
                                 <div>
-                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                    <i class="fa fa-envelope fa-fw"></i> {{ str_limit($farmer_inbox->topic, 20) }}
+                                    <span class="pull-right text-muted small">{{ $farmer_inbox->created_at->diffForHumans() }}</span>
                                 </div>
                             </a>
                         </li>
                         <li class="divider"></li>
+                        @endforeach
                         <li>
                             <div class="text-center link-block">
-                                <a href="notifications.html">
-                                    <strong>See All Alerts</strong>
+                                <a href="{{ url('farmer/inbox') }}">
+                                    <strong>ดูข้อความทั้งหมด</strong>
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>

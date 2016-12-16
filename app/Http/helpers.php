@@ -125,3 +125,12 @@ function customerInboxStatus($status) {
 		echo ' <i style="color:#1c84c6;" class="fa fa-circle text-primary"></i>';
 	}
 }
+
+function inboxFarmerStatus($status) {
+	if($status == 'general') {
+		echo '<i class="fa fa-circle text-navy"></i>';
+	}
+	if($status == 'news') {
+		echo '<i class="fa fa-circle text-warning"></i>';
+	}
+}

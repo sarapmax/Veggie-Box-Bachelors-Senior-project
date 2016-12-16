@@ -14,8 +14,12 @@ class CustomerCartController extends Controller
     	return view('customer.cart');
     }
 
-    public function addCart($product_id) {
-    	$product = Product::find($product_id);
+    public function addCart(Request $request) {
+      $this->validate($request, [
+        'qty'.$request->input('product_id') => 'required|integer|min:1'
+      ]);
+
+    	$product = Product::find($request->input('product_id'));
 
       	$product_price = 0;
 
@@ -28,11 +32,12 @@ class CustomerCartController extends Controller
 	    Cart::add([
 	        'id' => $product->id,
 	        'name' => $product->farm_product->name,
-	        'qty' => 1,
+	        'qty' => $request->input('qty'.$request->input('product_id')),
 	        'price' => bahtToCoin($product_price),
 	        'options' => [
 	        	'image' => $product->farm_product->thumb_image,
-	            'size' => $product->farm_product->unit
+	          'size' => $product->farm_product->unit,
+            'status' => $product->farm_product->status,
 	        ]
 	    ]);
 

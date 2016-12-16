@@ -50,6 +50,7 @@ class FeedController extends Controller
         $feed = new Feed ;
         $feed->topic = $request->input('topic');
         $feed->detail = $request->input('detail');
+        $feed->slug = slug($request->input('topic'));
         $feed->admin_id = auth()->guard('admin')->user()->id ;
 
         $feed->save();
@@ -102,6 +103,7 @@ class FeedController extends Controller
         $feed->topic = $request->input('topic');
         $feed->detail = $request->input('detail');
         $feed->activated = $request->input(1);
+        $feed->slug = slug($request->input('topic'));
         $feed->admin_id = auth()->guard('admin')->user()->id ;
 
         $feed->save();
@@ -122,7 +124,7 @@ class FeedController extends Controller
         $feed = Feed::find($id);
         $feed->delete();
 
-        alert()->success('ข่าว '. $feed->topic . ' ถูกลบออกจากระบบแล้ว', 'ลบข่าสำเร็จ', 'สำเร็จ')->persistent('ปิด');
+        alert()->success('ข่าว '. $feed->topic . ' ถูกลบออกจากระบบแล้ว', 'ลบข่าวสำเร็จ', 'สำเร็จ')->persistent('ปิด');
         return redirect()->back();
     }
 }

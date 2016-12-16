@@ -10,9 +10,25 @@ use App\Product;
 class CustomerProductController extends Controller
 {
     public function getProductsPage() {
-    	$products = Product::orderBy('created_at', 'DESC')->paginate(15);
+    	$products = Product::orderBy('products.created_at', 'DESC')
+                            ->join('farm_products', 'products.farm_product_id', '=', 'farm_products.id')
+                            ->where('farm_products.status', 'release')
+                            ->where('products.activated', 1)
+                            ->select('farm_products.*', 'products.price AS product_price', 'products.discount_price as product_discount_price', 'products.quantity AS product_quantity', 'products.id AS product_id')
+                            ->paginate(15);
 
     	return view('customer.products', compact('products'));
+    }
+
+    public function getProductPreorderPage() {
+        $products = Product::orderBy('products.created_at', 'DESC')
+                            ->join('farm_products', 'products.farm_product_id', '=', 'farm_products.id')
+                            ->where('farm_products.status', 'growing')
+                            ->where('products.activated', 1)
+                            ->select('farm_products.*', 'products.price AS product_price', 'products.discount_price as product_discount_price', 'products.quantity AS product_quantity', 'products.id AS product_id')
+                            ->paginate(15);
+
+        return view('customer.preorder_products', compact('products'));
     }
 
     public function getProduct($slug) {

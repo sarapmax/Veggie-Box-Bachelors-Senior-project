@@ -95,6 +95,14 @@
 									</td>
 								</tr>
 								@if($product->farm_product->grow_estimate && $product->farm_product->plant_date)
+								<?php
+									 $havest_date = date('Y-m-d', strtotime($product->farm_product->plant_date. ' + '.$product->farm_product->grow_estimate.' days'));
+
+						            $secs = strtotime($havest_date) - strtotime(date('Y-m-d'));
+
+						            $havest['havest_date'] = $havest_date;
+						            $havest['havest_countdown'] = $secs / 86400;
+								?>
 								<tr>
 									<td>ข้อมูลการเก็บเกียว</td>
 									<td>

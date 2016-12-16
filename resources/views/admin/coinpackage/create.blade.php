@@ -9,7 +9,7 @@
 				<a href="{{ url('admin/') }}">หน้าแรก</a>
 			</li>
 			<li>
-				<a href="{{ route('admin.coinpackage.index') }}">ข้อมูลแพคเกจเหรียญ</a>
+				<a href="{{ route('admin.veggiecoin.package.index') }}">ข้อมูลแพคเกจเหรียญ</a>
 			</li>
 			<li class="active">
 				<strong>เพิ่มแพคเกจเหรียญ</strong>
@@ -26,11 +26,11 @@
                 <div class="ibox-title">
                     <h5>เพิ่มแพคเกจเหรียญ</h5>
                     <div class="ibox-tools">
-                        <a href="{{ url('admin/coinpackage') }}" class="btn btn-primary"><i class="fa fa-list"> </i> ข้อมูลแพคเกจเหรียญ</a>
+                        <a href="{{ url('admin/veggiecoin/package') }}" class="btn btn-primary"><i class="fa fa-list"> </i> ข้อมูลแพคเกจเหรียญ</a>
                     </div>
                 </div>
 								<div class="ibox-content">
-                	<form action="{{ route('admin.coinpackage.store') }}" method="POST" class="form-horizontal">
+                	<form action="{{ route('admin.veggiecoin.package.store') }}" method="POST" class="form-horizontal">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                         	<label class="col-lg-2 control-label"> ชื่อแพคเกจ</label>

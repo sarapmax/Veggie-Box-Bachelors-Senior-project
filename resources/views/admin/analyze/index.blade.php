@@ -41,6 +41,49 @@
                     </div>
                 </div>
             </div>
+            <div style="padding-bottom: 40px;" class="col-md-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>สินค้าขายดี ปี 2016</h5>
+                    <div class="hr-line-dashed"></div>
+                    <input type="text" class="form-control" value="2016">
+                </div>
+                <div class="ibox-content">
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>ชื่อสินค้า</th>
+                                <th>จำนวนที่ขายได้ทั้งหมด</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($product_top_sell as $i => $pts)
+                            <tr>
+                                <td>{{ $i+1 }}</td>
+                                <td>{{ $pts->product_name }}</td>
+                                <td>{{ $pts->product_top_seller }} {{ $pts->unit }}</td>
+                                <td><a onClick="getTopSellDate({{ $pts->id }})"><i class="fa fa-external-link"> </i></a></td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+
+            <div style="padding-bottom: 40px;" class="col-md-8">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>ช่วงเวลาสินค้าขายดี ปี 2016</h5>
+                </div>
+                <div class="ibox-content">
+                    <canvas id="barChart2" height="140"></canvas>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 
@@ -53,6 +96,57 @@
 
 <script type="text/javascript">
     topProductByDate('{{ Carbon\Carbon::now()->startOfWeek() }}', '{{ Carbon\Carbon::now()->endOfWeek() }}', 'สัปดาห์นี้')
+
+    function getTopSellDate(product_id) {
+        $.get('analyze/get_top_sell_date/'+product_id, function(result) {
+            var labels = [], data = [];
+            for (var i = 0; i < result.length; i++) {
+                labels.push(month_format(result[i].month));
+                data.push(result[i].product_count);
+            }
+            console.log(labels)
+            console.log(data)
+            var barData = {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'ช่วงเวลาสินค้าขายดี',
+                    backgroundColor:'rgba(26,179,148, 0.7)',
+                    borderColor: 'rgba(26,179,148, 0.5)',
+                    data: data
+                },
+            ]
+            };
+
+            var barOptions = {
+            tooltips : {
+                enabled: true      
+            },
+            scales: {
+                    xAxes: [{
+                        beginAtZero: true,
+                        stacked: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'เดือน'
+                        }
+                    }],
+                    yAxes: [{
+                        beginAtZero: true,
+                        stacked: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'จำนวนที่ขายได้'
+                        }
+                    }]
+                }
+            }
+
+
+            var ctx = document.getElementById("barChart2").getContext("2d");
+            var myNewChart = new Chart(ctx, {type: 'bar', data: barData, options: barOptions});
+        })
+    }
 
     function topProductByDate($start, $end, $d) {
         $('#date_text').empty();
@@ -112,7 +206,16 @@
         return (d.getDate()+'/'+month+'/'+d.getFullYear());
     };
 
+    function month_format(input){
+        var monthNames = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน",
+          "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤษจิกายน", "ธันวาคม"
+        ];
 
+        // var d = new Date(Date.parse(input.replace(/-/g, "/")));
+        var month = monthNames[input - 1];
+        // return (date);  
+        return (month);
+    };
    
 </script>
 

@@ -2,6 +2,7 @@
 
 @section('content')
 
+<div id="printableArea">
 <div class="col-lg-12">
 	<div style="margin-bottom: 10px;" class="row border-box ibox-content">
 		<h3>เราได้รับรายการสั่งซื้อของคุณแล้ว</h3><hr/>
@@ -62,7 +63,13 @@
 				<div id="map_canvas" style="width:580;height:400px;"></div>
 			</div>
 		</div>
+		<br/><br/>
+		<center>
+		<button class="btn btn-primary" onClick="printDiv('printableArea')">พิมพ์ใบเสร็จ</button>
+		</center>
 	</div>
+	
+</div>
 </div>
 
 @endsection
@@ -72,6 +79,16 @@
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyDpdWsxjo5HJOPsERUyqQnGkgCwdtlr0HI"></script>
 
 <script type="text/javascript">
+	function printDiv(divName) {
+		var printContents = document.getElementById(divName).innerHTML;
+		var originalContents = document.body.innerHTML;
+
+		document.body.innerHTML = printContents;
+
+		window.print();
+
+		document.body.innerHTML = originalContents;
+	}
     setupMap()
 
     function setupMap() { 

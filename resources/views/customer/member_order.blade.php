@@ -35,11 +35,21 @@
             <div class="col-md-6" style="border-right: 1px solid #E4E9E5;">
                <h5><i class="fa fa-cubes"> </i> รายการสินค้า</h5><br/>
                @foreach($order->product as $product)
-                  	<li>
+                     <?php
+                        $havest_date = date('Y-m-d', strtotime($product->farm_product->plant_date. ' + '.$product->farm_product->grow_estimate.' days'));
+
+                       $secs = strtotime($havest_date) - strtotime(date('Y-m-d'));
+
+                       $havest['havest_countdown'] = $secs / 86400;
+                     ?>
+                     @if($product->farm_product->status == 'release')
+                  	<li style="margin-bottom: 5px;">
                   		{{ $product->farm_product->name }}
                   			<span> {{ $product->pivot->quantity }} {{ $product->farm_product->unit }} {{ viaCoin($total) }}
                   			</span>
+                           <small class="text-muted">สถานะ : {{ productStatus($product->farm_product->status) }}</small>
                   	</li>
+                     @endif
                @endforeach
             </div>
             <div class="col-md-6">

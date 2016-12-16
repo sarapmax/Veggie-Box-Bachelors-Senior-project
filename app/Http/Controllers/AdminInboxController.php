@@ -103,8 +103,8 @@ class AdminInboxController extends Controller
             $farmer_inbox->save();
         }
 
-        // alert()->success('ส่งข้อความให้ฟาร์มเมอร์เรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
+        alert()->success('ส่งข้อความให้ฟาร์มเมอร์เรียบร้อยแล้ว', 'สำเร็จ')->persistent('ปิด');
 
-        // return redirect('admin/inbox/farmer');
+        return redirect('admin/inbox/farmer');
    }
 }

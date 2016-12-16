@@ -82,7 +82,24 @@
 	                </table>
 	                <hr>
 	                <div>
-	                    <a href="{{ route('cart', $product->product_id) }}" class="btn btn-primary pull-right"><i class="fa fa-shopping-basket"> </i> หยิบใส่ตระกร้า</a>
+
+	                    {{-- <a href="{{ route('cart', $product->product_id) }}" class="btn btn-primary pull-right"><i class="fa fa-shopping-basket"> </i> หยิบใส่ตระกร้า</a> --}}
+	                    <div class="pull-right input-group">
+							<form action="{{ route('cart') }}" method="POST" style="display:inline">
+								{{ csrf_field() }}
+								<center>
+									<input style="width:80px;" type="number" min="1" max="{{ $product->product_quantity }}" name="qty{{ $product->product_id }}" class="form-control"> 
+									<input type="hidden" name="product_id" value="{{ $product->product_id }}">
+									<span class="input-group-btn">
+										<button class="btn btn-white btn-outline">{{ $product->unit }} </button>
+										<button type="submit" class="btn btn-primary btn-outline"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า </button>
+									</span>
+									@if($errors->has('qty'.$product->product_id))
+									<span style="color:#B12725;">กรุณาใส่จำนวนสินค้า</span><br/>
+									@endif
+								</center>
+							</form>
+						</div>
 	                    <h3 style="color:#D61614;" class="product-main-price">{{ discountCoinPrice($product->product_price, $product->product_discount_price, $product->unit) }} <small style="color:#D61614;" class="text-muted">รวมภาษามูลค่าเพิ่มแล้ว</small> </h3>
 	                </div>
 	                

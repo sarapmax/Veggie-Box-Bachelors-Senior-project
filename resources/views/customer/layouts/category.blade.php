@@ -19,12 +19,6 @@
                         <strong> &nbsp;สินค้าทั้งหมด</strong>
                     </a>
                 </li><div style="margin: 20px 0;" class="hr-line-dashed"></div>
-                <li>
-                    <a href="{{url('customer')}}">
-                    	<span class="fa fa-lg fa-certificate"></span>
-                        <strong> &nbsp;สินค้าโปรโมชั่น</strong>
-                    </a>
-                </li><div style="margin: 20px 0;" class="hr-line-dashed"></div>
             	<?php $i = 1; ?>
             	@foreach(App\Category::orderBy('created_at', 'ASC')->get() as $category)
                 <li>

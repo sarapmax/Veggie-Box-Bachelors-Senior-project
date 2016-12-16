@@ -11,6 +11,7 @@
 		<ul class="member-link">
 			<li><a href="{{ url('member/my_account') }}"><i class="fa fa-caret-right"> </i> บัญชีของฉัน</a></li>
 			<li><a href="{{ url('member/orders') }}"><i class="fa fa-caret-right"> </i> การสั่งซื้อสินค้า</a></li>
+			<li><a href="{{ url('member/pre-orders') }}"><i class="fa fa-caret-right"> </i> การสั่งซื้อสินค้า Pre-Order</a></li>
 			<li><a href="{{ url('member/order_coin') }}"><i class="fa fa-caret-right"> </i> การซื้อ VeggieCoin</a></li>
 			<li><a href="{{ url('member/inbox') }}"><i class="fa fa-caret-right"> </i> ข้อความ</a></li>
 		</ul>

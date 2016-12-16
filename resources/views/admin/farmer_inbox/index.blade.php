@@ -54,7 +54,7 @@
     <tr class="read">
         <td class="check-mail">
             {{-- {{ customerInboxStatus($inbox->status) }} --}}
-            {{ $inbox->status }}
+            {{ inboxFarmerStatus($inbox->status) }}
         </td>
         <td class="mail-ontact"><a href="{{ url('admin/inbox/farmer/detail/'.$inbox->slug) }}">
                 {{ $inbox->farmer->farm_name }}

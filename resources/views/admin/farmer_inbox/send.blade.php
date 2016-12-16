@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="form-group {{ $errors->has('admin_information_id') ? 'has-error' : '' }}">
-            <label for="" class="control-label col-md-2">ส่งถึง</label>
+            <label for="" class="control-label col-md-2">ข้อมูล</label>
             <div class="col-md-10">
                 <select class="form-control" name="admin_information_id">
                     <option value="">เลือกข้อมูลแอดมิน</option>

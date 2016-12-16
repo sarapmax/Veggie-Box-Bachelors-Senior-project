@@ -24,7 +24,23 @@
 								{{ discountCoinPrice($product_category->price, $product_category->discount_price, $product_category->farm_product->unit) }}
 							</div>
 							<div class="small m-t-xs">
-								<a href="{{ route('cart', $product_category->id) }}" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า</a>
+								<div class="input-group">
+									<form action="{{ route('cart') }}" method="POST" style="display:inline">
+										{{ csrf_field() }}
+										<center>
+											<input style="height: 22px;width:80px;" type="number" name="qty{{ $product_category->id }}" class="form-control"> 
+											<input type="hidden" name="product_id" value="{{ $product_category->id }}">
+											<span class="input-group-btn">
+												<button disabled="disabled" class="btn btn-primary btn-xs">{{ $product_category->farm_product->unit }} </button>
+											</span>
+											@if($errors->has('qty'.$product_category->id))
+											<span style="color:#B12725;">กรุณาใส่จำนวนสินค้า</span><br/>
+											@endif
+											<br/>
+											<button type="submit" class="btn btn-primary btn-outline btn-xs"><i class="fa fa-shopping-basket"></i> หยิบใส่ตระกร้า </button>
+										</center>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>

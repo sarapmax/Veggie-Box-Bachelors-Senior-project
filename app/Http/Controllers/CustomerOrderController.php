@@ -10,6 +10,8 @@ use Cart;
 use App\Order;
 use App\OrderDetail;
 use App\Customer;
+use App\PreOrder;
+use App\PreOrderDetail;
 
 class CustomerOrderController extends Controller
 {
@@ -66,27 +68,60 @@ class CustomerOrderController extends Controller
 
 	   		$order->save();
 
+
 	   		foreach(Cart::content() as $cart) {
-	   			$order_detail = new OrderDetail;
-				$product = Product::find($cart->id);
+	   			$product = Product::find($cart->id);
 
 				$product->update([
 					'quantity' => $product->quantity - $cart->qty,
 				]);
 
-				$order_detail->order_id = $order->id;
-				$order_detail->product_id = $cart->id;
-				$order_detail->sub_total = $cart->subtotal;
-				$order_detail->quantity = $cart->qty;
+	   			if($cart->options->status == 'release') {
+	   				$order_detail = new OrderDetail;
 
-				$order_detail->save();
+	   				$order_detail->order_id = $order->id;
+					$order_detail->product_id = $cart->id;
+					$order_detail->sub_total = $cart->subtotal;
+					$order_detail->quantity = $cart->qty;
+
+					$order_detail->save();
+	   			}
+
+	   			if($cart->options->status == 'growing') {
+	   				$pre_order_detail = new PreOrderDetail;
+	   				$pre_order = new PreOrder;
+
+	   				$pre_order->customer_id = auth()->guard('customer')->user()->id;
+			   		$pre_order->order_number = date('ydm').'-'.time();
+			   		$pre_order->email = $request->input('email');
+			   		$pre_order->firstname = $request->input('firstname');
+			   		$pre_order->lastname = $request->input('lastname');
+			   		$pre_order->phone = $request->input('phone');
+			   		$pre_order->address = $request->input('address');
+			   		$pre_order->sub_district = $request->input('sub_district');
+			   		$pre_order->district = $request->input('district');
+			   		$pre_order->province = $request->input('province');
+			   		$pre_order->zipcode = $request->input('zipcode');
+			   		$pre_order->order_status = 'paid';
+			   		$pre_order->latLng = $request->input('latLng');
+
+			   		$pre_order->save();
+
+	   				$pre_order_detail->order_id = $pre_order->id;
+					$pre_order_detail->product_id = $cart->id;
+					$pre_order_detail->sub_total = $cart->subtotal;
+					$pre_order_detail->quantity = $cart->qty;
+
+					$pre_order_detail->save();
+	   			}
+
 	        }
 
 	        Cart::destroy();
 
 	        return redirect()->route('order_success', ['order_number' => $order->order_number])->with('alert-success', 'คุณได้ทำการสั่งซื้อสินค้าเรียบร้อยแล้ว คุณจะได้รับสินค้าภายในวันนี้ เวลา 19.00 น. โดยประมาณ'); 
    		}else {
-   			return redirect()->back()->with('alert-danger', 'จำนวน VeggieCoin ของคุณไม่พอในการทำการสั่งซื้อสินค้า <a href="order_coin">ซื้อ VeggieCoin</a>');
+   			return redirect()->back()->with('alert-danger', 'จำนวน VeggieCoin ของคุณไม่พอในการทำการสั่งซื้อสินค้า <a href="veggiecoin">ซื้อ VeggieCoin</a>');
    		}
    }
 

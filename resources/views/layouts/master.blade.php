@@ -47,6 +47,7 @@
                                 <li><a href="{{ url('checkout') }}">เช็คเอาท์</a></li>
                                 @if(Auth::guard('customer')->check())
                                 <li><a href="{{ url('member/orders') }}">รายการสั่งซื้อ</a></li>
+                                <li><a href="{{ url('member/pre-orders') }}">รายการสั่งซื้อ สินค้า Pre-Order</a></li>
                                 <li><a href="{{ url('member/order_coin') }}">การสั่งซื้อ VeggieCoin</a></li>
 
                                 <li class="logout"><a href="{{ url('logout') }}"><i class="fa fa-sign-out"> </i> ออกจากระบบ</a></li>
@@ -74,28 +75,33 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul style="margin-left: 20px;" class="nav navbar-nav">
             <li {{ Request::segment(1) == '' ? 'class=active' : '' }}>
-                <a href="{{url('/')}}">
+                <a href="{{ url('/') }}">
                     <i class="glyphicon glyphicon-home" aria-hidden="true"></i>
                     หน้าแรก
                 </a>
             </li>
             <li {{ Request::segment(1) == 'products' || Request::segment(1) == 'product' ? 'class=active' : '' }}>
-                <a href="{{url('products')}}">
+                <a href="{{ url('products') }}">
                     สินค้า
                 </a>
             </li>
-            <li>
-                <a href="{{url('news')}}">
+            <li {{ Request::segment(1) == 'pre-order' ? 'class=active' : '' }}>
+                <a href="{{url('pre-order')}}">
+                     สินค้า Pre-Order
+                </a>
+            </li>
+            <li {{ Request::segment(1) == 'feed' ? 'class=active' : '' }}>
+                <a href="{{ url('feed') }}">
                     ข่าวสาร
                 </a>
             </li>
             <li {{ Request::segment(1) == 'member' && Request::segment(2) == 'inbox' ? 'class=active' : '' }}>
-                <a href="{{url('member/inbox')}}">
+                <a href="{{ url('member/inbox') }}">
                     ข้อความ
                 </a>
             </li>
             <li {{ Request::segment(1) == 'veggiecoin' ? 'class=active' : '' }}>
-                <a href="{{url('veggiecoin')}}">
+                <a href="{{ url('veggiecoin') }}">
                     ซื้อ VeggieCoin
                 </a>
             </li>
@@ -183,19 +189,19 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{url('customer/veggiecoin')}}">
+                                    <a href="{{url('products')}}">
                                         <i class="fa fa-caret-right"></i>
                                          สินค้า
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{url('customer/news')}}">
+                                    <a href="{{url('feed')}}">
                                         <i class="fa fa-caret-right"></i>
                                          ข่าวสาร
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{url('customer/inbox')}}">
+                                    <a href="{{url('member/inbox')}}">
                                         <i class="fa fa-caret-right"></i>
                                          ข้อความ
                                     </a>
@@ -205,21 +211,9 @@
                         <div class="col-md-6">
                             <ul class="footer-link">
                                 <li>
-                                    <a href="{{url('customer/veggiecoin')}}">
+                                    <a href="{{url('veggiecoin')}}">
                                         <i class="fa fa-caret-right"></i>
                                          ซื้อ VeggieCoin
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{url('customer/veggiecoin')}}">
-                                        <i class="fa fa-caret-right"></i>
-                                         เกี่ยวกับเรา
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{url('customer/veggiecoin')}}">
-                                        <i class="fa fa-caret-right"></i>
-                                         ติดต่อเรา
                                     </a>
                                 </li>
                             </ul>
