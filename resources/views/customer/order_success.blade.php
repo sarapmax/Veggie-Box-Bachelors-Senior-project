@@ -11,13 +11,14 @@
 			<tr>
 				<td><strong>รหัสการสั่งซื้อ :</strong> {{ $order[0]->order_number }}</td>
 				<td><strong>วันที่สั่งซื้อ :</strong> {{ $order[0]->created_at->format('d/m/Y') }}</td>
-				<td><strong>ราคา :</strong> {{ viaCoin($total) }}</td>
+				<td><strong>ราคา :</strong> {{ viaCoin($total + $pre_total) }}</td>
 				<td><strong>สถานะการสั่งซื้อ :</strong> {{ $order[0]->order_status }}</td>
 			</tr>
 		</table>
 
 		<div class="row">
 			<div class="col-lg-6">
+				@if(count($order[0]->product) != 0)
 				<h4>รายละเอียดสินค้า</h4><hr/>
 				<table class="table table-bordered">
 					<thead>
@@ -30,11 +31,45 @@
 						@foreach($order[0]->product as $product)
 						<tr>
 							<td>{{ $product->farm_product->name }} x {{ $product->pivot->quantity }} {{ $product->farm_product->unit }}</td>
-							<td>{{ $product->pivot->sub_total }}</td>
+							<td>{{ viaCoin($product->pivot->sub_total) }}</td>
 						</tr>
 						@endforeach
 					</tbody>
 				</table>
+				@endif
+				@if(count($pre_order[0]->product) != 0)
+				<h4>รายละเอียดสินค้า Preorder</h4><hr/>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>สินค้า</th>
+							<th>ราคา</th>
+							<th>สถานะ</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach($pre_order[0]->product as $product)
+						<tr>
+							<td>{{ $product->farm_product->name }} x {{ $product->pivot->quantity }} {{ $product->farm_product->unit }}</td>
+							<td>{{ viaCoin($product->pivot->sub_total) }}</td>
+							<td>
+								<center>
+								<?php
+				                    $havest_date = date('Y-m-d', strtotime($product->farm_product->plant_date. ' + '.$product->farm_product->grow_estimate.' days'));
+
+				                   $secs = strtotime($havest_date) - strtotime(date('Y-m-d'));
+
+				                   $havest['havest_countdown'] = $secs / 86400;
+				                 ?>
+								
+				                 <small style="color:#f0ad4e;">(เหลืออีกประมาณ {{ $havest['havest_countdown'] }} วัน จะได้รับสินค้า)</small>
+				                 </center>
+							</td>
+						</tr>
+						@endforeach
+					</tbody>
+				</table>
+				@endif
 			</div>
 			<div class="col-lg-6">
 				<h4>ข้อมูลลูกค้า</h4><hr/>

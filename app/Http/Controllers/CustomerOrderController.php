@@ -68,6 +68,24 @@ class CustomerOrderController extends Controller
 
 	   		$order->save();
 
+	   		$pre_order = new PreOrder;
+
+			$pre_order->customer_id = auth()->guard('customer')->user()->id;
+	   		$pre_order->order_number = date('ydm').'-'.time();
+	   		$pre_order->email = $request->input('email');
+	   		$pre_order->firstname = $request->input('firstname');
+	   		$pre_order->lastname = $request->input('lastname');
+	   		$pre_order->phone = $request->input('phone');
+	   		$pre_order->address = $request->input('address');
+	   		$pre_order->sub_district = $request->input('sub_district');
+	   		$pre_order->district = $request->input('district');
+	   		$pre_order->province = $request->input('province');
+	   		$pre_order->zipcode = $request->input('zipcode');
+	   		$pre_order->order_status = 'paid';
+	   		$pre_order->latLng = $request->input('latLng');
+
+	   		$pre_order->save();
+
 
 	   		foreach(Cart::content() as $cart) {
 	   			$product = Product::find($cart->id);
@@ -89,23 +107,6 @@ class CustomerOrderController extends Controller
 
 	   			if($cart->options->status == 'growing') {
 	   				$pre_order_detail = new PreOrderDetail;
-	   				$pre_order = new PreOrder;
-
-	   				$pre_order->customer_id = auth()->guard('customer')->user()->id;
-			   		$pre_order->order_number = date('ydm').'-'.time();
-			   		$pre_order->email = $request->input('email');
-			   		$pre_order->firstname = $request->input('firstname');
-			   		$pre_order->lastname = $request->input('lastname');
-			   		$pre_order->phone = $request->input('phone');
-			   		$pre_order->address = $request->input('address');
-			   		$pre_order->sub_district = $request->input('sub_district');
-			   		$pre_order->district = $request->input('district');
-			   		$pre_order->province = $request->input('province');
-			   		$pre_order->zipcode = $request->input('zipcode');
-			   		$pre_order->order_status = 'paid';
-			   		$pre_order->latLng = $request->input('latLng');
-
-			   		$pre_order->save();
 
 	   				$pre_order_detail->order_id = $pre_order->id;
 					$pre_order_detail->product_id = $cart->id;
@@ -113,27 +114,40 @@ class CustomerOrderController extends Controller
 					$pre_order_detail->quantity = $cart->qty;
 
 					$pre_order_detail->save();
+
 	   			}
 
 	        }
 
 	        Cart::destroy();
 
-	        return redirect()->route('order_success', ['order_number' => $order->order_number])->with('alert-success', 'คุณได้ทำการสั่งซื้อสินค้าเรียบร้อยแล้ว คุณจะได้รับสินค้าภายในวันนี้ เวลา 19.00 น. โดยประมาณ'); 
+	        return redirect()->route('order_success', ['order_number' => $order->order_number, 'pre_order_number' => $pre_order->order_number])->with('alert-success', 'คุณได้ทำการสั่งซื้อสินค้าเรียบร้อยแล้ว คุณจะได้รับสินค้าภายในวันนี้ เวลา 19.00 น. โดยประมาณ'); 
    		}else {
    			return redirect()->back()->with('alert-danger', 'จำนวน VeggieCoin ของคุณไม่พอในการทำการสั่งซื้อสินค้า <a href="veggiecoin">ซื้อ VeggieCoin</a>');
    		}
    }
 
-    public function getOrderSuccess($order_number) {
+    public function getOrderSuccess($order_number, $pre_order_number) {
+    	// echo "order :".$order_number."<br/>";
+    	// echo "pre order :".$pre_order_number;
         $order = Order::whereOrderNumber($order_number)->get();
+        $pre_order = PreOrder::whereOrderNumber($pre_order_number)->get();
+
         $total = 0;
+        $pre_total = 0;
+
         foreach($order as  $o) {
             foreach ($o->order_detail as $od) {
                 $total += $od->sub_total;
             }
         }
 
-        return view('customer.order_success', compact(['order', 'total']));
+        foreach($pre_order as  $po) {
+            foreach ($po->pre_order_detail as $odd) {
+                $pre_total += $odd->sub_total;
+            }
+        }
+
+        return view('customer.order_success', compact(['order', 'total', 'pre_total', 'pre_order']));
     }
 }

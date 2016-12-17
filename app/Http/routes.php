@@ -236,7 +236,7 @@ Route::group(['middleware' => ['member']], function () {
 
 	Route::post('order', 'CustomerOrderController@placeOrder');
 
-	Route::get('order_success/{order_number}', [
+	Route::get('order_success/{order_number}/{pre_order_number}', [
 		'as' => 'order_success',
 		'uses' => 'CustomerOrderController@getOrderSuccess'
 	]);

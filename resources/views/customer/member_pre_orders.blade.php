@@ -19,34 +19,30 @@
 			</thead>
 			<tbody>
 				@foreach($orders as $order)
+				@foreach ($order->pre_order_detail as $product)
 				<tr>
 					<td>{{ $order->order_number }} <a href="{{ url('member/pre-order/'.$order->order_number) }}"><i class="fa fa-external-link"> </i></a></td>
 					<td>
-						@foreach ($order->pre_order_detail as $product)
+						
 						{{ $product->product->farm_product->name }} x {{ $product->quantity }} {{ $product->product->farm_product->unit }}
-						@endforeach
 					</td>
 					<td>
 						<?php $total = 0; ?>
-						@foreach ($order->pre_order_detail as $od)
-							<?php $total += $od->sub_total; ?>
+							<?php $total += $product->sub_total; ?>
 
-						@endforeach
 						{{ viaCoin($total) }}
 					</td>
 					<td>{{ $order->created_at->format('d/m/Y') }}</td>
 					<td>
 						<center>
-						@foreach ($order->pre_order_detail as $havest)
-						{{ productStatus($havest->product->farm_product->status) }} <br/><br/>
+						{{ productStatus($product->product->farm_product->status) }} <br/><br/>
 						<?php
-		                    $havest_date = date('Y-m-d', strtotime($havest->product->farm_product->plant_date. ' + '.$havest->product->farm_product->grow_estimate.' days'));
+		                    $havest_date = date('Y-m-d', strtotime($product->product->farm_product->plant_date. ' + '.$product->product->farm_product->grow_estimate.' days'));
 
 		                   $secs = strtotime($havest_date) - strtotime(date('Y-m-d'));
 
 		                   $havest['havest_countdown'] = $secs / 86400;
 		                 ?>
-		                 @endforeach
 						
 		                 <small style="color:#f0ad4e;">(เหลืออีกประมาณ {{ $havest['havest_countdown'] }} วัน จะได้รับสินค้า)</small>
 		                 </center>
@@ -55,6 +51,7 @@
 						{{ adminOrderStatus($order->order_status) }}
 					</td>
 				</tr>
+				@endforeach
 				@endforeach
 			</tbody>
 		</table>
